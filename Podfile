@@ -1,0 +1,7 @@
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'SDCycleScrollView'
+pod 'MBProgressHUD'
+pod 'Mantle'
+pod 'MJRefresh'
