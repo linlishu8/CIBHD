@@ -10,4 +10,8 @@
 
 @interface MGTabBarController : UITabBarController
 
+@property (nonatomic, readwrite, copy) NSArray<UIViewController *> *viewControllers;
+
+@property (nonatomic, readwrite, copy) NSArray<NSDictionary *> *tabBarItemsAttributes;
+
 @end
