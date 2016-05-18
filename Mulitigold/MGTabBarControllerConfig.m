@@ -7,6 +7,7 @@
 //
 
 #import "MGTabBarControllerConfig.h"
+#import "MGGomeViewController.h"
 
 @interface MGTabBarControllerConfig ()
 
@@ -18,7 +19,7 @@
 
 - (MGTabBarController *)tabBarController {
     if (_tabBarController == nil) {
-        UIViewController *firstViewController = [[UIViewController alloc] init];
+        MGGomeViewController *firstViewController = [[MGGomeViewController alloc] init];
         UIViewController *firstNavigationController = [[UINavigationController alloc]
                                                        initWithRootViewController:firstViewController];
         

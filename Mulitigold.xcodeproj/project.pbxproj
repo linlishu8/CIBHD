@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1802376F1CEAC21900711C1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1802376E1CEAC21900711C1C /* Images.xcassets */; };
+		1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */; };
+		1814A5D91CEC1B2E002DE7AF /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5D81CEC1B2E002DE7AF /* UIImage+Color.m */; };
+		1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E01CEC4442002DE7AF /* BannerDataModel.m */; };
+		1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */; };
 		183008251CEABF580023D293 /* MGTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 183008241CEABF580023D293 /* MGTabBarControllerConfig.m */; };
+		183628051CEC497A004BBF65 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628041CEC497A004BBF65 /* Reachability.m */; };
+		183628081CEC539B004BBF65 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628071CEC539B004BBF65 /* BaseViewController.m */; };
+		1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */; };
 		1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */; };
 		18C861681CE971B2005FC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C861671CE971B2005FC4EA /* main.m */; };
 		18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8616A1CE971B2005FC4EA /* AppDelegate.m */; };
@@ -18,8 +25,22 @@
 
 /* Begin PBXFileReference section */
 		1802376E1CEAC21900711C1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1814A5D01CEC13C8002DE7AF /* MGGomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeViewController.h; sourceTree = "<group>"; };
+		1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeViewController.m; sourceTree = "<group>"; };
+		1814A5D71CEC1B2E002DE7AF /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		1814A5D81CEC1B2E002DE7AF /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		1814A5DF1CEC4442002DE7AF /* BannerDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerDataModel.h; sourceTree = "<group>"; };
+		1814A5E01CEC4442002DE7AF /* BannerDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerDataModel.m; sourceTree = "<group>"; };
+		1814A5E21CEC48EF002DE7AF /* NetworkUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUnit.h; sourceTree = "<group>"; };
+		1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkUnit.m; sourceTree = "<group>"; };
 		183008231CEABF580023D293 /* MGTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarControllerConfig.h; sourceTree = "<group>"; };
 		183008241CEABF580023D293 /* MGTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarControllerConfig.m; sourceTree = "<group>"; };
+		183628031CEC497A004BBF65 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		183628041CEC497A004BBF65 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		183628061CEC539B004BBF65 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		183628071CEC539B004BBF65 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1836280A1CEC53C4004BBF65 /* BaseNavBarHiddenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavBarHiddenController.h; sourceTree = "<group>"; };
+		1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavBarHiddenController.m; sourceTree = "<group>"; };
 		1875A36F1CE9AA3C00E7AB84 /* Mulitigold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mulitigold-Prefix.pch"; sourceTree = "<group>"; };
 		1875A3721CE9B85A00E7AB84 /* MGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarController.h; sourceTree = "<group>"; };
 		1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarController.m; sourceTree = "<group>"; };
@@ -49,6 +70,7 @@
 		180237701CEB01F600711C1C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1814A5D51CEC1B26002DE7AF /* UIKit */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -63,13 +85,112 @@
 		180237721CEB01F600711C1C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1814A5E21CEC48EF002DE7AF /* NetworkUnit.h */,
+				1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		1814A5CB1CEC1106002DE7AF /* MGGomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1814A5D31CEC13EB002DE7AF /* Model */,
+				1814A5D41CEC13EB002DE7AF /* View */,
+				1814A5CF1CEC13C8002DE7AF /* Controller */,
+			);
+			path = MGGomeViewController;
+			sourceTree = "<group>";
+		};
+		1814A5CF1CEC13C8002DE7AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1814A5D01CEC13C8002DE7AF /* MGGomeViewController.h */,
+				1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1814A5D31CEC13EB002DE7AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1814A5DF1CEC4442002DE7AF /* BannerDataModel.h */,
+				1814A5E01CEC4442002DE7AF /* BannerDataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1814A5D41CEC13EB002DE7AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1814A5D51CEC1B26002DE7AF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1814A5D61CEC1B26002DE7AF /* UIImage */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1814A5D61CEC1B26002DE7AF /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				1814A5D71CEC1B2E002DE7AF /* UIImage+Color.h */,
+				1814A5D81CEC1B2E002DE7AF /* UIImage+Color.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		1814A5DA1CEC1B42002DE7AF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				183628091CEC53BB004BBF65 /* BaseNavBarHiddenController */,
+				1814A5DB1CEC1B42002DE7AF /* BaseController */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1814A5DB1CEC1B42002DE7AF /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				183628061CEC539B004BBF65 /* BaseViewController.h */,
+				183628071CEC539B004BBF65 /* BaseViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		183628011CEC4957004BBF65 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				183628021CEC4974004BBF65 /* Reachability */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		183628021CEC4974004BBF65 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				183628031CEC497A004BBF65 /* Reachability.h */,
+				183628041CEC497A004BBF65 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		183628091CEC53BB004BBF65 /* BaseNavBarHiddenController */ = {
+			isa = PBXGroup;
+			children = (
+				1836280A1CEC53C4004BBF65 /* BaseNavBarHiddenController.h */,
+				1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */,
+			);
+			path = BaseNavBarHiddenController;
 			sourceTree = "<group>";
 		};
 		1875A3701CE9B77900E7AB84 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1814A5CB1CEC1106002DE7AF /* MGGomeViewController */,
 				1875A3711CE9B83C00E7AB84 /* MGTabBarController */,
 			);
 			path = Classes;
@@ -105,6 +226,8 @@
 		18C861651CE971B2005FC4EA /* Mulitigold */ = {
 			isa = PBXGroup;
 			children = (
+				183628011CEC4957004BBF65 /* Tool */,
+				1814A5DA1CEC1B42002DE7AF /* Base */,
 				180237701CEB01F600711C1C /* Category */,
 				180237711CEB01F600711C1C /* Macros */,
 				180237721CEB01F600711C1C /* Network */,
@@ -253,9 +376,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */,
+				183628081CEC539B004BBF65 /* BaseViewController.m in Sources */,
 				18C861681CE971B2005FC4EA /* main.m in Sources */,
+				1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */,
 				1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */,
+				1814A5D91CEC1B2E002DE7AF /* UIImage+Color.m in Sources */,
 				183008251CEABF580023D293 /* MGTabBarControllerConfig.m in Sources */,
+				1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */,
+				1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */,
+				183628051CEC497A004BBF65 /* Reachability.m in Sources */,
+				1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
