@@ -8,7 +8,7 @@
 
 #import "MGGomeViewController.h"
 
-@interface MGGomeViewController ()<UITableViewDataSource>
+@interface MGGomeViewController ()
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -18,9 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setUpTableView];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
-    self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
@@ -34,22 +34,9 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+- (void)setUpTableView
+{
     
-    return 10;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-        
-    }
-    cell.backgroundColor = indexPath.row % 2 ? [UIColor orangeColor]:[UIColor greenColor];
-    
-    cell.textLabel.text = @"zzzz";
-    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

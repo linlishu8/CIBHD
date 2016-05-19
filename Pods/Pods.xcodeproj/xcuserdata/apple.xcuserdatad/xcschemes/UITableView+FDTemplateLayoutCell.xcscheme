@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "84C6452B90B27BC8A230D8FD"
-               BuildableName = "libMasonry.a"
-               BlueprintName = "Masonry"
+               BlueprintIdentifier = "74D90A4ED6C81A2C53CAC76B"
+               BuildableName = "libUITableView+FDTemplateLayoutCell.a"
+               BlueprintName = "UITableView+FDTemplateLayoutCell"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

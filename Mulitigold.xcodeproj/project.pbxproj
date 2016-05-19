@@ -9,17 +9,18 @@
 /* Begin PBXBuildFile section */
 		1802376F1CEAC21900711C1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1802376E1CEAC21900711C1C /* Images.xcassets */; };
 		1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */; };
-		1814A5D91CEC1B2E002DE7AF /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5D81CEC1B2E002DE7AF /* UIImage+Color.m */; };
 		1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E01CEC4442002DE7AF /* BannerDataModel.m */; };
 		1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */; };
 		183008251CEABF580023D293 /* MGTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 183008241CEABF580023D293 /* MGTabBarControllerConfig.m */; };
 		183628051CEC497A004BBF65 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628041CEC497A004BBF65 /* Reachability.m */; };
 		183628081CEC539B004BBF65 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628071CEC539B004BBF65 /* BaseViewController.m */; };
 		1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */; };
+		18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18401A751CED6370005DFB43 /* UIImage+Color.m */; };
 		1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */; };
 		18C861681CE971B2005FC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C861671CE971B2005FC4EA /* main.m */; };
 		18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8616A1CE971B2005FC4EA /* AppDelegate.m */; };
 		18C861761CE971B2005FC4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C861741CE971B2005FC4EA /* LaunchScreen.storyboard */; };
+		18ED53201CED9D6B00F5F898 /* ACTableViewDelegte.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */; };
 		43DFC672F77565789664AFA6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8B8D4F6F1C104C7B256E20 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +28,6 @@
 		1802376E1CEAC21900711C1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1814A5D01CEC13C8002DE7AF /* MGGomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeViewController.h; sourceTree = "<group>"; };
 		1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeViewController.m; sourceTree = "<group>"; };
-		1814A5D71CEC1B2E002DE7AF /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
-		1814A5D81CEC1B2E002DE7AF /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		1814A5DF1CEC4442002DE7AF /* BannerDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerDataModel.h; sourceTree = "<group>"; };
 		1814A5E01CEC4442002DE7AF /* BannerDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerDataModel.m; sourceTree = "<group>"; };
 		1814A5E21CEC48EF002DE7AF /* NetworkUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUnit.h; sourceTree = "<group>"; };
@@ -41,6 +40,8 @@
 		183628071CEC539B004BBF65 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		1836280A1CEC53C4004BBF65 /* BaseNavBarHiddenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavBarHiddenController.h; sourceTree = "<group>"; };
 		1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavBarHiddenController.m; sourceTree = "<group>"; };
+		18401A741CED6370005DFB43 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		18401A751CED6370005DFB43 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		1875A36F1CE9AA3C00E7AB84 /* Mulitigold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mulitigold-Prefix.pch"; sourceTree = "<group>"; };
 		1875A3721CE9B85A00E7AB84 /* MGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarController.h; sourceTree = "<group>"; };
 		1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarController.m; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		18C8616A1CE971B2005FC4EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18C861751CE971B2005FC4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C861771CE971B2005FC4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18ED53141CED90C200F5F898 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		18ED531E1CED9D6B00F5F898 /* ACTableViewDelegte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTableViewDelegte.h; sourceTree = "<group>"; };
+		18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTableViewDelegte.m; sourceTree = "<group>"; };
 		5D575FBB2A1E363F99F97366 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D86515CA192EF670BA8F9FD1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EF8B8D4F6F1C104C7B256E20 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +74,8 @@
 		180237701CEB01F600711C1C /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				1814A5D51CEC1B26002DE7AF /* UIKit */,
+				18401A741CED6370005DFB43 /* UIImage+Color.h */,
+				18401A751CED6370005DFB43 /* UIImage+Color.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -78,6 +83,7 @@
 		180237711CEB01F600711C1C /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				18ED53141CED90C200F5F898 /* Macros.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -126,23 +132,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		1814A5D51CEC1B26002DE7AF /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				1814A5D61CEC1B26002DE7AF /* UIImage */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		1814A5D61CEC1B26002DE7AF /* UIImage */ = {
-			isa = PBXGroup;
-			children = (
-				1814A5D71CEC1B2E002DE7AF /* UIImage+Color.h */,
-				1814A5D81CEC1B2E002DE7AF /* UIImage+Color.m */,
-			);
-			path = UIImage;
-			sourceTree = "<group>";
-		};
 		1814A5DA1CEC1B42002DE7AF /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +153,7 @@
 		183628011CEC4957004BBF65 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				18ED531D1CED9D6200F5F898 /* ACTableViewDelegte */,
 				183628021CEC4974004BBF65 /* Reachability */,
 			);
 			path = Tool;
@@ -251,6 +241,15 @@
 				18C861671CE971B2005FC4EA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18ED531D1CED9D6200F5F898 /* ACTableViewDelegte */ = {
+			isa = PBXGroup;
+			children = (
+				18ED531E1CED9D6B00F5F898 /* ACTableViewDelegte.h */,
+				18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */,
+			);
+			path = ACTableViewDelegte;
 			sourceTree = "<group>";
 		};
 		39A8A38F69AE824FC1D510C2 /* Pods */ = {
@@ -380,10 +379,11 @@
 				18C861681CE971B2005FC4EA /* main.m in Sources */,
 				1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */,
 				1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */,
-				1814A5D91CEC1B2E002DE7AF /* UIImage+Color.m in Sources */,
+				18ED53201CED9D6B00F5F898 /* ACTableViewDelegte.m in Sources */,
 				183008251CEABF580023D293 /* MGTabBarControllerConfig.m in Sources */,
 				1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */,
 				1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */,
+				18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */,
 				183628051CEC497A004BBF65 /* Reachability.m in Sources */,
 				1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */,
 			);
