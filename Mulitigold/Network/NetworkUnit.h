@@ -31,8 +31,6 @@ typedef void(^netStatus)(NetworkStatus netStatus);
 + (id)sharedInstance;
 + (NETWORK_TYPE)getNetworkTypeFromStatusBar;
 
-+ (NSDictionary *)getUrlsFromJsonAddress:(NSString *)str;
-
 - (void)addObserverReachabilityChanged:(void(^)(NetworkStatus netStatus))netStatusBlock;
 - (NSInteger)delayTime:(NetworkStatus)netStatus;
 

@@ -103,18 +103,6 @@
     } 
 }
 
-+ (NSDictionary *)getUrlsFromJsonAddress:(NSString *)str
-{
-    NSError *error;
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:str]];
-    NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&error];
-    if (responseData) {
-        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableContainers error:nil];
-        return dic;
-    }
-    return @{};
-}
-
 
 @end
 

@@ -11,6 +11,23 @@
 		1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */; };
 		1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E01CEC4442002DE7AF /* BannerDataModel.m */; };
 		1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */; };
+		182BA3921CEEACF900672DFA /* YAAPIBaseRequestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3691CEEACF900672DFA /* YAAPIBaseRequestDataModel.m */; };
+		182BA3931CEEACF900672DFA /* YAAPIResponseErrorHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA36B1CEEACF900672DFA /* YAAPIResponseErrorHandler.m */; };
+		182BA3941CEEACF900672DFA /* YAAPIURLRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA36D1CEEACF900672DFA /* YAAPIURLRequestGenerator.m */; };
+		182BA3971CEEACF900672DFA /* YASignatureGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3731CEEACF900672DFA /* YASignatureGenerator.m */; };
+		182BA3981CEEACF900672DFA /* YABaseDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3761CEEACF900672DFA /* YABaseDataEngine.m */; };
+		182BA3991CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3791CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m */; };
+		182BA39A1CEEACF900672DFA /* NSString+UtilNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA37B1CEEACF900672DFA /* NSString+UtilNetworking.m */; };
+		182BA39B1CEEACF900672DFA /* UIDevice+UtilNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA37D1CEEACF900672DFA /* UIDevice+UtilNetworking.m */; };
+		182BA39C1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA37F1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m */; };
+		182BA39D1CEEACF900672DFA /* FWZServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3841CEEACF900672DFA /* FWZServer.m */; };
+		182BA39E1CEEACF900672DFA /* YAServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3871CEEACF900672DFA /* YAServer.m */; };
+		182BA39F1CEEACF900672DFA /* YABaseServers.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3891CEEACF900672DFA /* YABaseServers.m */; };
+		182BA3A01CEEACF900672DFA /* YAServerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA38B1CEEACF900672DFA /* YAServerFactory.m */; };
+		182BA3A11CEEACF900672DFA /* YAAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA38D1CEEACF900672DFA /* YAAPIClient.m */; };
+		182BA3A51CEEAF5D00672DFA /* MGGomeDataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3A41CEEAF5D00672DFA /* MGGomeDataEngine.m */; };
+		182BA3A81CEEF53B00672DFA /* YACommonParamsGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3A71CEEF53B00672DFA /* YACommonParamsGenerator.m */; };
+		182BA3AB1CEEF54A00672DFA /* YAAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3AA1CEEF54A00672DFA /* YAAppContext.m */; };
 		183008251CEABF580023D293 /* MGTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 183008241CEABF580023D293 /* MGTabBarControllerConfig.m */; };
 		183628051CEC497A004BBF65 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628041CEC497A004BBF65 /* Reachability.m */; };
 		183628081CEC539B004BBF65 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628071CEC539B004BBF65 /* BaseViewController.m */; };
@@ -32,6 +49,41 @@
 		1814A5E01CEC4442002DE7AF /* BannerDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerDataModel.m; sourceTree = "<group>"; };
 		1814A5E21CEC48EF002DE7AF /* NetworkUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUnit.h; sourceTree = "<group>"; };
 		1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkUnit.m; sourceTree = "<group>"; };
+		182BA3681CEEACF900672DFA /* YAAPIBaseRequestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAPIBaseRequestDataModel.h; sourceTree = "<group>"; };
+		182BA3691CEEACF900672DFA /* YAAPIBaseRequestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAPIBaseRequestDataModel.m; sourceTree = "<group>"; };
+		182BA36A1CEEACF900672DFA /* YAAPIResponseErrorHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAPIResponseErrorHandler.h; sourceTree = "<group>"; };
+		182BA36B1CEEACF900672DFA /* YAAPIResponseErrorHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAPIResponseErrorHandler.m; sourceTree = "<group>"; };
+		182BA36C1CEEACF900672DFA /* YAAPIURLRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAPIURLRequestGenerator.h; sourceTree = "<group>"; };
+		182BA36D1CEEACF900672DFA /* YAAPIURLRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAPIURLRequestGenerator.m; sourceTree = "<group>"; };
+		182BA3721CEEACF900672DFA /* YASignatureGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YASignatureGenerator.h; sourceTree = "<group>"; };
+		182BA3731CEEACF900672DFA /* YASignatureGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YASignatureGenerator.m; sourceTree = "<group>"; };
+		182BA3751CEEACF900672DFA /* YABaseDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YABaseDataEngine.h; sourceTree = "<group>"; };
+		182BA3761CEEACF900672DFA /* YABaseDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YABaseDataEngine.m; sourceTree = "<group>"; };
+		182BA3781CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YANetWorkingAutoCancel.h"; sourceTree = "<group>"; };
+		182BA3791CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YANetWorkingAutoCancel.m"; sourceTree = "<group>"; };
+		182BA37A1CEEACF900672DFA /* NSString+UtilNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UtilNetworking.h"; sourceTree = "<group>"; };
+		182BA37B1CEEACF900672DFA /* NSString+UtilNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UtilNetworking.m"; sourceTree = "<group>"; };
+		182BA37C1CEEACF900672DFA /* UIDevice+UtilNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+UtilNetworking.h"; sourceTree = "<group>"; };
+		182BA37D1CEEACF900672DFA /* UIDevice+UtilNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+UtilNetworking.m"; sourceTree = "<group>"; };
+		182BA37E1CEEACF900672DFA /* YANetworkingAutoCancelRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YANetworkingAutoCancelRequests.h; sourceTree = "<group>"; };
+		182BA37F1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YANetworkingAutoCancelRequests.m; sourceTree = "<group>"; };
+		182BA3831CEEACF900672DFA /* FWZServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWZServer.h; sourceTree = "<group>"; };
+		182BA3841CEEACF900672DFA /* FWZServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWZServer.m; sourceTree = "<group>"; };
+		182BA3861CEEACF900672DFA /* YAServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAServer.h; sourceTree = "<group>"; };
+		182BA3871CEEACF900672DFA /* YAServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAServer.m; sourceTree = "<group>"; };
+		182BA3881CEEACF900672DFA /* YABaseServers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YABaseServers.h; sourceTree = "<group>"; };
+		182BA3891CEEACF900672DFA /* YABaseServers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YABaseServers.m; sourceTree = "<group>"; };
+		182BA38A1CEEACF900672DFA /* YAServerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAServerFactory.h; sourceTree = "<group>"; };
+		182BA38B1CEEACF900672DFA /* YAServerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAServerFactory.m; sourceTree = "<group>"; };
+		182BA38C1CEEACF900672DFA /* YAAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAPIClient.h; sourceTree = "<group>"; };
+		182BA38D1CEEACF900672DFA /* YAAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAPIClient.m; sourceTree = "<group>"; };
+		182BA3911CEEACF900672DFA /* ServerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConfig.h; sourceTree = "<group>"; };
+		182BA3A31CEEAF5D00672DFA /* MGGomeDataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeDataEngine.h; sourceTree = "<group>"; };
+		182BA3A41CEEAF5D00672DFA /* MGGomeDataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeDataEngine.m; sourceTree = "<group>"; };
+		182BA3A61CEEF53B00672DFA /* YACommonParamsGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YACommonParamsGenerator.h; sourceTree = "<group>"; };
+		182BA3A71CEEF53B00672DFA /* YACommonParamsGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YACommonParamsGenerator.m; sourceTree = "<group>"; };
+		182BA3A91CEEF54A00672DFA /* YAAppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAAppContext.h; sourceTree = "<group>"; };
+		182BA3AA1CEEF54A00672DFA /* YAAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAppContext.m; sourceTree = "<group>"; };
 		183008231CEABF580023D293 /* MGTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarControllerConfig.h; sourceTree = "<group>"; };
 		183008241CEABF580023D293 /* MGTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarControllerConfig.m; sourceTree = "<group>"; };
 		183628031CEC497A004BBF65 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
@@ -91,6 +143,7 @@
 		180237721CEB01F600711C1C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				182BA3661CEEACF900672DFA /* HTTP */,
 				1814A5E21CEC48EF002DE7AF /* NetworkUnit.h */,
 				1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */,
 			);
@@ -148,6 +201,112 @@
 				183628071CEC539B004BBF65 /* BaseViewController.m */,
 			);
 			path = BaseController;
+			sourceTree = "<group>";
+		};
+		182BA3661CEEACF900672DFA /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				182BA3671CEEACF900672DFA /* Assistants */,
+				182BA3741CEEACF900672DFA /* BaseEngine */,
+				182BA3771CEEACF900672DFA /* Categories */,
+				182BA3801CEEACF900672DFA /* Client */,
+				182BA38E1CEEACF900672DFA /* DataEngine */,
+				182BA3911CEEACF900672DFA /* ServerConfig.h */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		182BA3671CEEACF900672DFA /* Assistants */ = {
+			isa = PBXGroup;
+			children = (
+				182BA3A91CEEF54A00672DFA /* YAAppContext.h */,
+				182BA3AA1CEEF54A00672DFA /* YAAppContext.m */,
+				182BA3A61CEEF53B00672DFA /* YACommonParamsGenerator.h */,
+				182BA3A71CEEF53B00672DFA /* YACommonParamsGenerator.m */,
+				182BA3681CEEACF900672DFA /* YAAPIBaseRequestDataModel.h */,
+				182BA3691CEEACF900672DFA /* YAAPIBaseRequestDataModel.m */,
+				182BA36A1CEEACF900672DFA /* YAAPIResponseErrorHandler.h */,
+				182BA36B1CEEACF900672DFA /* YAAPIResponseErrorHandler.m */,
+				182BA36C1CEEACF900672DFA /* YAAPIURLRequestGenerator.h */,
+				182BA36D1CEEACF900672DFA /* YAAPIURLRequestGenerator.m */,
+				182BA3721CEEACF900672DFA /* YASignatureGenerator.h */,
+				182BA3731CEEACF900672DFA /* YASignatureGenerator.m */,
+			);
+			path = Assistants;
+			sourceTree = "<group>";
+		};
+		182BA3741CEEACF900672DFA /* BaseEngine */ = {
+			isa = PBXGroup;
+			children = (
+				182BA3751CEEACF900672DFA /* YABaseDataEngine.h */,
+				182BA3761CEEACF900672DFA /* YABaseDataEngine.m */,
+			);
+			path = BaseEngine;
+			sourceTree = "<group>";
+		};
+		182BA3771CEEACF900672DFA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				182BA3781CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.h */,
+				182BA3791CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m */,
+				182BA37A1CEEACF900672DFA /* NSString+UtilNetworking.h */,
+				182BA37B1CEEACF900672DFA /* NSString+UtilNetworking.m */,
+				182BA37C1CEEACF900672DFA /* UIDevice+UtilNetworking.h */,
+				182BA37D1CEEACF900672DFA /* UIDevice+UtilNetworking.m */,
+				182BA37E1CEEACF900672DFA /* YANetworkingAutoCancelRequests.h */,
+				182BA37F1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		182BA3801CEEACF900672DFA /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				182BA3811CEEACF900672DFA /* Servers */,
+				182BA38C1CEEACF900672DFA /* YAAPIClient.h */,
+				182BA38D1CEEACF900672DFA /* YAAPIClient.m */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		182BA3811CEEACF900672DFA /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				182BA3821CEEACF900672DFA /* FWZ */,
+				182BA3851CEEACF900672DFA /* YA */,
+				182BA3881CEEACF900672DFA /* YABaseServers.h */,
+				182BA3891CEEACF900672DFA /* YABaseServers.m */,
+				182BA38A1CEEACF900672DFA /* YAServerFactory.h */,
+				182BA38B1CEEACF900672DFA /* YAServerFactory.m */,
+			);
+			path = Servers;
+			sourceTree = "<group>";
+		};
+		182BA3821CEEACF900672DFA /* FWZ */ = {
+			isa = PBXGroup;
+			children = (
+				182BA3831CEEACF900672DFA /* FWZServer.h */,
+				182BA3841CEEACF900672DFA /* FWZServer.m */,
+			);
+			path = FWZ;
+			sourceTree = "<group>";
+		};
+		182BA3851CEEACF900672DFA /* YA */ = {
+			isa = PBXGroup;
+			children = (
+				182BA3861CEEACF900672DFA /* YAServer.h */,
+				182BA3871CEEACF900672DFA /* YAServer.m */,
+			);
+			path = YA;
+			sourceTree = "<group>";
+		};
+		182BA38E1CEEACF900672DFA /* DataEngine */ = {
+			isa = PBXGroup;
+			children = (
+				182BA3A31CEEAF5D00672DFA /* MGGomeDataEngine.h */,
+				182BA3A41CEEAF5D00672DFA /* MGGomeDataEngine.m */,
+			);
+			path = DataEngine;
 			sourceTree = "<group>";
 		};
 		183628011CEC4957004BBF65 /* Tool */ = {
@@ -374,16 +533,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182BA39A1CEEACF900672DFA /* NSString+UtilNetworking.m in Sources */,
+				182BA3AB1CEEF54A00672DFA /* YAAppContext.m in Sources */,
 				18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */,
+				182BA3A81CEEF53B00672DFA /* YACommonParamsGenerator.m in Sources */,
 				183628081CEC539B004BBF65 /* BaseViewController.m in Sources */,
+				182BA39F1CEEACF900672DFA /* YABaseServers.m in Sources */,
 				18C861681CE971B2005FC4EA /* main.m in Sources */,
+				182BA39D1CEEACF900672DFA /* FWZServer.m in Sources */,
+				182BA3A51CEEAF5D00672DFA /* MGGomeDataEngine.m in Sources */,
+				182BA3931CEEACF900672DFA /* YAAPIResponseErrorHandler.m in Sources */,
+				182BA3A11CEEACF900672DFA /* YAAPIClient.m in Sources */,
 				1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */,
 				1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */,
+				182BA3941CEEACF900672DFA /* YAAPIURLRequestGenerator.m in Sources */,
 				18ED53201CED9D6B00F5F898 /* ACTableViewDelegte.m in Sources */,
 				183008251CEABF580023D293 /* MGTabBarControllerConfig.m in Sources */,
+				182BA39B1CEEACF900672DFA /* UIDevice+UtilNetworking.m in Sources */,
+				182BA3A01CEEACF900672DFA /* YAServerFactory.m in Sources */,
+				182BA3921CEEACF900672DFA /* YAAPIBaseRequestDataModel.m in Sources */,
+				182BA39C1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m in Sources */,
+				182BA3991CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m in Sources */,
+				182BA3971CEEACF900672DFA /* YASignatureGenerator.m in Sources */,
 				1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */,
 				1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */,
 				18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */,
+				182BA39E1CEEACF900672DFA /* YAServer.m in Sources */,
+				182BA3981CEEACF900672DFA /* YABaseDataEngine.m in Sources */,
 				183628051CEC497A004BBF65 /* Reachability.m in Sources */,
 				1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */,
 			);

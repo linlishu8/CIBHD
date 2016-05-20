@@ -12,10 +12,15 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"result": @"result",
-             @"bannerElements": @"bannerElements",
-             @"imgUrl": @"bannerElements.imgUrl",
-             @"tolink": @"bannerElements.tolink",
+             @"bannerId": @"bannerId",
+             @"content": @"content",
+             @"elementDesc": @"elementDesc",
+             @"elementSequence": @"elementSequence",
+             @"elementTitle": @"elementTitle",
+             @"imgUrl": @"imgUrl",
+             @"target": @"target",
+             @"tolink": @"tolink",
+             @"type": @"type"
              };
 }
 
