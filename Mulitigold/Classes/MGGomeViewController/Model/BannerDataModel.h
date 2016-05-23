@@ -10,14 +10,14 @@
 
 @interface BannerDataModel : MTLModel<MTLJSONSerializing>
 
-@property (nonatomic, copy, readonly) NSString *bannerId;
+//@property (nonatomic, copy, readonly) NSString *bannerId;
 @property (nonatomic, copy, readonly) NSString *content;
 @property (nonatomic, copy, readonly) NSString *elementDesc;
-@property (nonatomic, copy, readonly) NSString *elementSequence;
+//@property (nonatomic, copy, readonly) NSString *elementSequence;
 @property (nonatomic, copy, readonly) NSString *elementTitle;
 @property (nonatomic, copy, readonly) NSString *imgUrl;
-@property (nonatomic, copy, readonly) NSString *target;
+//@property (nonatomic, copy, readonly) NSString *target;
 @property (nonatomic, copy, readonly) NSString *tolink;
-@property (nonatomic, copy, readonly) NSString *type;
+//@property (nonatomic, copy, readonly) NSString *type;
 
 @end
