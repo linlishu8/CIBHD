@@ -9,12 +9,14 @@
 #import "MGGomeViewController.h"
 #import "BannerDataModel.h"
 #import "MGGomeDataEngine.h"
+#import "MGGomeTableViewCell.h"
 
-@interface MGGomeViewController ()
+@interface MGGomeViewController ()<SDCycleScrollViewDelegate>
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) BaseTableView *tableView;
 @property (nonatomic, strong) YABaseDataEngine *gomeDataEngine;
 @property (nonatomic, strong) NSMutableArray *bannerItems;
+
 
 @end
 
@@ -41,36 +43,71 @@
                     NSLog(@"error:%@, Info:%@",error,error.userInfo);
                 }
                 [self.bannerItems addObject:model];
+                [self.tableView reloadData];
             }
-//            NSArray *bannerElements = data[@"bannerElements"];
-//            for (NSDictionary *dic in bannerElements) {
-//                BannerDataModel *model = [MTLJSONAdapter modelOfClass:[BannerDataModel class]
-//                                                   fromJSONDictionary:dic
-//                                                                error:nil];
-//                [self.bannerItems addObject:model];
-//            }
         }
         
     }];
+}
 
-    
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+- (void)setUpTableView
+{
+    self.tableView = [[BaseTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
     
-    [self setKeyScrollView:self.tableView scrolOffsetY:600 options:HYHidenControlOptionLeft | HYHidenControlOptionTitle];
+    self.tableView.tableDelegate.sections = ^NSInteger() {
+        return 4.0;
+    };
+    
+    self.tableView.tableDelegate.rows = ^NSInteger(NSInteger section) {
+        if (section == 0) {
+            return 1.0;
+        }
+        return 0.0;
+    };
+    
+    //创建cell
+    @weakify(self);
+    self.tableView.tableDelegate.cellAtIndexPath = ^(id cell, NSIndexPath *indexPath) {
+        @strongify(self);
+        if (indexPath.section == 0) {
+            MGGomeTableViewCell *cycleCell = (MGGomeTableViewCell *)cell;
+            cycleCell.bannerItems = self.bannerItems;
+            cycleCell.delegate = self;
+        }
+    };
+    
+    //cell高度
+    self.tableView.tableDelegate.heightForRow = ^(NSIndexPath *indexPath) {
+        if (indexPath.section == 0) {
+            return HEIGHT_LFL(150.0);
+        }
+        return 0.0;
+    };
+    
+    //cell复用标识
+    self.tableView.tableDelegate.cellIdentifier = ^(NSIndexPath *indexPath) {
+        if (indexPath.section == 0) {
+            return @"MGGomeTableViewCell";
+        }
+        return @"cell";
+    };
+    
+    [self setKeyScrollView:self.tableView scrolOffsetY:HEIGHT_LFL(150.0) options:HYHidenControlOptionLeft | HYHidenControlOptionTitle];
     
     self.navigationItem.titleView = [UIButton buttonWithType:UIButtonTypeContactAdd];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIButton buttonWithType:UIButtonTypeDetailDisclosure]];
-    self.tableView.rowHeight = 100;
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
-- (void)setUpTableView
+#pragma SDCycleScrollViewDelegate
+
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
-    
+    NSLog(@"%ld",(long)index);
 }
 
 - (void)didReceiveMemoryWarning {

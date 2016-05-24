@@ -7,16 +7,14 @@
 //
 
 #import "ACTableViewDelegte.h"
-#import "UITableView+FDTemplateLayoutCell.h"
 
 @implementation ACTableViewDelegte
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [tableView fd_heightForCellWithIdentifier:self.cellIdentifier(indexPath) configuration:^(id cell) {
-//        cell.entity = self.feedEntities[indexPath.row];
-    }];
+    return self.heightForRow(indexPath);
 }
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -34,13 +32,19 @@
     NSString *cellIdentifier = self.cellIdentifier(indexPath);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[NSClassFromString(self.cellIdentifier(indexPath)) alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:self.cellIdentifier(indexPath)];
         
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         [cell setBackgroundColor:[UIColor clearColor]];
     }
+    self.cellAtIndexPath(cell, indexPath);
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectRow(indexPath);
 }
 
 @end

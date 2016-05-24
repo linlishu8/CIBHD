@@ -43,4 +43,8 @@
 
 #define BANNERLISTPAGE @"https://cms.dbjb.com/banner/bannerListPage?keyWord=ios"
 
+// MainScreen Height&Width
+#define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
+#define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
+
 #endif /* Macros_h */
