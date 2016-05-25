@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ImageCenterButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,7 +62,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2C5DC2111AD8201B9812AC0AF0B65507</key>
+		<key>0B072A4612608731CE62542BD6DDDAEB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>35DB7A165359BFE65DA2E0F31B64AF8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AE5159C4BC9E1F943012988BBDBFF3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,27 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>74FFC56197E052AC2CD36039830FBB6B</key>
+		<key>627E4EE6771047A6C69631A8E08B4982</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>779274994E1A7F3CE25B1237A191CDD8</key>
+		<key>AC72385FB75B90DB98B5F0DD25F73328</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC39AAC54FDC8A97791A3B24159730DD</key>
+		<key>AD3328074C7FCBC2B0F10D1A2213B605</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC2049CDBB8760B6C3EFF1A8A8ECFD94</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DC9362D247A4E9F31A345CEDA4382F2A</key>
+		<key>D65141941BB16165A0CB39FB16552A5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

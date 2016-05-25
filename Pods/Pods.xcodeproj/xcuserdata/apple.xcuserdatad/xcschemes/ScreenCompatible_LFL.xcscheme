@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5448591FAD04D7F8AB991C29"
+               BlueprintIdentifier = "BD6D119B8BCCF9A69EB2F4F3"
                BuildableName = "libScreenCompatible_LFL.a"
                BlueprintName = "ScreenCompatible_LFL"
                ReferencedContainer = "container:Pods.xcodeproj">

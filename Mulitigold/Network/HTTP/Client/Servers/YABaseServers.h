@@ -19,6 +19,11 @@ typedef NS_ENUM(NSUInteger,EnvironmentType) {
     EnvironmentTypeCustom,
 };
 
+typedef NS_ENUM(NSUInteger,DifferentType) {
+    DifferentType1,
+    DifferentType2
+};
+
 @protocol YABaseServiceProtocol <NSObject>
 /**
  *  开发、测试、预发、正式、HotFix五种环境的baseUrl在子类中实现，获取对应的URL赋值给apiBaseUrl，自定义在基类中进行保存获取
@@ -29,6 +34,9 @@ typedef NS_ENUM(NSUInteger,EnvironmentType) {
 @property (nonatomic, strong, readonly) NSString *prereleaseApiBaseUrl;
 @property (nonatomic, strong, readonly) NSString *hotfixApiBaseUrl;
 @property (nonatomic, strong, readonly) NSString *releaseApiBaseUrl;
+@property (nonatomic, assign) DifferentType apiBaseUrlType;//同一个环境不同地址
+
+
 
 //@optional
 //@property (nonatomic, readonly) NSString *onlinePrivateKey;

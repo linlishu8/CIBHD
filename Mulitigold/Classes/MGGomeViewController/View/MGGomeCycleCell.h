@@ -1,5 +1,5 @@
 //
-//  MGGomeTableViewCell.h
+//  MGGomeCycleCell.h
 //  Mulitigold
 //
 //  Created by 动感超人 on 16/5/24.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SDCycleScrollView.h"
 
-@interface MGGomeTableViewCell : UITableViewCell
+@interface MGGomeCycleCell : UITableViewCell
 
 @property (nonatomic, strong) NSArray *bannerItems;
 @property (nonatomic, weak) id<SDCycleScrollViewDelegate> delegate;

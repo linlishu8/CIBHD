@@ -11,11 +11,13 @@
 @implementation MGGomeDataEngine
 
 + (YABaseDataEngine *)control:(NSObject *)control
-                      keyWord:(NSString *)keyWord
+                       params:(NSDictionary *)params
+                         path:(NSString *)path
+                  requestType:(YAAPIManagerRequestType)requestType
                      complete:(CompletionDataBlock)responseBlock
 {
-    NSDictionary *param = @{@"keyWord":keyWord};
-    return [YABaseDataEngine control:control callAPIWithServiceType:YAServiceFWZ path:@"banner/bannerListPage" param:param requestType:YAAPIManagerRequestTypeGet alertType:DataEngineAlertType_None progressBlock:nil complete:responseBlock errorButtonSelectIndex:nil];
+    return [YABaseDataEngine control:control callAPIWithServiceType:YAServiceFWZ path:path param:params requestType:requestType alertType:DataEngineAlertType_None progressBlock:nil complete:responseBlock errorButtonSelectIndex:nil];
 }
+
 
 @end

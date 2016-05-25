@@ -41,10 +41,16 @@
     #endif
 #endif
 
-#define BANNERLISTPAGE @"https://cms.dbjb.com/banner/bannerListPage?keyWord=ios"
-
 // MainScreen Height&Width
 #define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
 #define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
+
+#define HEXCOLOR(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0 green:((float)((hex & 0xFF00) >> 8)) / 255.0 blue:((float)(hex & 0xFF)) / 255.0 alpha:1]
+
+#define DEFINE_LITTLE HEXCOLOR(0x999999)
+#define TAB_BAR_COLOR HEXCOLOR(0x318fc9)
+
+#define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:HEIGHT_LFL(FONTSIZE)]
+#define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:HEIGHT_LFL(FONTSIZE)]
 
 #endif /* Macros_h */

@@ -69,6 +69,13 @@ CGFloat MGTabBarItemWidth = 0.0f;
                 selectedImageName:(NSString *)selectedImageName {
     
     viewController.tabBarItem.title = title;
+
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : SYSTEMFONT(11.0), NSForegroundColorAttributeName : TAB_BAR_COLOR} forState:UIControlStateSelected];
+    
+    // 字体颜色 未选中
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : SYSTEMFONT(11.0),  NSForegroundColorAttributeName:[UIColor grayColor]} forState:UIControlStateNormal];
+    
+    
     if (normalImageName) {
         UIImage *normalImage = [UIImage imageNamed:normalImageName];
         normalImage = [normalImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

@@ -12,7 +12,9 @@
 @interface MGGomeDataEngine : NSObject
 
 + (YABaseDataEngine *)control:(NSObject *)control
-                    keyWord:(NSString *)keyWord
+                       params:(NSDictionary *)params
+                         path:(NSString *)path
+                  requestType:(YAAPIManagerRequestType)requestType
                      complete:(CompletionDataBlock)responseBlock;
 
 @end

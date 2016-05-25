@@ -1,21 +1,21 @@
 //
-//  MGGomeTableViewCell.m
+//  MGGomeCycleCell.m
 //  Mulitigold
 //
 //  Created by 动感超人 on 16/5/24.
 //  Copyright © 2016年 cib. All rights reserved.
 //
 
-#import "MGGomeTableViewCell.h"
+#import "MGGomeCycleCell.h"
 #import "BannerDataModel.h"
 
-@interface MGGomeTableViewCell ()
+@interface MGGomeCycleCell ()
 
 @property(nonatomic, strong) SDCycleScrollView *cycleScrollView;
 
 @end
 
-@implementation MGGomeTableViewCell
+@implementation MGGomeCycleCell
 
 - (void)setBannerItems:(NSArray *)bannerItems
 {

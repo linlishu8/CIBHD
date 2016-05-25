@@ -12,12 +12,18 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (!self.heightForRow) {
+        return 44.0;
+    }
     return self.heightForRow(indexPath);
 }
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+    if (!self.sections) {
+        return 1.0;
+    }
     return self.sections();
 }
 
@@ -44,7 +50,36 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    self.selectRow(indexPath);
+    if (self.selectRow) {
+        self.selectRow(indexPath);
+    }
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (!self.heightForHeader) {
+        return 0.0;
+    }
+    return self.heightForHeader(section);
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (!self.heightForHeader) {
+        return 0.0;
+    }
+    return self.heightForHeader(section);
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return self.viewForHeader(section);
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return self.viewForFooter(section);
+}
+
 
 @end
