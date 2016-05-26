@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ServerConfig.h"
 /**
  *  开发、测试、预发、正式、HotFix和自定义环境,环境的切换是给开发人员和测试人员用的，对于外部正式打包不应该有环境切换的存在
  */
@@ -19,11 +20,6 @@ typedef NS_ENUM(NSUInteger,EnvironmentType) {
     EnvironmentTypeCustom,
 };
 
-typedef NS_ENUM(NSUInteger,DifferentType) {
-    DifferentType1,
-    DifferentType2
-};
-
 @protocol YABaseServiceProtocol <NSObject>
 /**
  *  开发、测试、预发、正式、HotFix五种环境的baseUrl在子类中实现，获取对应的URL赋值给apiBaseUrl，自定义在基类中进行保存获取
@@ -34,8 +30,6 @@ typedef NS_ENUM(NSUInteger,DifferentType) {
 @property (nonatomic, strong, readonly) NSString *prereleaseApiBaseUrl;
 @property (nonatomic, strong, readonly) NSString *hotfixApiBaseUrl;
 @property (nonatomic, strong, readonly) NSString *releaseApiBaseUrl;
-@property (nonatomic, assign) DifferentType apiBaseUrlType;//同一个环境不同地址
-
 
 
 //@optional
@@ -44,6 +38,7 @@ typedef NS_ENUM(NSUInteger,DifferentType) {
 
 @interface YABaseServers : NSObject
 @property (nonatomic, assign) EnvironmentType environmentType;
+@property (nonatomic, assign) YAAddressManagerType addressManagerType;
 
 @property (nonatomic, strong, readonly) NSString *publicKey;
 @property (nonatomic, strong, readonly) NSString *privateKey;

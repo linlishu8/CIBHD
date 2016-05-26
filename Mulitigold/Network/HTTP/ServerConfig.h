@@ -30,6 +30,12 @@ typedef NS_ENUM(NSUInteger, YAServiceType) {
     YAServiceFWZ,       //FWZ服务器
 };
 
+//同个环境不同地址
+typedef NS_ENUM (NSUInteger, YAAddressManagerType){
+    YAAddressManagerType1,               //地址1
+    YAAddressManagerType2                //地址2
+};
+
 typedef NS_ENUM (NSUInteger, YAAPIManagerRequestType){
     YAAPIManagerRequestTypeGet,                 //get请求
     YAAPIManagerRequestTypePost,                //POST请求

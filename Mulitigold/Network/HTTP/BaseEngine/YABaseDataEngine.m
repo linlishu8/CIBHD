@@ -33,6 +33,7 @@
        callAPIWithServiceType:(YAServiceType)serviceType
                          path:(NSString *)path
                         param:(NSDictionary *)parameters
+                  addressType:(YAAddressManagerType)addressType
                   requestType:(YAAPIManagerRequestType)requestType
                     alertType:(DataEngineAlertType)alertType
                 progressBlock:(ProgressBlock)progressBlock
@@ -41,7 +42,7 @@
 {
     YABaseDataEngine *engine = [[YABaseDataEngine alloc]init];
     __weak typeof(control) weakControl = control;
-    YAAPIBaseRequestDataModel *dataModel = [engine dataModelWith:serviceType path:path param:parameters dataFilePath:nil dataName:nil fileName:nil mimeType:nil requestType:requestType uploadProgressBlock:progressBlock downloadProgressBlock:nil complete:^(id data, NSError *error) {
+    YAAPIBaseRequestDataModel *dataModel = [engine dataModelWith:serviceType path:path param:parameters dataFilePath:nil dataName:nil fileName:nil mimeType:nil addressType:addressType requestType:requestType uploadProgressBlock:progressBlock downloadProgressBlock:nil complete:^(id data, NSError *error) {
         if (responseBlock) {
             //可以在这里做错误的UI处理，或者是在上层engine做
             responseBlock(data,error);
@@ -61,6 +62,7 @@
                      dataName:(NSString *)dataName
                      fileName:(NSString *)fileName
                      mimeType:(NSString *)mimeType
+                  addressType:(YAAddressManagerType)addressType
                   requestType:(YAAPIManagerRequestType)requestType
                     alertType:(DataEngineAlertType)alertType
           uploadProgressBlock:(ProgressBlock)uploadProgressBlock
@@ -70,7 +72,7 @@
 {
     YABaseDataEngine *engine = [[YABaseDataEngine alloc]init];
     __weak typeof(control) weakControl = control;
-    YAAPIBaseRequestDataModel *dataModel = [engine dataModelWith:serviceType path:path param:parameters dataFilePath:dataFilePath dataName:dataName fileName:fileName mimeType:mimeType requestType:requestType uploadProgressBlock:uploadProgressBlock downloadProgressBlock:downloadProgressBlock complete:^(id data, NSError *error) {
+    YAAPIBaseRequestDataModel *dataModel = [engine dataModelWith:serviceType path:path param:parameters dataFilePath:dataFilePath dataName:dataName fileName:fileName mimeType:mimeType addressType:addressType requestType:requestType uploadProgressBlock:uploadProgressBlock downloadProgressBlock:downloadProgressBlock complete:^(id data, NSError *error) {
         if (responseBlock) {
             //可以在这里做错误的UI处理，或者是在上层engine做
             responseBlock(data,error);
@@ -92,12 +94,14 @@
                                     dataName:(NSString *)dataName
                                     fileName:(NSString *)fileName
                                     mimeType:(NSString *)mimeType
+                                 addressType:(YAAddressManagerType)addressType
                                  requestType:(YAAPIManagerRequestType)requestType
                          uploadProgressBlock:(ProgressBlock)uploadProgressBlock
                        downloadProgressBlock:(ProgressBlock)downloadProgressBlock
                                     complete:(CompletionDataBlock)responseBlock
 {
     YAAPIBaseRequestDataModel *dataModel = [[YAAPIBaseRequestDataModel alloc]init];
+    dataModel.addressType = addressType;
     dataModel.serviceType = serviceType;
     dataModel.apiMethodPath = path;
     dataModel.parameters = parameters;

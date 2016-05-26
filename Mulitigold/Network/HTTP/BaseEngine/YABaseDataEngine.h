@@ -23,6 +23,7 @@
        callAPIWithServiceType:(YAServiceType)serviceType
                          path:(NSString *)path
                         param:(NSDictionary *)parameters
+                  addressType:(YAAddressManagerType)addressType
                   requestType:(YAAPIManagerRequestType)requestType
                     alertType:(DataEngineAlertType)alertType
                 progressBlock:(ProgressBlock)progressBlock
@@ -38,6 +39,7 @@
                      dataName:(NSString *)dataName
                      fileName:(NSString *)fileName
                      mimeType:(NSString *)mimeType
+                  addressType:(YAAddressManagerType)addressType
                   requestType:(YAAPIManagerRequestType)requestType
                     alertType:(DataEngineAlertType)alertType
           uploadProgressBlock:(ProgressBlock)uploadProgressBlock

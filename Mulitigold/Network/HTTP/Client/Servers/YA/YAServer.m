@@ -9,11 +9,21 @@
 #import "YAServer.h"
 
 @implementation YAServer
-@synthesize developApiBaseUrl = _developApiBaseUrl,testApiBaseUrl = _testApiBaseUrl,prereleaseApiBaseUrl = _prereleaseApiBaseUrl,releaseApiBaseUrl = _releaseApiBaseUrl,hotfixApiBaseUrl = _hotfixApiBaseUrl;
+@synthesize developApiBaseUrl = _developApiBaseUrl,testApiBaseUrl = _testApiBaseUrl,prereleaseApiBaseUrl = _prereleaseApiBaseUrl,releaseApiBaseUrl = _releaseApiBaseUrl,hotfixApiBaseUrl = _hotfixApiBaseUrl,addressManagerType = _addressManagerType;
 
 - (NSString *)developApiBaseUrl {
     if (_developApiBaseUrl == nil) {
-        _developApiBaseUrl = @"http://www.baidu.com";
+        switch (_addressManagerType) {
+            case YAAddressManagerType1:
+                _developApiBaseUrl = @"https://cms.dbjb.com/";
+                break;
+            case YAAddressManagerType2:
+                _developApiBaseUrl = @"https://app.dbjb.com/";
+                break;
+                
+            default:
+                break;
+        }
     }
     return _developApiBaseUrl;
 }

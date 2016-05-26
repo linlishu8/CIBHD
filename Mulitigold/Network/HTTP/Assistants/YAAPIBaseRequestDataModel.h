@@ -16,6 +16,7 @@
  */
 @property (nonatomic, strong) NSString *apiMethodPath;              //网络请求地址
 @property (nonatomic, assign) YAServiceType serviceType;            //服务器标识
+@property (nonatomic, assign) YAAddressManagerType addressType;     //同个环境不同地址
 @property (nonatomic, strong) NSDictionary *parameters;             //请求参数
 @property (nonatomic, assign) YAAPIManagerRequestType requestType;  //网络请求方式
 @property (nonatomic, copy) CompletionDataBlock responseBlock;      //请求着陆回调

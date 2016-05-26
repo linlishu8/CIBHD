@@ -9,15 +9,15 @@
 #import "FWZServer.h"
 
 @implementation FWZServer
-@synthesize developApiBaseUrl = _developApiBaseUrl,testApiBaseUrl = _testApiBaseUrl,prereleaseApiBaseUrl = _prereleaseApiBaseUrl,releaseApiBaseUrl = _releaseApiBaseUrl,hotfixApiBaseUrl = _hotfixApiBaseUrl,apiBaseUrlType = _apiBaseUrlType;
+@synthesize developApiBaseUrl = _developApiBaseUrl,testApiBaseUrl = _testApiBaseUrl,prereleaseApiBaseUrl = _prereleaseApiBaseUrl,releaseApiBaseUrl = _releaseApiBaseUrl,hotfixApiBaseUrl = _hotfixApiBaseUrl,addressManagerType = _addressManagerType;
 
 - (NSString *)developApiBaseUrl {
     if (_developApiBaseUrl == nil) {
-        switch (_apiBaseUrlType) {
-            case DifferentType1:
+        switch (_addressManagerType) {
+            case YAAddressManagerType1:
                 _developApiBaseUrl = @"https://cms.dbjb.com/";
                 break;
-            case DifferentType2:
+            case YAAddressManagerType2:
                 _developApiBaseUrl = @"https://app.dbjb.com/";
                 break;
                 

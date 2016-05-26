@@ -36,6 +36,7 @@ static NSTimeInterval kYANetworkingTimeoutSeconds = 20.0f;
 #pragma mark - public methods
 - (NSURLRequest *)generateWithRequestDataModel:(YAAPIBaseRequestDataModel *)dataModel{
     YABaseServers *service = [[YAServerFactory sharedInstance] serviceWithType:dataModel.serviceType];
+    service.addressManagerType = dataModel.addressType;
     NSMutableDictionary *commonParams = [NSMutableDictionary dictionaryWithDictionary:[YACommonParamsGenerator commonParamsDictionary]];
     [commonParams addEntriesFromDictionary:dataModel.parameters];
     if (![NSString isEmptyString:service.privateKey]) {

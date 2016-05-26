@@ -30,7 +30,7 @@
     [self.gomeDataEngine cancelRequest];
     
     @weakify(self);
-    self.gomeDataEngine = [MGGomeDataEngine control:self params:@{@"keyWord":@"ios"} path:@"banner/bannerListPage" requestType:YAAPIManagerRequestTypeGet complete:^(id data, NSError *error) {
+    self.gomeDataEngine = [MGGomeDataEngine control:self params:@{@"keyWord":@"ios"} path:@"banner/bannerListPage" addressType:YAAddressManagerType1 requestType:YAAPIManagerRequestTypeGet complete:^(id data, NSError *error) {
         @strongify(self);
         if (error) {
             NSLog(@"%@",error.localizedDescription);
@@ -48,27 +48,6 @@
             }
         }
     }];
-    
-    self.gomeDataEngine = [MGGomeDataEngine control:self params:@{@"keyWord":@"ios"} path:@"banner/bannerListPage" requestType:YAAPIManagerRequestTypeGet complete:^(id data, NSError *error) {
-        @strongify(self);
-        if (error) {
-            NSLog(@"%@",error.localizedDescription);
-        } else {
-            NSLog(@"%@",data[@"result"][@"bannerElements"]);
-            self.bannerItems = [NSMutableArray array];
-            for (NSDictionary *orderDict in data[@"result"][@"bannerElements"]) {
-                NSError* error;
-                BannerDataModel *model = [MTLJSONAdapter modelOfClass:[BannerDataModel class] fromJSONDictionary:orderDict error:&error];
-                if(error){
-                    NSLog(@"error:%@, Info:%@",error,error.userInfo);
-                }
-                [self.bannerItems addObject:model];
-                [self.tableView reloadData];
-            }
-        }
-    }];
-    
-    
 }
 
 - (void)setUpTableView

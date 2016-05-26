@@ -14,6 +14,7 @@
 + (YABaseDataEngine *)control:(NSObject *)control
                        params:(NSDictionary *)params
                          path:(NSString *)path
+                  addressType:(YAAddressManagerType)addressType
                   requestType:(YAAPIManagerRequestType)requestType
                      complete:(CompletionDataBlock)responseBlock;
 
