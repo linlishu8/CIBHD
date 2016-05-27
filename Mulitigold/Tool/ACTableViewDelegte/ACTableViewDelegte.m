@@ -30,6 +30,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    if (!self.rows) {
+        return 1.0;
+    }
     return self.rows(section);
 }
 
@@ -50,7 +53,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.selectRow) {
+    if (!self.selectRow) {
         self.selectRow(indexPath);
     }
 }
@@ -65,10 +68,10 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    if (!self.heightForHeader) {
+    if (!self.heightForFooter) {
         return 0.0;
     }
-    return self.heightForHeader(section);
+    return self.heightForFooter(section);
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section

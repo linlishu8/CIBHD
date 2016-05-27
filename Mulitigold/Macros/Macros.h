@@ -53,4 +53,11 @@
 #define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:HEIGHT_LFL(FONTSIZE)]
 #define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:HEIGHT_LFL(FONTSIZE)]
 
+//获取图片资源
+#define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+
+//
+#define GoldRateAndSysTime @"/api/inrate/getGoldRateAndSysTime"
+#define BannerListPage @"banner/bannerListPage"
+
 #endif /* Macros_h */

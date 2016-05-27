@@ -73,29 +73,27 @@
 
 - (NSString *)apiBaseUrl
 {
-    if (_apiBaseUrl == nil) {
-        switch (self.environmentType) {
-            case EnvironmentTypeDevelop:
-                _apiBaseUrl = self.child.developApiBaseUrl;
-                break;
-            case EnvironmentTypeTest:
-                _apiBaseUrl = self.child.testApiBaseUrl;
-                break;
-            case EnvironmentTypePreRelease:
-                _apiBaseUrl = self.child.prereleaseApiBaseUrl;
-                break;
-            case EnvironmentTypeHotFix:
-                _apiBaseUrl = self.child.hotfixApiBaseUrl;
-                break;
-            case EnvironmentTypeRelease:
-                _apiBaseUrl = self.child.releaseApiBaseUrl;
-                break;
-            case EnvironmentTypeCustom:
-                _apiBaseUrl = self.customApiBaseUrl;
-                break;
-            default:
-                break;
-        }
+    switch (self.environmentType) {
+        case EnvironmentTypeDevelop:
+            _apiBaseUrl = self.child.developApiBaseUrl;
+            break;
+        case EnvironmentTypeTest:
+            _apiBaseUrl = self.child.testApiBaseUrl;
+            break;
+        case EnvironmentTypePreRelease:
+            _apiBaseUrl = self.child.prereleaseApiBaseUrl;
+            break;
+        case EnvironmentTypeHotFix:
+            _apiBaseUrl = self.child.hotfixApiBaseUrl;
+            break;
+        case EnvironmentTypeRelease:
+            _apiBaseUrl = self.child.releaseApiBaseUrl;
+            break;
+        case EnvironmentTypeCustom:
+            _apiBaseUrl = self.customApiBaseUrl;
+            break;
+        default:
+            break;
     }
     return _apiBaseUrl;
 }

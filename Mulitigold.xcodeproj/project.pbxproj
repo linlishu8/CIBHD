@@ -36,6 +36,7 @@
 		183628081CEC539B004BBF65 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628071CEC539B004BBF65 /* BaseViewController.m */; };
 		1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */; };
 		18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18401A751CED6370005DFB43 /* UIImage+Color.m */; };
+		1867466A1CF8241200B3190B /* MGGomeCellFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186746691CF8241200B3190B /* MGGomeCellFootView.m */; };
 		1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */; };
 		18C861681CE971B2005FC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C861671CE971B2005FC4EA /* main.m */; };
 		18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8616A1CE971B2005FC4EA /* AppDelegate.m */; };
@@ -103,6 +104,8 @@
 		1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavBarHiddenController.m; sourceTree = "<group>"; };
 		18401A741CED6370005DFB43 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		18401A751CED6370005DFB43 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		186746681CF8241200B3190B /* MGGomeCellFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeCellFootView.h; sourceTree = "<group>"; };
+		186746691CF8241200B3190B /* MGGomeCellFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeCellFootView.m; sourceTree = "<group>"; };
 		1875A36F1CE9AA3C00E7AB84 /* Mulitigold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mulitigold-Prefix.pch"; sourceTree = "<group>"; };
 		1875A3721CE9B85A00E7AB84 /* MGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarController.h; sourceTree = "<group>"; };
 		1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarController.m; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 				1808AA3D1CF4478500465C0E /* MGGomeCycleCell.m */,
 				1808AA391CF446F300465C0E /* MGGomeMenuCell.h */,
 				1808AA3A1CF446F300465C0E /* MGGomeMenuCell.m */,
+				186746681CF8241200B3190B /* MGGomeCellFootView.h */,
+				186746691CF8241200B3190B /* MGGomeCellFootView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -577,6 +582,7 @@
 				1808AA3E1CF4478500465C0E /* MGGomeCycleCell.m in Sources */,
 				182BA3A01CEEACF900672DFA /* YAServerFactory.m in Sources */,
 				182BA3921CEEACF900672DFA /* YAAPIBaseRequestDataModel.m in Sources */,
+				1867466A1CF8241200B3190B /* MGGomeCellFootView.m in Sources */,
 				182BA39C1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m in Sources */,
 				182BA3991CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m in Sources */,
 				182BA3971CEEACF900672DFA /* YASignatureGenerator.m in Sources */,

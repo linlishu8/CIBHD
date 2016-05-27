@@ -12,19 +12,16 @@
 @synthesize developApiBaseUrl = _developApiBaseUrl,testApiBaseUrl = _testApiBaseUrl,prereleaseApiBaseUrl = _prereleaseApiBaseUrl,releaseApiBaseUrl = _releaseApiBaseUrl,hotfixApiBaseUrl = _hotfixApiBaseUrl,addressManagerType = _addressManagerType;
 
 - (NSString *)developApiBaseUrl {
-    if (_developApiBaseUrl == nil) {
-        switch (_addressManagerType) {
-            case YAAddressManagerType1:
-                _developApiBaseUrl = @"https://cms.dbjb.com/";
-                break;
-            case YAAddressManagerType2:
-                _developApiBaseUrl = @"https://app.dbjb.com/";
-                break;
-                
-            default:
-                break;
-        }
-        
+    switch (_addressManagerType) {
+        case YAAddressManagerType1:
+            _developApiBaseUrl = @"https://cms.dbjb.com/";
+            break;
+        case YAAddressManagerType2:
+            _developApiBaseUrl = @"https://app.dbjb.com/";
+            break;
+            
+        default:
+            break;
     }
     return _developApiBaseUrl;
 }

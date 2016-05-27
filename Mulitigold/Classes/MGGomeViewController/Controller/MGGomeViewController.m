@@ -8,9 +8,9 @@
 
 #import "MGGomeViewController.h"
 #import "BannerDataModel.h"
-#import "MGGomeDataEngine.h"
 #import "MGGomeCycleCell.h"
 #import "MGGomeMenuCell.h"
+#import "MGGomeCellFootView.h"
 
 @interface MGGomeViewController ()<SDCycleScrollViewDelegate>
 
@@ -30,7 +30,7 @@
     [self.gomeDataEngine cancelRequest];
     
     @weakify(self);
-    self.gomeDataEngine = [MGGomeDataEngine control:self params:@{@"keyWord":@"ios"} path:@"banner/bannerListPage" addressType:YAAddressManagerType1 requestType:YAAPIManagerRequestTypeGet complete:^(id data, NSError *error) {
+    self.gomeDataEngine = [MGGomeDataEngine control:self params:@{@"keyWord":@"ios"} path:BannerListPage addressType:YAAddressManagerType1 requestType:YAAPIManagerRequestTypeGet complete:^(id data, NSError *error) {
         @strongify(self);
         if (error) {
             NSLog(@"%@",error.localizedDescription);
@@ -58,12 +58,19 @@
         make.edges.equalTo(self.view);
     }];
     
-    self.tableView.tableDelegate.sections = ^NSInteger() {
-        return 2.0;
+    self.tableView.tableDelegate.heightForFooter = ^(NSInteger section) {
+        if (section == 0) {
+            return HEIGHT_LFL(60.0);
+        }
+        return 0.0;
     };
     
-    self.tableView.tableDelegate.rows = ^NSInteger(NSInteger section) {
-        return 1.0;
+    self.tableView.tableDelegate.viewForFooter = ^(NSInteger section) {
+        return [MGGomeCellFootView setupFootView];
+    };
+    
+    self.tableView.tableDelegate.sections = ^NSInteger() {
+        return 2.0;
     };
     
     //创建cell
