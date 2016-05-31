@@ -61,12 +61,19 @@
     self.tableView.tableDelegate.heightForFooter = ^(NSInteger section) {
         if (section == 0) {
             return HEIGHT_LFL(60.0);
+        } else if (section == 1) {
+            return HEIGHT_LFL(10.0);
         }
         return 0.0;
     };
     
     self.tableView.tableDelegate.viewForFooter = ^(NSInteger section) {
-        return [MGGomeCellFootView setupFootView];
+        if (section == 0) {
+            return [MGGomeCellFootView setupFootView];
+        } else if (section == 1) {
+            return [MGGomeCellFootView setupFootView];
+        }
+        return [[UIView alloc] init];
     };
     
     self.tableView.tableDelegate.sections = ^NSInteger() {

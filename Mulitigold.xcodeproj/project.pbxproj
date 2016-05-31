@@ -11,6 +11,7 @@
 		1808AA321CF3FD4E00465C0E /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808AA311CF3FD4E00465C0E /* BaseTableView.m */; };
 		1808AA3B1CF446F300465C0E /* MGGomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808AA3A1CF446F300465C0E /* MGGomeMenuCell.m */; };
 		1808AA3E1CF4478500465C0E /* MGGomeCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808AA3D1CF4478500465C0E /* MGGomeCycleCell.m */; };
+		181169AC1CFBD65A00789BC7 /* UILabel+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 181169AB1CFBD65A00789BC7 /* UILabel+Custom.m */; };
 		1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */; };
 		1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E01CEC4442002DE7AF /* BannerDataModel.m */; };
 		1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */; };
@@ -53,6 +54,8 @@
 		1808AA3A1CF446F300465C0E /* MGGomeMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeMenuCell.m; sourceTree = "<group>"; };
 		1808AA3C1CF4478500465C0E /* MGGomeCycleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeCycleCell.h; sourceTree = "<group>"; };
 		1808AA3D1CF4478500465C0E /* MGGomeCycleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeCycleCell.m; sourceTree = "<group>"; };
+		181169AA1CFBD65A00789BC7 /* UILabel+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Custom.h"; sourceTree = "<group>"; };
+		181169AB1CFBD65A00789BC7 /* UILabel+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Custom.m"; sourceTree = "<group>"; };
 		1814A5D01CEC13C8002DE7AF /* MGGomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeViewController.h; sourceTree = "<group>"; };
 		1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeViewController.m; sourceTree = "<group>"; };
 		1814A5DF1CEC4442002DE7AF /* BannerDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerDataModel.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 			children = (
 				18401A741CED6370005DFB43 /* UIImage+Color.h */,
 				18401A751CED6370005DFB43 /* UIImage+Color.m */,
+				181169AA1CFBD65A00789BC7 /* UILabel+Custom.h */,
+				181169AB1CFBD65A00789BC7 /* UILabel+Custom.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -582,6 +587,7 @@
 				1808AA3E1CF4478500465C0E /* MGGomeCycleCell.m in Sources */,
 				182BA3A01CEEACF900672DFA /* YAServerFactory.m in Sources */,
 				182BA3921CEEACF900672DFA /* YAAPIBaseRequestDataModel.m in Sources */,
+				181169AC1CFBD65A00789BC7 /* UILabel+Custom.m in Sources */,
 				1867466A1CF8241200B3190B /* MGGomeCellFootView.m in Sources */,
 				182BA39C1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m in Sources */,
 				182BA3991CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m in Sources */,

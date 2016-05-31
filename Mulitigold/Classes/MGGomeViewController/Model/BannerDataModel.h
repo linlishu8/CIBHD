@@ -21,3 +21,10 @@
 //@property (nonatomic, copy, readonly) NSString *type;
 
 @end
+
+@interface BannerFootModel : MTLModel<MTLJSONSerializing>
+
+@property (nonatomic, strong, readonly) NSDictionary *responseParams;
+@property (nonatomic, readonly) double goldRate;
+
+@end

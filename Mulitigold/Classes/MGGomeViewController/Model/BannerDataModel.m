@@ -19,8 +19,19 @@
              @"elementTitle": @"elementTitle",
              @"imgUrl": @"imgUrl",
 //             @"target": @"target",
-             @"tolink": @"tolink",
+             @"tolink": @"tolink"
 //             @"type": @"type"
+             };
+}
+
+@end
+
+@implementation BannerFootModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"responseParams": @"responseParams",
+             @"goldRate": @"responseParams.goldRate"
              };
 }
 
