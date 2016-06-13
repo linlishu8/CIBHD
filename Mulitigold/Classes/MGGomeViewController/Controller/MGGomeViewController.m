@@ -58,6 +58,22 @@
         make.edges.equalTo(self.view);
     }];
     
+    self.tableView.tableDelegate.heightForHeader = ^(NSInteger section) {
+        if (section == 1) {
+            return HEIGHT_LFL(10.0);
+        }
+        return 0.0;
+    };
+    
+    self.tableView.tableDelegate.viewForHeader = ^(NSInteger section) {
+        if (section == 1) {
+            UIView *view = [[UIView alloc] init];
+            [view setBackgroundColor:TAB_HEAD_FOOT];
+            return view;
+        }
+        return [[UIView alloc] init];
+    };
+    
     self.tableView.tableDelegate.heightForFooter = ^(NSInteger section) {
         if (section == 0) {
             return HEIGHT_LFL(60.0);
@@ -69,9 +85,11 @@
     
     self.tableView.tableDelegate.viewForFooter = ^(NSInteger section) {
         if (section == 0) {
-            return [MGGomeCellFootView setupFootView];
+            return (UIView *)[MGGomeCellFootView setupFootView];
         } else if (section == 1) {
-            return [MGGomeCellFootView setupFootView];
+            UIView *view = [[UIView alloc] init];
+            [view setBackgroundColor:TAB_HEAD_FOOT];
+            return view;
         }
         return [[UIView alloc] init];
     };
