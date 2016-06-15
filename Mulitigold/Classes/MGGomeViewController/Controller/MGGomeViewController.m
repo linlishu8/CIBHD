@@ -44,7 +44,9 @@
                     NSLog(@"error:%@, Info:%@",error,error.userInfo);
                 }
                 [self.bannerItems addObject:model];
-                [self.tableView reloadData];
+                
+                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+                [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
             }
         }
     }];

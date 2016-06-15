@@ -19,22 +19,30 @@
 
 - (void)setButtons:(NSArray *)buttons clickItemBlock:(void (^)(NSInteger))clickItemBlock
 {
-    NSInteger i = 0;
-    for (NSString *title in buttons) {
-        ImageCenterButton *button = [self addButtons:CGRectMake(i%4*Main_Screen_Width/4, HEIGHT_LFL(12)+HEIGHT_LFL(70)*(i/4), Main_Screen_Width/4, HEIGHT_LFL(70)) image:[NSString stringWithFormat:@"MGGome_Menu_Button%ld",(long)i] title:title];
-        button.tag = i+10;
-        [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    for (NSUInteger i = 0; i < [buttons count]; i++) {
+        ImageCenterButton *button = [self addButtons:i title:buttons[i]];
+        [button setTag:10+i];
+        @weakify(self);
+        [button addActionHandler:^(NSInteger tag) {
+            @strongify(self);
+            self.clickItemBlock(tag);
+        }];
         [self.contentView addSubview:button];
-        i ++;
+        
+        [button mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.equalTo(@(50));
+            make.height.equalTo(@(70));
+            make.centerY.equalTo(self.contentView.mas_centerY).multipliedBy(0.5+i/4);
+            make.centerX.equalTo(self.contentView.mas_centerX).multipliedBy(0.25+(CGFloat)(i%4)/2);
+        }];
     }
     self.clickItemBlock = clickItemBlock;
 }
 
-- (ImageCenterButton *)addButtons:(CGRect)frame image:(NSString *)image title:(NSString *)title
+- (ImageCenterButton *)addButtons:(NSUInteger)index title:(NSString *)title
 {
     ImageCenterButton *button = [[ImageCenterButton alloc] init];
-    [button setFrame:frame];
-    [button setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"MGGome_Menu_Button%ld",(long)index]] forState:UIControlStateNormal];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:DEFINE_LITTLE forState:UIControlStateNormal];
     button.titleLabel.font = SYSTEMFONT(12.0);
@@ -42,11 +50,6 @@
     button.imageTextSpace = 6.0;
     button.imageViewMaxSize = CGSizeMake(HEIGHT_LFL(40), HEIGHT_LFL(40));
     return button;
-}
-
-- (void)buttonAction:(UIButton *)sender
-{
-    self.clickItemBlock(sender.tag);
 }
 
 @end

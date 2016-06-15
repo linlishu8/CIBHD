@@ -7,11 +7,12 @@
 //
 
 #import "MGTabBarController.h"
+#import "MGLoginViewController.h"
 
 NSUInteger MGTabbarItemsCount = 0;
 CGFloat MGTabBarItemWidth = 0.0f;
 
-@interface MGTabBarController ()
+@interface MGTabBarController ()<UITabBarControllerDelegate>
 
 @end
 
@@ -21,7 +22,16 @@ CGFloat MGTabBarItemWidth = 0.0f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setDelegate:self];
     // Do any additional setup after loading the view.
+}
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    if (tabBarController.selectedIndex != 0) {
+        MGLoginViewController *loginView = [[MGLoginViewController alloc] init];
+        [self presentViewController:loginView animated:YES completion:nil];
+    }
 }
 
 - (void)setViewControllers:(NSArray *)viewControllers {

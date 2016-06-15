@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E50D326B7F55DF95D1A47096"
+               BlueprintIdentifier = "E5F1E2092E6DF7BA9645BB71"
                BuildableName = "libImageCenterButton.a"
                BlueprintName = "ImageCenterButton"
                ReferencedContainer = "container:Pods.xcodeproj">

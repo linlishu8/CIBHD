@@ -53,7 +53,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!self.selectRow) {
+    if (self.selectRow) {
         self.selectRow(indexPath);
     }
 }

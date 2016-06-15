@@ -11,7 +11,7 @@
 		1808AA321CF3FD4E00465C0E /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808AA311CF3FD4E00465C0E /* BaseTableView.m */; };
 		1808AA3B1CF446F300465C0E /* MGGomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808AA3A1CF446F300465C0E /* MGGomeMenuCell.m */; };
 		1808AA3E1CF4478500465C0E /* MGGomeCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1808AA3D1CF4478500465C0E /* MGGomeCycleCell.m */; };
-		181169AC1CFBD65A00789BC7 /* UILabel+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 181169AB1CFBD65A00789BC7 /* UILabel+Custom.m */; };
+		181169AC1CFBD65A00789BC7 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 181169AB1CFBD65A00789BC7 /* UIView+Custom.m */; };
 		1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */; };
 		1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E01CEC4442002DE7AF /* BannerDataModel.m */; };
 		1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */; };
@@ -42,7 +42,10 @@
 		18C861681CE971B2005FC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C861671CE971B2005FC4EA /* main.m */; };
 		18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8616A1CE971B2005FC4EA /* AppDelegate.m */; };
 		18C861761CE971B2005FC4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C861741CE971B2005FC4EA /* LaunchScreen.storyboard */; };
+		18C992C01D0FDFB200A9ED2D /* ZYKeyboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C992BF1D0FDFB200A9ED2D /* ZYKeyboardUtil.m */; };
+		18C992C31D0FE55700A9ED2D /* UIView+FreeBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C992C21D0FE55700A9ED2D /* UIView+FreeBorder.m */; };
 		18ED53201CED9D6B00F5F898 /* ACTableViewDelegte.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */; };
+		18F8548E1D0FA9840081FBB6 /* MGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8548D1D0FA9840081FBB6 /* MGLoginViewController.m */; };
 		43DFC672F77565789664AFA6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8B8D4F6F1C104C7B256E20 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +57,8 @@
 		1808AA3A1CF446F300465C0E /* MGGomeMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeMenuCell.m; sourceTree = "<group>"; };
 		1808AA3C1CF4478500465C0E /* MGGomeCycleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeCycleCell.h; sourceTree = "<group>"; };
 		1808AA3D1CF4478500465C0E /* MGGomeCycleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeCycleCell.m; sourceTree = "<group>"; };
-		181169AA1CFBD65A00789BC7 /* UILabel+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Custom.h"; sourceTree = "<group>"; };
-		181169AB1CFBD65A00789BC7 /* UILabel+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Custom.m"; sourceTree = "<group>"; };
+		181169AA1CFBD65A00789BC7 /* UIView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Custom.h"; sourceTree = "<group>"; };
+		181169AB1CFBD65A00789BC7 /* UIView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Custom.m"; sourceTree = "<group>"; };
 		1814A5D01CEC13C8002DE7AF /* MGGomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeViewController.h; sourceTree = "<group>"; };
 		1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeViewController.m; sourceTree = "<group>"; };
 		1814A5DF1CEC4442002DE7AF /* BannerDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerDataModel.h; sourceTree = "<group>"; };
@@ -118,9 +121,15 @@
 		18C8616A1CE971B2005FC4EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18C861751CE971B2005FC4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18C861771CE971B2005FC4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C992BE1D0FDFB200A9ED2D /* ZYKeyboardUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYKeyboardUtil.h; sourceTree = "<group>"; };
+		18C992BF1D0FDFB200A9ED2D /* ZYKeyboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYKeyboardUtil.m; sourceTree = "<group>"; };
+		18C992C11D0FE55700A9ED2D /* UIView+FreeBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FreeBorder.h"; sourceTree = "<group>"; };
+		18C992C21D0FE55700A9ED2D /* UIView+FreeBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FreeBorder.m"; sourceTree = "<group>"; };
 		18ED53141CED90C200F5F898 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		18ED531E1CED9D6B00F5F898 /* ACTableViewDelegte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTableViewDelegte.h; sourceTree = "<group>"; };
 		18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTableViewDelegte.m; sourceTree = "<group>"; };
+		18F8548C1D0FA9840081FBB6 /* MGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLoginViewController.h; sourceTree = "<group>"; };
+		18F8548D1D0FA9840081FBB6 /* MGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGLoginViewController.m; sourceTree = "<group>"; };
 		5D575FBB2A1E363F99F97366 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D86515CA192EF670BA8F9FD1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EF8B8D4F6F1C104C7B256E20 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,8 +152,10 @@
 			children = (
 				18401A741CED6370005DFB43 /* UIImage+Color.h */,
 				18401A751CED6370005DFB43 /* UIImage+Color.m */,
-				181169AA1CFBD65A00789BC7 /* UILabel+Custom.h */,
-				181169AB1CFBD65A00789BC7 /* UILabel+Custom.m */,
+				181169AA1CFBD65A00789BC7 /* UIView+Custom.h */,
+				181169AB1CFBD65A00789BC7 /* UIView+Custom.m */,
+				18C992C11D0FE55700A9ED2D /* UIView+FreeBorder.h */,
+				18C992C21D0FE55700A9ED2D /* UIView+FreeBorder.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -345,6 +356,7 @@
 		183628011CEC4957004BBF65 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				18C992BD1D0FDFA500A9ED2D /* Keyboard */,
 				18ED531D1CED9D6200F5F898 /* ACTableViewDelegte */,
 				183628021CEC4974004BBF65 /* Reachability */,
 			);
@@ -372,6 +384,7 @@
 		1875A3701CE9B77900E7AB84 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18F8548B1D0FA9740081FBB6 /* MGLoginViewController */,
 				1814A5CB1CEC1106002DE7AF /* MGGomeViewController */,
 				1875A3711CE9B83C00E7AB84 /* MGTabBarController */,
 			);
@@ -435,6 +448,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18C992BD1D0FDFA500A9ED2D /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				18C992BE1D0FDFB200A9ED2D /* ZYKeyboardUtil.h */,
+				18C992BF1D0FDFB200A9ED2D /* ZYKeyboardUtil.m */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 		18ED531D1CED9D6200F5F898 /* ACTableViewDelegte */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +464,15 @@
 				18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */,
 			);
 			path = ACTableViewDelegte;
+			sourceTree = "<group>";
+		};
+		18F8548B1D0FA9740081FBB6 /* MGLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18F8548C1D0FA9840081FBB6 /* MGLoginViewController.h */,
+				18F8548D1D0FA9840081FBB6 /* MGLoginViewController.m */,
+			);
+			path = MGLoginViewController;
 			sourceTree = "<group>";
 		};
 		39A8A38F69AE824FC1D510C2 /* Pods */ = {
@@ -571,6 +602,8 @@
 				18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */,
 				182BA3A81CEEF53B00672DFA /* YACommonParamsGenerator.m in Sources */,
 				183628081CEC539B004BBF65 /* BaseViewController.m in Sources */,
+				18C992C01D0FDFB200A9ED2D /* ZYKeyboardUtil.m in Sources */,
+				18F8548E1D0FA9840081FBB6 /* MGLoginViewController.m in Sources */,
 				182BA39F1CEEACF900672DFA /* YABaseServers.m in Sources */,
 				18C861681CE971B2005FC4EA /* main.m in Sources */,
 				182BA39D1CEEACF900672DFA /* FWZServer.m in Sources */,
@@ -587,7 +620,7 @@
 				1808AA3E1CF4478500465C0E /* MGGomeCycleCell.m in Sources */,
 				182BA3A01CEEACF900672DFA /* YAServerFactory.m in Sources */,
 				182BA3921CEEACF900672DFA /* YAAPIBaseRequestDataModel.m in Sources */,
-				181169AC1CFBD65A00789BC7 /* UILabel+Custom.m in Sources */,
+				181169AC1CFBD65A00789BC7 /* UIView+Custom.m in Sources */,
 				1867466A1CF8241200B3190B /* MGGomeCellFootView.m in Sources */,
 				182BA39C1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m in Sources */,
 				182BA3991CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m in Sources */,
@@ -597,6 +630,7 @@
 				18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */,
 				182BA39E1CEEACF900672DFA /* YAServer.m in Sources */,
 				1808AA3B1CF446F300465C0E /* MGGomeMenuCell.m in Sources */,
+				18C992C31D0FE55700A9ED2D /* UIView+FreeBorder.m in Sources */,
 				182BA3981CEEACF900672DFA /* YABaseDataEngine.m in Sources */,
 				183628051CEC497A004BBF65 /* Reachability.m in Sources */,
 				1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */,

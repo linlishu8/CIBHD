@@ -7,7 +7,6 @@
 //
 
 #import "MGGomeCellFootView.h"
-#import "UILabel+Custom.h"
 #import "BannerDataModel.h"
 
 const CGFloat MGRefreshSlowAnimationDuration = 0.6;
@@ -31,7 +30,6 @@ const CGFloat MGRefreshSlowAnimationDuration = 0.6;
     self = [super init];
     if (self) {
         [self initViews];
-        [self startHttpRequest];
     }
     return self;
 }
@@ -96,6 +94,8 @@ const CGFloat MGRefreshSlowAnimationDuration = 0.6;
         make.top.equalTo(self).with.offset(13);
         make.bottom.right.equalTo(self).width.offset(-13);
     }];
+    
+    [self refreshControl:refreshButton];
 }
 
 - (void)refreshControl:(UIButton *)sender
@@ -120,9 +120,9 @@ const CGFloat MGRefreshSlowAnimationDuration = 0.6;
         if (error) {
             NSLog(@"%@",error.localizedDescription);
         } else {
-            NSLog(@"%@",data);
             NSError* error;
             BannerFootModel *model = [MTLJSONAdapter modelOfClass:[BannerFootModel class] fromJSONDictionary:data error:&error];
+            NSLog(@"model.goldRate:%@",[NSString stringWithFormat:@"%.2f元/g",model.goldRate]);
             if(error){
                 NSLog(@"error:%@, Info:%@",error,error.userInfo);
             }
