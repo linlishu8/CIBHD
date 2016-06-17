@@ -8,7 +8,9 @@
 
 #import "MGLoginViewController.h"
 
-@interface MGLoginViewController ()
+@interface MGLoginViewController ()<UITextFieldDelegate>
+
+@property (nonatomic, strong) UIButton *loginButton;
 
 @end
 
@@ -17,26 +19,109 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self addPresentModalBack];
+    [self initViews];
 }
 
-- (void)addPresentModalBack
+- (void)initViews
 {
+    UIScrollView *scrollView = [[UIScrollView alloc] init];
+    [scrollView setBackgroundColor:[UIColor whiteColor]];
+    scrollView.pagingEnabled = NO;
+    [self.view addSubview:scrollView];
+    
+    
     @weakify(self);
     UIButton *closeButton = [UIButton buttonImage:@"MG_Login_close"];
     [closeButton addActionHandler:^(NSInteger tag) {
         @strongify(self);
         [self dismissViewControllerAnimated:YES completion:nil];
     }];
-    [self.view addSubview:closeButton];
+    [scrollView addSubview:closeButton];
+    
+    UIButton *headButton = [UIButton buttonImage:@"MG_Login_head"];
+    [headButton addActionHandler:^(NSInteger tag) {
+        @strongify(self);
+        [self updateUserHeadImage];
+    }];
+    [scrollView addSubview:headButton];
+    
+    UIView *nameTextField = [UIView new];
+    [scrollView addSubview:nameTextField];
+    
+    nameTextField = [UIView textFieldAndLabelView:nameTextField
+                                        labelText:@"账号"
+                                  placeholderText:@"请输入手机号/黄金卡号"
+                                     isSecureText:NO
+                                           target:self];
+    
+    UIView *pwdTextField = [UIView new];
+    [scrollView addSubview:pwdTextField];
+    
+    pwdTextField = [UIView textFieldAndLabelView:pwdTextField
+                                        labelText:@"密码"
+                                  placeholderText:@"请输入8~16位登录密码"
+                                     isSecureText:YES
+                                          target:self];
+    
+    self.loginButton = [UIButton buttonText:@"登录" font:SYSTEMFONT(15.0) textColor:[UIColor whiteColor]];
+    [self.loginButton setBackgroundColor:COLOR1f81c2];
+    self.loginButton.layer.masksToBounds = YES;
+    self.loginButton.layer.cornerRadius = 4;
+    [scrollView addSubview:self.loginButton];
     
     
+    
+    /**
+     *  布局
+     */
     [closeButton mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.left.equalTo(self.view).offset(15);
         make.top.equalTo(self.view).offset(38);
-        make.size.mas_equalTo(CGSizeMake(15, 14));
+        make.size.mas_equalTo(CGSizeMake(WIDTH_LFL(16), HEIGHT_LFL(16)));
     }];
+    [headButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.top.equalTo(closeButton.mas_bottom).offset(42);
+        make.centerX.equalTo(self.view.mas_centerX);
+        make.width.and.height.equalTo(@(WIDTH_LFL(60)));
+    }];
+    
+    [nameTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.left.equalTo(self.view).offset(15);
+        make.right.equalTo(self.view).offset(-15);
+        make.top.equalTo(headButton.mas_bottom).offset(22);
+        make.height.equalTo(@(HEIGHT_LFL(45)));
+    }];
+    [pwdTextField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.right.and.height.equalTo(nameTextField);
+        make.top.equalTo(nameTextField.mas_bottom);
+    }];
+    
+    [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.top.equalTo(pwdTextField.mas_bottom).offset(24);
+        make.left.equalTo(self.view).offset(15);
+        make.right.equalTo(self.view).offset(-15);
+        make.height.equalTo(@(HEIGHT_LFL(43)));
+    }];
+    
+    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+        
+        // 让scrollview的contentSize随着内容的增多而变化
+//        make.bottom.mas_equalTo(lastLabel.mas_bottom).offset(20);
+    }];
+    
+    
+    [nameTextField addBorderLayerWithColor:COLORf4f4f4 size:1 borderType:BorderTypeBottom];//分割线
+    [pwdTextField addBorderLayerWithColor:COLORf4f4f4 size:1 borderType:BorderTypeBottom];//分割线
+}
+
+- (void)updateUserHeadImage
+{
+
 }
 
 - (void)didReceiveMemoryWarning {

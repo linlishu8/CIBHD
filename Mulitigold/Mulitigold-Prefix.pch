@@ -16,6 +16,7 @@
 #import "FrameMainLFL.h"
 #import "MGGomeDataEngine.h"
 #import "UIView+Custom.h"
+#import "UIView+FreeBorder.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

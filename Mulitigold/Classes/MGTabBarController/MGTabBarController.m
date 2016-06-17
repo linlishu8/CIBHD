@@ -80,7 +80,7 @@ CGFloat MGTabBarItemWidth = 0.0f;
     
     viewController.tabBarItem.title = title;
 
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : SYSTEMFONT(11.0), NSForegroundColorAttributeName : TAB_BAR_COLOR} forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : SYSTEMFONT(11.0), NSForegroundColorAttributeName : COLOR318fc9} forState:UIControlStateSelected];
     
     // 字体颜色 未选中
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName : SYSTEMFONT(11.0),  NSForegroundColorAttributeName:[UIColor grayColor]} forState:UIControlStateNormal];

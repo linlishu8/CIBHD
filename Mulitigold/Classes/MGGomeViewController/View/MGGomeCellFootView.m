@@ -39,13 +39,13 @@ const CGFloat MGRefreshSlowAnimationDuration = 0.6;
     UILabel *fontLabel = [UILabel lableFrame:CGRectZero
                                         text:@"最新金价"
                                         font:SYSTEMFONT(10.0)
-                                   textColor:HEXCOLOR(0x333333)];
+                                   textColor:COLOR333333];
     [self addSubview:fontLabel];
     
     self.priceLabel = [UILabel lableFrame:CGRectZero
                                      text:@""
                                      font:SYSTEMFONT(26.0)
-                                textColor:HEXCOLOR(0x333333)];
+                                textColor:COLOR333333];
     [self addSubview:self.priceLabel];
     
     UIButton *refreshButton = [[UIButton alloc] init];

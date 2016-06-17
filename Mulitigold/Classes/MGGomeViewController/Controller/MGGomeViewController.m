@@ -70,7 +70,7 @@
     self.tableView.tableDelegate.viewForHeader = ^(NSInteger section) {
         if (section == 1) {
             UIView *view = [[UIView alloc] init];
-            [view setBackgroundColor:TAB_HEAD_FOOT];
+            [view setBackgroundColor:COLORf4f4f4];
             return view;
         }
         return [[UIView alloc] init];
@@ -90,7 +90,7 @@
             return (UIView *)[MGGomeCellFootView setupFootView];
         } else if (section == 1) {
             UIView *view = [[UIView alloc] init];
-            [view setBackgroundColor:TAB_HEAD_FOOT];
+            [view setBackgroundColor:COLORf4f4f4];
             return view;
         }
         return [[UIView alloc] init];

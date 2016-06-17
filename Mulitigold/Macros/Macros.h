@@ -47,9 +47,11 @@
 
 #define HEXCOLOR(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0 green:((float)((hex & 0xFF00) >> 8)) / 255.0 blue:((float)(hex & 0xFF)) / 255.0 alpha:1]
 
-#define DEFINE_LITTLE HEXCOLOR(0x999999)
-#define TAB_BAR_COLOR HEXCOLOR(0x318fc9)
-#define TAB_HEAD_FOOT HEXCOLOR(0xf4f4f4)
+#define COLOR999999 HEXCOLOR(0x999999)
+#define COLOR318fc9 HEXCOLOR(0x318fc9)//浅蓝色
+#define COLORf4f4f4 HEXCOLOR(0xf4f4f4)//浅灰色
+#define COLOR1f81c2 HEXCOLOR(0x1f81c2)//蓝色
+#define COLOR333333 HEXCOLOR(0x333333)
 
 #define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:HEIGHT_LFL(FONTSIZE)]
 #define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:HEIGHT_LFL(FONTSIZE)]

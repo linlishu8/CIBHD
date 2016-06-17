@@ -20,6 +20,7 @@
     CALayer *layer = [CALayer layer];
     layer.backgroundColor = color.CGColor;
     [self.layer addSublayer:layer];
+    [self layoutIfNeeded];
     
     switch (boderType) {
         case BorderTypeTop:
@@ -39,5 +40,7 @@
     }
     
 }
+
+
 
 @end
