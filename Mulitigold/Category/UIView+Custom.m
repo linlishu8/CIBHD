@@ -96,7 +96,7 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
 
 - (UIButton *)buttonBindTextColor:(UIColor *)color
 {
-    [self.titleLabel setTextColor:color];
+    [self setTitleColor:color forState:UIControlStateNormal];
     return self;
 }
 

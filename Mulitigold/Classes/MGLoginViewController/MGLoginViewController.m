@@ -70,7 +70,11 @@
     [scrollView addSubview:self.loginButton];
     
     
+    UIButton *forgetButton = [UIButton buttonText:@"忘记密码？" font:SYSTEMFONT(14.0) textColor:COLOR333333];
+    [scrollView addSubview:forgetButton];
     
+    UIButton *registerButton = [UIButton buttonText:@"注册" font:SYSTEMFONT(14.0) textColor:COLOR333333];
+    [scrollView addSubview:registerButton];
     /**
      *  布局
      */
@@ -105,6 +109,22 @@
         make.left.equalTo(self.view).offset(15);
         make.right.equalTo(self.view).offset(-15);
         make.height.equalTo(@(HEIGHT_LFL(43)));
+    }];
+    
+    [forgetButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.left.equalTo(self.view).offset(15);
+        make.top.equalTo(self.loginButton.mas_bottom).offset(20);
+        make.width.equalTo(@(HEIGHT_LFL(70)));
+        make.height.equalTo(@(HEIGHT_LFL(20)));
+    }];
+    
+    [registerButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.right.equalTo(self.view).offset(-15);
+        make.top.equalTo(forgetButton);
+        make.width.equalTo(@(HEIGHT_LFL(30)));
+        make.height.equalTo(@(HEIGHT_LFL(20)));
     }];
     
     [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
