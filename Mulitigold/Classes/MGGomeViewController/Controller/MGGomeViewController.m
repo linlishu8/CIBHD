@@ -16,9 +16,6 @@
 @interface MGGomeViewController ()<SDCycleScrollViewDelegate>
 
 @property (nonatomic, strong) BaseTableView *tableView;
-@property (nonatomic, strong) YABaseDataEngine *gomeDataEngine;
-@property (nonatomic, strong) NSMutableArray *bannerItems;
-@property (nonatomic, strong) NSMutableArray *imageItems;
 
 
 @end
@@ -83,7 +80,7 @@
         if (indexPath.section == 0) {
             MGGomeCycleCell *cellView = (MGGomeCycleCell *)cell;
             cellView.delegate = self;
-        }else if (indexPath.section == 2) {
+        } else if (indexPath.section == 2) {
             MGGomeMenuCell *cellView = (MGGomeMenuCell *)cell;
             [cellView setButtons:@[@"卖金",@"提金",@"充值",@"提现",@"金价走势",
                                    @"黄金贷",@"银行卡",@"每日签到"] clickItemBlock:^(NSInteger tag) {
