@@ -10,13 +10,15 @@
 #import "BannerDataModel.h"
 #import "MGGomeCycleCell.h"
 #import "MGGomeMenuCell.h"
-#import "MGGomeCellFootView.h"
+#import "MGGomeImagesCell.h"
+#import "MGGomePriceCell.h"
 
 @interface MGGomeViewController ()<SDCycleScrollViewDelegate>
 
 @property (nonatomic, strong) BaseTableView *tableView;
 @property (nonatomic, strong) YABaseDataEngine *gomeDataEngine;
 @property (nonatomic, strong) NSMutableArray *bannerItems;
+@property (nonatomic, strong) NSMutableArray *imageItems;
 
 
 @end
@@ -26,49 +28,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setUpTableView];
-    
-    [self.gomeDataEngine cancelRequest];
-    
-    @weakify(self);
-    self.gomeDataEngine = [MGGomeDataEngine control:self params:@{@"keyWord":@"ios"} path:BannerListPage addressType:YAAddressManagerType1 requestType:YAAPIManagerRequestTypeGet complete:^(id data, NSError *error) {
-        @strongify(self);
-        if (error) {
-            NSLog(@"%@",error.localizedDescription);
-        } else {
-            NSLog(@"%@",data[@"result"][@"bannerElements"]);
-            self.bannerItems = [NSMutableArray array];
-            for (NSDictionary *orderDict in data[@"result"][@"bannerElements"]) {
-                NSError* error;
-                BannerDataModel *model = [MTLJSONAdapter modelOfClass:[BannerDataModel class] fromJSONDictionary:orderDict error:&error];
-                if(error){
-                    NSLog(@"error:%@, Info:%@",error,error.userInfo);
-                }
-                [self.bannerItems addObject:model];
-                
-                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-                [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
-            }
-        }
-    }];
 }
 
 - (void)setUpTableView
 {
+    @weakify(self);
     self.tableView = [[BaseTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
+        @strongify(self);
+        make.left.and.right.and.top.equalTo(self.view);
+        make.bottom.equalTo(self.mas_bottomLayoutGuide);
     }];
     
     self.tableView.tableDelegate.heightForHeader = ^(NSInteger section) {
-        if (section == 1) {
+        if (section == 2) {
             return HEIGHT_LFL(10.0);
         }
         return 0.0;
     };
     
     self.tableView.tableDelegate.viewForHeader = ^(NSInteger section) {
-        if (section == 1) {
+        if (section == 2) {
             UIView *view = [[UIView alloc] init];
             [view setBackgroundColor:COLORf4f4f4];
             return view;
@@ -77,18 +58,14 @@
     };
     
     self.tableView.tableDelegate.heightForFooter = ^(NSInteger section) {
-        if (section == 0) {
-            return HEIGHT_LFL(60.0);
-        } else if (section == 1) {
+        if (section == 2) {
             return HEIGHT_LFL(10.0);
         }
         return 0.0;
     };
     
     self.tableView.tableDelegate.viewForFooter = ^(NSInteger section) {
-        if (section == 0) {
-            return (UIView *)[MGGomeCellFootView setupFootView];
-        } else if (section == 1) {
+        if (section == 2) {
             UIView *view = [[UIView alloc] init];
             [view setBackgroundColor:COLORf4f4f4];
             return view;
@@ -97,20 +74,18 @@
     };
     
     self.tableView.tableDelegate.sections = ^NSInteger() {
-        return 2.0;
+        return 5.0;
     };
     
     //创建cell
-    @weakify(self);
     self.tableView.tableDelegate.cellAtIndexPath = ^(id cell, NSIndexPath *indexPath) {
         @strongify(self);
         if (indexPath.section == 0) {
-            MGGomeCycleCell *cycleCell = (MGGomeCycleCell *)cell;
-            cycleCell.bannerItems = self.bannerItems;
-            cycleCell.delegate = self;
-        } else if (indexPath.section == 1) {
-            MGGomeMenuCell *cycleCell = (MGGomeMenuCell *)cell;
-            [cycleCell setButtons:@[@"卖金",@"提金",@"充值",@"提现",@"金价走势",
+            MGGomeCycleCell *cellView = (MGGomeCycleCell *)cell;
+            cellView.delegate = self;
+        }else if (indexPath.section == 2) {
+            MGGomeMenuCell *cellView = (MGGomeMenuCell *)cell;
+            [cellView setButtons:@[@"卖金",@"提金",@"充值",@"提现",@"金价走势",
                                    @"黄金贷",@"银行卡",@"每日签到"] clickItemBlock:^(NSInteger tag) {
                                        NSLog(@"%ld",(long)tag);
                                    }];
@@ -122,7 +97,13 @@
         if (indexPath.section == 0) {
             return HEIGHT_LFL(150.0);
         } else if (indexPath.section == 1) {
+            return HEIGHT_LFL(60.0);
+        } else if (indexPath.section == 2) {
             return HEIGHT_LFL(160.0);
+        } else if (indexPath.section == 3) {
+            return HEIGHT_LFL(210.0);
+        } else if (indexPath.section == 4) {
+            return HEIGHT_LFL(90.0);
         }
         return 0.0;
     };
@@ -132,7 +113,13 @@
         if (indexPath.section == 0) {
             return @"MGGomeCycleCell";
         } else if (indexPath.section == 1) {
+            return @"MGGomePriceCell";
+        } else if (indexPath.section == 2) {
             return @"MGGomeMenuCell";
+        } else if (indexPath.section == 3) {
+            return @"MGGomeImagesCell";
+        } else if (indexPath.section == 4) {
+            return @"MGGomeLogoCell";
         }
         return @"cell";
     };
@@ -143,6 +130,7 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIButton buttonWithType:UIButtonTypeDetailDisclosure]];
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
+
 
 #pragma SDCycleScrollViewDelegate
 

@@ -16,6 +16,7 @@
     if (self) {
         [self setSeparatorStyle: UITableViewCellSeparatorStyleNone];
         [self setSeparatorColor:[UIColor clearColor]];
+        [self setBackgroundColor:COLORf4f4f4];
         self.tableDelegate = [[ACTableViewDelegte alloc] init];
         self.delegate = self.tableDelegate;
         self.dataSource = self.tableDelegate;

@@ -1,33 +1,28 @@
 //
-//  MGGomeCellFootView.m
+//  MGGomePriceCell.m
 //  Mulitigold
 //
-//  Created by 动感超人 on 16/5/27.
+//  Created by 动感超人 on 16/6/20.
 //  Copyright © 2016年 cib. All rights reserved.
 //
 
-#import "MGGomeCellFootView.h"
+#import "MGGomePriceCell.h"
 #import "BannerDataModel.h"
 
 const CGFloat MGRefreshSlowAnimationDuration = 0.6;
 
-@interface MGGomeCellFootView ()
+@interface MGGomePriceCell ()
 
 @property (nonatomic, strong) YABaseDataEngine *gomeDataEngine;
 @property (nonatomic, strong) UILabel *priceLabel;
 
 @end
 
-@implementation MGGomeCellFootView
+@implementation MGGomePriceCell
 
-+ (MGGomeCellFootView *)setupFootView
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
-    return [[MGGomeCellFootView alloc] init];
-}
-
-- (instancetype)init
-{
-    self = [super init];
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self initViews];
     }
@@ -43,7 +38,7 @@ const CGFloat MGRefreshSlowAnimationDuration = 0.6;
     [self addSubview:fontLabel];
     
     self.priceLabel = [UILabel lableFrame:CGRectZero
-                                     text:@""
+                                     text:@"---.--元/g"
                                      font:SYSTEMFONT(26.0)
                                 textColor:COLOR333333];
     [self addSubview:self.priceLabel];

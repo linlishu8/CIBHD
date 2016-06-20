@@ -28,3 +28,9 @@
 @property (nonatomic, readonly) double goldRate;
 
 @end
+
+@interface BannerImageModel : MTLModel<MTLJSONSerializing>
+
+@property (nonatomic, copy, readonly) NSString *imgUrl;
+
+@end

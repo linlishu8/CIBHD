@@ -98,10 +98,13 @@
         make.top.equalTo(headButton.mas_bottom).offset(22);
         make.height.equalTo(@(HEIGHT_LFL(45)));
     }];
+    [nameTextField addBorderLayerWithColor:COLORf4f4f4 size:1 borderType:BorderTypeBottom];//分割线
+    
     [pwdTextField mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.and.right.and.height.equalTo(nameTextField);
         make.top.equalTo(nameTextField.mas_bottom);
     }];
+    [pwdTextField addBorderLayerWithColor:COLORf4f4f4 size:1 borderType:BorderTypeBottom];//分割线
     
     [self.loginButton mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
@@ -133,10 +136,6 @@
         // 让scrollview的contentSize随着内容的增多而变化
 //        make.bottom.mas_equalTo(lastLabel.mas_bottom).offset(20);
     }];
-    
-    
-    [nameTextField addBorderLayerWithColor:COLORf4f4f4 size:1 borderType:BorderTypeBottom];//分割线
-    [pwdTextField addBorderLayerWithColor:COLORf4f4f4 size:1 borderType:BorderTypeBottom];//分割线
 }
 
 - (void)updateUserHeadImage

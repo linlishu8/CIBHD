@@ -11,6 +11,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Masonry/Masonry.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "Macros.h"
 #import "BaseTableView.h"
 #import "FrameMainLFL.h"

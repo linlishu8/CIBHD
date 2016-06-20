@@ -44,7 +44,7 @@
         cell = [[NSClassFromString(self.cellIdentifier(indexPath)) alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:self.cellIdentifier(indexPath)];
         
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        [cell setBackgroundColor:[UIColor clearColor]];
+        [cell setBackgroundColor:[UIColor whiteColor]];
     }
     self.cellAtIndexPath(cell, indexPath);
     

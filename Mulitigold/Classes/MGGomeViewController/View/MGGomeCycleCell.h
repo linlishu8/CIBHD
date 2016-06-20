@@ -11,7 +11,6 @@
 
 @interface MGGomeCycleCell : UITableViewCell
 
-@property (nonatomic, strong) NSArray *bannerItems;
 @property (nonatomic, weak) id<SDCycleScrollViewDelegate> delegate;
 
 @end

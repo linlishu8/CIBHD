@@ -10,37 +10,61 @@
 
 @implementation UIView (FreeBorder)
 
-- (void)addBorderWithColor:(UIColor *)color size:(CGFloat)size borderTypes:(NSArray *)types{
+- (void)addBorderWithColor:(UIColor *)color size:(CGFloat)size borderTypes:(NSArray *)types
+{
     for (int i = 0 ; i < types.count; i ++) {
         [self addBorderLayerWithColor:color size:size borderType:[types[i] integerValue]];
     }
 }
 
-- (void)addBorderLayerWithColor:(UIColor *)color size:(CGFloat)size borderType:(BorderType)boderType{
-    CALayer *layer = [CALayer layer];
-    layer.backgroundColor = color.CGColor;
-    [self.layer addSublayer:layer];
-    [self layoutIfNeeded];
+
+- (void)addBorderLayerWithColor:(UIColor *)color size:(CGFloat)size borderType:(BorderType)boderType
+{
+    UIView *lineView = [UIView new];
+    [lineView setBackgroundColor:color];
+    [self addSubview:lineView];
     
+    @weakify(self);
     switch (boderType) {
         case BorderTypeTop:
-            layer.frame = CGRectMake(0, 0, self.frame.size.width, size);
+        {
+            [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+                @strongify(self);
+                make.left.and.top.and.bottom.equalTo(self);
+                make.height.equalTo(@(size));
+            }];
+        }
             break;
         case BorderTypeLeft:
-            layer.frame = CGRectMake(0, 0, size, self.frame.size.height);
+        {
+            [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+                @strongify(self);
+                make.left.and.top.and.bottom.equalTo(self);
+                make.width.equalTo(@(size));
+            }];
+        }
             break;
         case BorderTypeBottom:
-            layer.frame = CGRectMake(0, self.frame.size.height - size, self.frame.size.width, size);
+        {
+            [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+                @strongify(self);
+                make.left.and.right.and.bottom.equalTo(self);
+                make.height.equalTo(@(size));
+            }];
+        }
             break;
         case BorderTypeRight:
-            layer.frame = CGRectMake(self.frame.size.width - size, 0, size, self.frame.size.height);
+        {
+            [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+                @strongify(self);
+                make.top.and.right.and.bottom.equalTo(self);
+                make.width.equalTo(@(size));
+            }];
+        }
             break;
         default:
             break;
     }
-    
 }
-
-
 
 @end

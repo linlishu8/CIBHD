@@ -12,21 +12,61 @@
 @interface MGGomeCycleCell ()
 
 @property(nonatomic, strong) SDCycleScrollView *cycleScrollView;
+@property (nonatomic, strong) YABaseDataEngine *gomeDataEngine;
+@property (nonatomic, strong) NSArray *bannerItems;
 
 @end
 
 @implementation MGGomeCycleCell
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        
+        self.cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero delegate:nil placeholderImage:[UIImage imageNamed:@"banner_normal"]];
+        self.cycleScrollView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
+        self.cycleScrollView.pageControlDotSize = CGSizeMake(8, 8);
+        self.cycleScrollView.autoScrollTimeInterval = 5.0;
+        [self.contentView addSubview:self.cycleScrollView];
+        
+        [self.cycleScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self.contentView);
+        }];
+        
+        [self httpRequestBannerElements];
+    }
+    return self;
+}
+
+- (void)httpRequestBannerElements
+{
+    [self.gomeDataEngine cancelRequest];
+    
+    @weakify(self);
+    self.gomeDataEngine = [MGGomeDataEngine control:self params:@{@"keyWord":@"ios"} path:BannerListPage addressType:YAAddressManagerType1 requestType:YAAPIManagerRequestTypeGet complete:^(id data, NSError *error) {
+        @strongify(self);
+        if (error) {
+            NSLog(@"%@",error.localizedDescription);
+        } else {
+            NSLog(@"%@",data[@"result"][@"bannerElements"]);
+            NSMutableArray *bannerItems = [NSMutableArray array];
+            for (NSDictionary *orderDict in data[@"result"][@"bannerElements"]) {
+                NSError* error;
+                BannerDataModel *model = [MTLJSONAdapter modelOfClass:[BannerDataModel class] fromJSONDictionary:orderDict error:&error];
+                if(error){
+                    NSLog(@"error:%@, Info:%@",error,error.userInfo);
+                }
+                [bannerItems addObject:model];
+            }
+            self.bannerItems = bannerItems;
+        }
+    }];
+}
+
 - (void)setBannerItems:(NSArray *)bannerItems
 {
     NSMutableArray *items = [NSMutableArray array];
-    
-    self.cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, Main_Screen_Width, WIDTH_LFL(150)) delegate:nil placeholderImage:[UIImage imageNamed:@"banner_normal"]];
-    self.cycleScrollView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
-    self.cycleScrollView.pageControlDotSize = CGSizeMake(8, 8);
-    self.cycleScrollView.autoScrollTimeInterval = 5.0;
-    [self.contentView addSubview:self.cycleScrollView];
-    
     for (BannerDataModel *model in bannerItems) {
         [items addObject:model.imgUrl];
     }

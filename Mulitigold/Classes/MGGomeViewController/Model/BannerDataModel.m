@@ -36,3 +36,13 @@
 }
 
 @end
+
+@implementation BannerImageModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"imgUrl": @"imgUrl"
+             };
+}
+
+@end
