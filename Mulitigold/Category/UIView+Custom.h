@@ -13,6 +13,11 @@
 + (UILabel *)lableFrame:(CGRect)rect text:(NSString *)text;
 + (UILabel *)lableFrame:(CGRect)rect text:(NSString *)text font:(UIFont *)font;
 + (UILabel *)lableFrame:(CGRect)rect text:(NSString *)text font:(UIFont *)font textColor:(UIColor *)color;
++ (UILabel *)lableFrame:(CGRect)rect
+                   text:(NSString *)text
+                   font:(UIFont *)font
+              textColor:(UIColor *)color
+          textAlignment:(NSTextAlignment)textAlignment;
 
 @end
 
@@ -26,7 +31,14 @@ typedef void (^TouchedBlock)(NSInteger tag);
 + (UIButton *)buttonText:(NSString *)text font:(UIFont *)font;
 + (UIButton *)buttonText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)color;
 
++ (UIButton *)buttonWithFrame:(CGRect)frame Image:(NSString *)backImage actionBlock:(void (^)())actionBlock;
+
 -(void)addActionHandler:(TouchedBlock)touchHandler;
+
++ (UIButton *)ImageCenterButton:(NSString *)image
+                          title:(NSString *)title
+                       fontSize:(CGFloat)fontSize
+                      textColor:(UIColor *)textColor;
 
 @end
 

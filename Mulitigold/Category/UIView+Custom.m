@@ -15,7 +15,7 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
 + (UILabel *)lableFrame:(CGRect)rect text:(NSString *)text
 {
     UILabel *label = [[self alloc] initWithFrame:rect];
-    label.backgroundColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor clearColor];
     label.text = text;
     return label;
 }
@@ -30,9 +30,24 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
     return [[self lableFrame:rect text:text font:font] labelBindTextColor:color];
 }
 
++ (UILabel *)lableFrame:(CGRect)rect
+                   text:(NSString *)text
+                   font:(UIFont *)font
+              textColor:(UIColor *)color
+          textAlignment:(NSTextAlignment)textAlignment
+{
+    return [[[self lableFrame:rect text:text font:font] labelBindTextColor:color] labelBindAligment:textAlignment];
+}
+
 - (UILabel *)labelBindFont:(UIFont *)font
 {
     [self setFont:font];
+    return self;
+}
+
+- (UILabel *)labelBindAligment:(NSTextAlignment)textAlignment
+{
+    [self setTextAlignment:textAlignment];
     return self;
 }
 
@@ -46,11 +61,11 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
 
 @implementation UIButton (Custom)
 
--(void)addActionHandler:(TouchedBlock)touchHandler{
+- (void)addActionHandler:(TouchedBlock)touchHandler{
     objc_setAssociatedObject(self, UIButtonBlockKey, touchHandler, OBJC_ASSOCIATION_COPY_NONATOMIC);
     [self addTarget:self action:@selector(actionTouched:) forControlEvents:UIControlEventTouchUpInside];
 }
--(void)actionTouched:(UIButton *)btn{
+- (void)actionTouched:(UIButton *)btn{
     TouchedBlock block = objc_getAssociatedObject(self, UIButtonBlockKey);
     if (block) {
         block(btn.tag);
@@ -60,6 +75,16 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
 + (UIButton *)buttonImage:(NSString *)backImage
 {
     UIButton *button = [[self alloc] init];
+    [button setBackgroundImage:[UIImage imageNamed:backImage] forState:UIControlStateNormal];
+    return button;
+}
+
++ (UIButton *)buttonWithFrame:(CGRect)frame Image:(NSString *)backImage actionBlock:(void (^)())actionBlock
+{
+    UIButton *button = [[self alloc] initWithFrame:frame];
+    [button addActionHandler:^(NSInteger tag) {
+        actionBlock();
+    }];
     [button setBackgroundImage:[UIImage imageNamed:backImage] forState:UIControlStateNormal];
     return button;
 }
@@ -98,6 +123,46 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
 {
     [self setTitleColor:color forState:UIControlStateNormal];
     return self;
+}
+
+
+/**
+ *  图片居中按钮
+ *
+ *  @param image     图片
+ *  @param title     标题
+ *  @param fontSize  字号
+ *  @param textColor 字色
+ *
+ *  @return 按钮
+ */
++ (UIButton *)ImageCenterButton:(NSString *)image
+                          title:(NSString *)title
+                       fontSize:(CGFloat)fontSize
+                      textColor:(UIColor *)textColor
+{
+    UIButton *button = [[self alloc] init];
+    
+    UIImageView *imageView = [UIImageView new];
+    [imageView setImage:[UIImage imageNamed:image]];
+    [button addSubview:imageView];
+    
+    UILabel *label = [UILabel lableFrame:CGRectZero text:title font:SYSTEMFONT(fontSize) textColor:textColor];
+    [label setTextAlignment:NSTextAlignmentCenter];
+    [button addSubview:label];
+    
+    [imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(button);
+        make.centerX.equalTo(button);
+        make.width.and.height.equalTo(@(WIDTH_LFL(40)));
+    }];
+    
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.right.and.bottom.equalTo(button);
+        make.top.equalTo(imageView.mas_bottom);
+    }];
+    
+    return button;
 }
 
 @end

@@ -7,4 +7,3 @@ pod 'Mantle'
 pod 'MJRefresh'
 pod 'UITableView+FDTemplateLayoutCell'
 pod 'ScreenCompatible_LFL'#分辨率适配
-pod 'ImageCenterButton'#带图片文字按钮

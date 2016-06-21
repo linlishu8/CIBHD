@@ -30,8 +30,20 @@
         self.cycleScrollView.autoScrollTimeInterval = 5.0;
         [self.contentView addSubview:self.cycleScrollView];
         
+        UIButton *codeButton = [UIButton buttonImage:@"MG_Home_QRcode"];
+        [self.contentView addSubview:codeButton];
+        
+        @weakify(self);
         [self.cycleScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+            @strongify(self);
             make.edges.equalTo(self.contentView);
+        }];
+        
+        [codeButton mas_makeConstraints:^(MASConstraintMaker *make) {
+            @strongify(self);
+            make.top.equalTo(self.cycleScrollView).offset(25);
+            make.right.equalTo(self.cycleScrollView).offset(-15);
+            make.width.and.height.equalTo(@(WIDTH_LFL(30)));
         }];
         
         [self httpRequestBannerElements];

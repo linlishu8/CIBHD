@@ -7,7 +7,6 @@
 //
 
 #import "MGGomeMenuCell.h"
-#import "ImageCenterButton.h"
 
 static const NSUInteger ITEM_COUNT = 4;
 
@@ -22,7 +21,7 @@ static const NSUInteger ITEM_COUNT = 4;
 - (void)setButtons:(NSArray *)buttons clickItemBlock:(void (^)(NSInteger))clickItemBlock
 {
     for (NSUInteger i = 0; i < [buttons count]; i++) {
-        ImageCenterButton *button = [self addButtons:i title:buttons[i]];
+        UIButton *button = [self addButtons:i title:buttons[i]];
         [button setTag:10+i];
         @weakify(self);
         [button addActionHandler:^(NSInteger tag) {
@@ -41,16 +40,9 @@ static const NSUInteger ITEM_COUNT = 4;
     self.clickItemBlock = clickItemBlock;
 }
 
-- (ImageCenterButton *)addButtons:(NSUInteger)index title:(NSString *)title
+- (UIButton *)addButtons:(NSUInteger)index title:(NSString *)title
 {
-    ImageCenterButton *button = [[ImageCenterButton alloc] init];
-    [button setImage:[UIImage imageNamed:[NSString stringWithFormat:@"MGGome_Menu_Button%ld",(long)index]] forState:UIControlStateNormal];
-    [button setTitle:title forState:UIControlStateNormal];
-    [button setTitleColor:COLOR999999 forState:UIControlStateNormal];
-    button.titleLabel.font = SYSTEMFONT(12.0);
-    button.imageIsRound = YES;
-    button.imageTextSpace = 6.0;
-    button.imageViewMaxSize = CGSizeMake(WIDTH_LFL(40), HEIGHT_LFL(40));
+    UIButton *button = [UIButton ImageCenterButton:[NSString stringWithFormat:@"MGGome_Menu_Button%ld",(long)index] title:title fontSize:12.0 textColor:COLOR999999];
     return button;
 }
 

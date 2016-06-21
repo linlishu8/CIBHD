@@ -121,10 +121,12 @@
         return @"cell";
     };
     
-    [self setKeyScrollView:self.tableView scrolOffsetY:HEIGHT_LFL(150.0) options:HYHidenControlOptionLeft | HYHidenControlOptionTitle];
+    [self setKeyScrollView:self.tableView scrolOffsetY:HEIGHT_LFL(100.0) options:HYHidenControlOptionRight | HYHidenControlOptionTitle];
     
-    self.navigationItem.titleView = [UIButton buttonWithType:UIButtonTypeContactAdd];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIButton buttonWithType:UIButtonTypeDetailDisclosure]];
+    self.navigationItem.titleView = [UILabel lableFrame:CGRectMake(0, 0, WIDTH_LFL(200), HEIGHT_LFL(30)) text:@"国美黄金" font:SYSTEMFONT(20.0) textColor:[UIColor blackColor] textAlignment:NSTextAlignmentCenter];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIButton buttonWithFrame:CGRectMake(0, 0, WIDTH_LFL(20), HEIGHT_LFL(20)) Image:@"MG_Home_QRcode2" actionBlock:^{
+        NSLog(@"二维码啦");
+    }]];
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
