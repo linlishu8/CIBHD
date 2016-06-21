@@ -123,7 +123,7 @@
     
     [self setKeyScrollView:self.tableView scrolOffsetY:HEIGHT_LFL(100.0) options:HYHidenControlOptionRight | HYHidenControlOptionTitle];
     
-    self.navigationItem.titleView = [UILabel lableFrame:CGRectMake(0, 0, WIDTH_LFL(200), HEIGHT_LFL(30)) text:@"国美黄金" font:SYSTEMFONT(20.0) textColor:[UIColor blackColor] textAlignment:NSTextAlignmentCenter];
+    self.navigationItem.titleView = [UILabel lableTitleView:@"国美黄金"];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[UIButton buttonWithFrame:CGRectMake(0, 0, WIDTH_LFL(20), HEIGHT_LFL(20)) Image:@"MG_Home_QRcode2" actionBlock:^{
         NSLog(@"二维码啦");
     }]];

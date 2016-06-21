@@ -28,10 +28,10 @@ CGFloat MGTabBarItemWidth = 0.0f;
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
-    if (tabBarController.selectedIndex != 0) {
-        MGLoginViewController *loginView = [[MGLoginViewController alloc] init];
-        [self presentViewController:loginView animated:YES completion:nil];
-    }
+//    if (tabBarController.selectedIndex != 0) {
+//        MGLoginViewController *loginView = [[MGLoginViewController alloc] init];
+//        [self presentViewController:loginView animated:YES completion:nil];
+//    }
 }
 
 - (void)setViewControllers:(NSArray *)viewControllers {

@@ -8,6 +8,7 @@
 
 #import "MGTabBarControllerConfig.h"
 #import "MGGomeViewController.h"
+#import "MGGoldViewController.h"
 
 @interface MGTabBarControllerConfig ()
 
@@ -23,7 +24,7 @@
         UIViewController *firstNavigationController = [[UINavigationController alloc]
                                                        initWithRootViewController:firstViewController];
         
-        UIViewController *secondViewController = [[UIViewController alloc] init];
+        MGGoldViewController *secondViewController = [[MGGoldViewController alloc] init];
         UIViewController *secondNavigationController = [[UINavigationController alloc]
                                                         initWithRootViewController:secondViewController];
         

@@ -38,6 +38,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (!self.cellIdentifier) {
+        static NSString *CellIdentifier = @"Cell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+            
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            [cell setBackgroundColor:[UIColor clearColor]];
+        }
+        
+        return cell;
+    }
     NSString *cellIdentifier = self.cellIdentifier(indexPath);
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {

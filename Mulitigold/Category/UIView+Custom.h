@@ -10,6 +10,8 @@
 
 @interface UILabel (Custom)
 
++ (UILabel *)lableTitleView:(NSString *)text;//navigationItem.titleView
+
 + (UILabel *)lableFrame:(CGRect)rect text:(NSString *)text;
 + (UILabel *)lableFrame:(CGRect)rect text:(NSString *)text font:(UIFont *)font;
 + (UILabel *)lableFrame:(CGRect)rect text:(NSString *)text font:(UIFont *)font textColor:(UIColor *)color;

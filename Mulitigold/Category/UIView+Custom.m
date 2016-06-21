@@ -12,6 +12,11 @@ static const void *UIButtonBlockKey = &UIButtonBlockKey;
 
 @implementation UILabel (Custom)
 
++ (UILabel *)lableTitleView:(NSString *)text
+{
+    return [UILabel lableFrame:CGRectMake(0, 0, WIDTH_LFL(200), HEIGHT_LFL(30)) text:text font:SYSTEMFONT(18.0) textColor:COLOR454b5b textAlignment:NSTextAlignmentCenter];
+}
+
 + (UILabel *)lableFrame:(CGRect)rect text:(NSString *)text
 {
     UILabel *label = [[self alloc] initWithFrame:rect];

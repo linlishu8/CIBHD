@@ -41,6 +41,8 @@
 		1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */; };
 		18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18401A751CED6370005DFB43 /* UIImage+Color.m */; };
 		1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */; };
+		18BF2EFA1D190FFD0047394D /* MGGoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2EF91D190FFD0047394D /* MGGoldViewController.m */; };
+		18BF2EFE1D1928280047394D /* BaseRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2EFD1D1928280047394D /* BaseRefreshHeader.m */; };
 		18C861681CE971B2005FC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C861671CE971B2005FC4EA /* main.m */; };
 		18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8616A1CE971B2005FC4EA /* AppDelegate.m */; };
 		18C861761CE971B2005FC4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C861741CE971B2005FC4EA /* LaunchScreen.storyboard */; };
@@ -121,6 +123,10 @@
 		1875A36F1CE9AA3C00E7AB84 /* Mulitigold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mulitigold-Prefix.pch"; sourceTree = "<group>"; };
 		1875A3721CE9B85A00E7AB84 /* MGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarController.h; sourceTree = "<group>"; };
 		1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarController.m; sourceTree = "<group>"; };
+		18BF2EF81D190FFD0047394D /* MGGoldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGoldViewController.h; sourceTree = "<group>"; };
+		18BF2EF91D190FFD0047394D /* MGGoldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGoldViewController.m; sourceTree = "<group>"; };
+		18BF2EFC1D1928280047394D /* BaseRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRefreshHeader.h; sourceTree = "<group>"; };
+		18BF2EFD1D1928280047394D /* BaseRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRefreshHeader.m; sourceTree = "<group>"; };
 		18C861631CE971B2005FC4EA /* Mulitigold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mulitigold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C861671CE971B2005FC4EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18C861691CE971B2005FC4EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -241,6 +247,7 @@
 		1814A5DA1CEC1B42002DE7AF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				18BF2EFB1D1928170047394D /* BaseRefreshHeader */,
 				1808AA2F1CF3FD4400465C0E /* BaseTableView */,
 				183628091CEC53BB004BBF65 /* BaseNavBarHiddenController */,
 				1814A5DB1CEC1B42002DE7AF /* BaseController */,
@@ -394,6 +401,7 @@
 		1875A3701CE9B77900E7AB84 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18BF2EF71D190FE60047394D /* MGGoldViewController */,
 				18F8548B1D0FA9740081FBB6 /* MGLoginViewController */,
 				1814A5CB1CEC1106002DE7AF /* MGGomeViewController */,
 				1875A3711CE9B83C00E7AB84 /* MGTabBarController */,
@@ -408,6 +416,24 @@
 				1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */,
 			);
 			path = MGTabBarController;
+			sourceTree = "<group>";
+		};
+		18BF2EF71D190FE60047394D /* MGGoldViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18BF2EF81D190FFD0047394D /* MGGoldViewController.h */,
+				18BF2EF91D190FFD0047394D /* MGGoldViewController.m */,
+			);
+			path = MGGoldViewController;
+			sourceTree = "<group>";
+		};
+		18BF2EFB1D1928170047394D /* BaseRefreshHeader */ = {
+			isa = PBXGroup;
+			children = (
+				18BF2EFC1D1928280047394D /* BaseRefreshHeader.h */,
+				18BF2EFD1D1928280047394D /* BaseRefreshHeader.m */,
+			);
+			path = BaseRefreshHeader;
 			sourceTree = "<group>";
 		};
 		18C8615A1CE971B2005FC4EA = {
@@ -627,12 +653,14 @@
 				18ED53201CED9D6B00F5F898 /* ACTableViewDelegte.m in Sources */,
 				183008251CEABF580023D293 /* MGTabBarControllerConfig.m in Sources */,
 				182BA39B1CEEACF900672DFA /* UIDevice+UtilNetworking.m in Sources */,
+				18BF2EFE1D1928280047394D /* BaseRefreshHeader.m in Sources */,
 				1808AA3E1CF4478500465C0E /* MGGomeCycleCell.m in Sources */,
 				1824773F1D17851D0014B6AF /* MGGomeImagesCell.m in Sources */,
 				182BA3A01CEEACF900672DFA /* YAServerFactory.m in Sources */,
 				182BA3921CEEACF900672DFA /* YAAPIBaseRequestDataModel.m in Sources */,
 				181169AC1CFBD65A00789BC7 /* UIView+Custom.m in Sources */,
 				182BA39C1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m in Sources */,
+				18BF2EFA1D190FFD0047394D /* MGGoldViewController.m in Sources */,
 				182BA3991CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m in Sources */,
 				182BA3971CEEACF900672DFA /* YASignatureGenerator.m in Sources */,
 				1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */,
