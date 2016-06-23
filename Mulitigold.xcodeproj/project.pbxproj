@@ -36,12 +36,14 @@
 		182BA3A81CEEF53B00672DFA /* YACommonParamsGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3A71CEEF53B00672DFA /* YACommonParamsGenerator.m */; };
 		182BA3AB1CEEF54A00672DFA /* YAAppContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 182BA3AA1CEEF54A00672DFA /* YAAppContext.m */; };
 		183008251CEABF580023D293 /* MGTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 183008241CEABF580023D293 /* MGTabBarControllerConfig.m */; };
+		183196BD1D1BB9CF00B1D315 /* MGGoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183196BA1D1BB9CF00B1D315 /* MGGoldViewController.m */; };
+		183196C01D1BBB5500B1D315 /* MGGoldIncomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183196BF1D1BBB5500B1D315 /* MGGoldIncomeCell.m */; };
+		183196C31D1BBDCA00B1D315 /* MGIncomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183196C21D1BBDCA00B1D315 /* MGIncomeModel.m */; };
 		183628051CEC497A004BBF65 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628041CEC497A004BBF65 /* Reachability.m */; };
 		183628081CEC539B004BBF65 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628071CEC539B004BBF65 /* BaseViewController.m */; };
 		1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */; };
 		18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18401A751CED6370005DFB43 /* UIImage+Color.m */; };
 		1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */; };
-		18BF2EFA1D190FFD0047394D /* MGGoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2EF91D190FFD0047394D /* MGGoldViewController.m */; };
 		18BF2EFE1D1928280047394D /* BaseRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2EFD1D1928280047394D /* BaseRefreshHeader.m */; };
 		18C861681CE971B2005FC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C861671CE971B2005FC4EA /* main.m */; };
 		18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8616A1CE971B2005FC4EA /* AppDelegate.m */; };
@@ -112,6 +114,12 @@
 		182BA3AA1CEEF54A00672DFA /* YAAppContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAAppContext.m; sourceTree = "<group>"; };
 		183008231CEABF580023D293 /* MGTabBarControllerConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarControllerConfig.h; sourceTree = "<group>"; };
 		183008241CEABF580023D293 /* MGTabBarControllerConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarControllerConfig.m; sourceTree = "<group>"; };
+		183196B91D1BB9CF00B1D315 /* MGGoldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGoldViewController.h; sourceTree = "<group>"; };
+		183196BA1D1BB9CF00B1D315 /* MGGoldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGoldViewController.m; sourceTree = "<group>"; };
+		183196BE1D1BBB5500B1D315 /* MGGoldIncomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MGGoldIncomeCell.h; path = Mulitigold/Classes/MGGoldViewController/View/MGGoldIncomeCell.h; sourceTree = SOURCE_ROOT; };
+		183196BF1D1BBB5500B1D315 /* MGGoldIncomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGGoldIncomeCell.m; path = Mulitigold/Classes/MGGoldViewController/View/MGGoldIncomeCell.m; sourceTree = SOURCE_ROOT; };
+		183196C11D1BBDCA00B1D315 /* MGIncomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGIncomeModel.h; sourceTree = "<group>"; };
+		183196C21D1BBDCA00B1D315 /* MGIncomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGIncomeModel.m; sourceTree = "<group>"; };
 		183628031CEC497A004BBF65 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		183628041CEC497A004BBF65 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		183628061CEC539B004BBF65 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -123,8 +131,6 @@
 		1875A36F1CE9AA3C00E7AB84 /* Mulitigold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mulitigold-Prefix.pch"; sourceTree = "<group>"; };
 		1875A3721CE9B85A00E7AB84 /* MGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarController.h; sourceTree = "<group>"; };
 		1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarController.m; sourceTree = "<group>"; };
-		18BF2EF81D190FFD0047394D /* MGGoldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGoldViewController.h; sourceTree = "<group>"; };
-		18BF2EF91D190FFD0047394D /* MGGoldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGoldViewController.m; sourceTree = "<group>"; };
 		18BF2EFC1D1928280047394D /* BaseRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRefreshHeader.h; sourceTree = "<group>"; };
 		18BF2EFD1D1928280047394D /* BaseRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRefreshHeader.m; sourceTree = "<group>"; };
 		18C861631CE971B2005FC4EA /* Mulitigold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mulitigold.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -370,6 +376,33 @@
 			path = DataEngine;
 			sourceTree = "<group>";
 		};
+		183196B81D1BB9CF00B1D315 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				183196B91D1BB9CF00B1D315 /* MGGoldViewController.h */,
+				183196BA1D1BB9CF00B1D315 /* MGGoldViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		183196BB1D1BB9CF00B1D315 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				183196C11D1BBDCA00B1D315 /* MGIncomeModel.h */,
+				183196C21D1BBDCA00B1D315 /* MGIncomeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		183196BC1D1BB9CF00B1D315 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				183196BE1D1BBB5500B1D315 /* MGGoldIncomeCell.h */,
+				183196BF1D1BBB5500B1D315 /* MGGoldIncomeCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		183628011CEC4957004BBF65 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,8 +454,9 @@
 		18BF2EF71D190FE60047394D /* MGGoldViewController */ = {
 			isa = PBXGroup;
 			children = (
-				18BF2EF81D190FFD0047394D /* MGGoldViewController.h */,
-				18BF2EF91D190FFD0047394D /* MGGoldViewController.m */,
+				183196B81D1BB9CF00B1D315 /* Controller */,
+				183196BB1D1BB9CF00B1D315 /* Model */,
+				183196BC1D1BB9CF00B1D315 /* View */,
 			);
 			path = MGGoldViewController;
 			sourceTree = "<group>";
@@ -633,8 +667,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183196BD1D1BB9CF00B1D315 /* MGGoldViewController.m in Sources */,
 				182BA39A1CEEACF900672DFA /* NSString+UtilNetworking.m in Sources */,
 				182BA3AB1CEEF54A00672DFA /* YAAppContext.m in Sources */,
+				183196C31D1BBDCA00B1D315 /* MGIncomeModel.m in Sources */,
 				18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */,
 				182BA3A81CEEF53B00672DFA /* YACommonParamsGenerator.m in Sources */,
 				183628081CEC539B004BBF65 /* BaseViewController.m in Sources */,
@@ -660,9 +696,9 @@
 				182BA3921CEEACF900672DFA /* YAAPIBaseRequestDataModel.m in Sources */,
 				181169AC1CFBD65A00789BC7 /* UIView+Custom.m in Sources */,
 				182BA39C1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m in Sources */,
-				18BF2EFA1D190FFD0047394D /* MGGoldViewController.m in Sources */,
 				182BA3991CEEACF900672DFA /* NSObject+YANetWorkingAutoCancel.m in Sources */,
 				182BA3971CEEACF900672DFA /* YASignatureGenerator.m in Sources */,
+				183196C01D1BBB5500B1D315 /* MGGoldIncomeCell.m in Sources */,
 				1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */,
 				1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */,
 				18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */,

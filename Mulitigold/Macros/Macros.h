@@ -53,6 +53,7 @@
 #define COLOR1f81c2 HEXCOLOR(0x1f81c2)//蓝色
 #define COLOR333333 HEXCOLOR(0x333333)
 #define COLOR454b5b HEXCOLOR(0x454b5b)//navtitle颜色
+#define COLORff6336 HEXCOLOR(0xff6336)//橙色
 
 #define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:HEIGHT_LFL(FONTSIZE)]
 #define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:HEIGHT_LFL(FONTSIZE)]
@@ -60,8 +61,11 @@
 //获取图片资源
 #define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 
-//
+//首页
 #define GoldRateAndSysTime @"/api/inrate/getGoldRateAndSysTime"
 #define BannerListPage @"banner/bannerListPage"
+
+//存金
+#define GoldIncome @"/api/inrate/getInteralRate"
 
 #endif /* Macros_h */

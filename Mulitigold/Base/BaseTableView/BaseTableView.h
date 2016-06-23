@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "ACTableViewDelegte.h"
+#import "MJRefresh.h"
 
 @interface BaseTableView : UITableView
 
 @property (nonatomic, strong) ACTableViewDelegte *tableDelegate;
+
+//下拉刷新
+- (void)addTableViewRefreshHeader:(id)target selector:(SEL)selector;
+
+//上拉更多
+- (void)addTableViewRefreshFooter:(id)target selector:(SEL)selector;
 
 @end

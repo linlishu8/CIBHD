@@ -7,6 +7,7 @@
 //
 
 #import "BaseTableView.h"
+#import "BaseRefreshHeader.h"
 
 @implementation BaseTableView
 
@@ -23,5 +24,25 @@
     }
     return self;
 }
+
+- (void)addTableViewRefreshHeader:(id)target selector:(SEL)selector
+{
+    BaseRefreshHeader *header = [BaseRefreshHeader headerWithRefreshingTarget:target refreshingAction:selector];
+    // 隐藏时间
+    header.lastUpdatedTimeLabel.hidden = YES;
+    // 马上进入刷新状态
+    [header beginRefreshing];
+    
+    self.mj_header = header;
+}
+
+- (void)addTableViewRefreshFooter:(id)target selector:(SEL)selector
+{
+    MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:target refreshingAction:selector];
+    
+    // 设置footer
+    self.mj_footer = footer;
+}
+
 
 @end

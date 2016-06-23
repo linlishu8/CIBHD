@@ -6,8 +6,8 @@
 //  Copyright © 2016年 cib. All rights reserved.
 //
 
-#import "MJRefreshHeader.h"
+#import "MJRefreshGifHeader.h"
 
-@interface BaseRefreshHeader : MJRefreshHeader
+@interface BaseRefreshHeader : MJRefreshNormalHeader
 
 @end
