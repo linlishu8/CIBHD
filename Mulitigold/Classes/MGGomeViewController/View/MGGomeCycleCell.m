@@ -61,7 +61,6 @@
         if (error) {
             NSLog(@"%@",error.localizedDescription);
         } else {
-            NSLog(@"%@",data[@"result"][@"bannerElements"]);
             NSMutableArray *bannerItems = [NSMutableArray array];
             for (NSDictionary *orderDict in data[@"result"][@"bannerElements"]) {
                 NSError* error;

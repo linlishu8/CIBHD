@@ -73,6 +73,8 @@
             make.height.equalTo(@(HEIGHT_LFL(34.0)));
             make.baseline.equalTo(iconView.mas_baseline);
         }];
+        
+        [self.contentView addBorderLayerWithColor:COLORf4f4f4 size:15 borderType:BorderTypeBottom];
     }
     return self;
 }

@@ -117,7 +117,6 @@ const CGFloat MGRefreshSlowAnimationDuration = 0.6;
         } else {
             NSError* error;
             BannerFootModel *model = [MTLJSONAdapter modelOfClass:[BannerFootModel class] fromJSONDictionary:data error:&error];
-            NSLog(@"model.goldRate:%@",[NSString stringWithFormat:@"%.2f元/g",model.goldRate]);
             if(error){
                 NSLog(@"error:%@, Info:%@",error,error.userInfo);
             }

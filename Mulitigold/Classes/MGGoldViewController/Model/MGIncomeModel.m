@@ -17,3 +17,17 @@
 }
 
 @end
+
+@implementation MGForUseNewModel
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+    return @{
+             @"balance": @"balance",
+             @"timeLimit": @"tBaseLCProcuct.timeLimit",
+             @"lcPrdName": @"tBaseLCProcuct.lcPrdName",
+             @"lcPrdCode": @"tBaseLCProcuct.lcPrdCode",
+             @"inrate": @"tBaseLCProcuct.inrate"
+             };
+}
+
+@end

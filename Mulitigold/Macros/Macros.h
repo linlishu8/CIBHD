@@ -67,5 +67,6 @@
 
 //存金
 #define GoldIncome @"/api/inrate/getInteralRate"
+#define DetailForUseNew @"/api/banklist/queryLcDetailForUseNew"
 
 #endif /* Macros_h */

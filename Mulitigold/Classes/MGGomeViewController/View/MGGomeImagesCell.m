@@ -37,7 +37,6 @@
         if (error) {
             NSLog(@"%@",error.localizedDescription);
         } else {
-            NSLog(@"%@",data[@"result"][@"bannerElements"]);
             NSMutableArray *imageItems = [NSMutableArray array];
             for (NSDictionary *orderDict in data[@"result"][@"bannerElements"]) {
                 NSError* error;

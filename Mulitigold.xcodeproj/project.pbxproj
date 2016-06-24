@@ -43,6 +43,7 @@
 		183628081CEC539B004BBF65 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628071CEC539B004BBF65 /* BaseViewController.m */; };
 		1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */; };
 		18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18401A751CED6370005DFB43 /* UIImage+Color.m */; };
+		184361E71D1CE2F700E5927B /* MGUserNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184361E61D1CE2F700E5927B /* MGUserNewsCell.m */; };
 		1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */; };
 		18BF2EFE1D1928280047394D /* BaseRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2EFD1D1928280047394D /* BaseRefreshHeader.m */; };
 		18C861681CE971B2005FC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C861671CE971B2005FC4EA /* main.m */; };
@@ -128,6 +129,8 @@
 		1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavBarHiddenController.m; sourceTree = "<group>"; };
 		18401A741CED6370005DFB43 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		18401A751CED6370005DFB43 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		184361E51D1CE2F700E5927B /* MGUserNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGUserNewsCell.h; sourceTree = "<group>"; };
+		184361E61D1CE2F700E5927B /* MGUserNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGUserNewsCell.m; sourceTree = "<group>"; };
 		1875A36F1CE9AA3C00E7AB84 /* Mulitigold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mulitigold-Prefix.pch"; sourceTree = "<group>"; };
 		1875A3721CE9B85A00E7AB84 /* MGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarController.h; sourceTree = "<group>"; };
 		1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarController.m; sourceTree = "<group>"; };
@@ -399,6 +402,8 @@
 			children = (
 				183196BE1D1BBB5500B1D315 /* MGGoldIncomeCell.h */,
 				183196BF1D1BBB5500B1D315 /* MGGoldIncomeCell.m */,
+				184361E51D1CE2F700E5927B /* MGUserNewsCell.h */,
+				184361E61D1CE2F700E5927B /* MGUserNewsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -710,6 +715,7 @@
 				182BA3981CEEACF900672DFA /* YABaseDataEngine.m in Sources */,
 				183628051CEC497A004BBF65 /* Reachability.m in Sources */,
 				1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */,
+				184361E71D1CE2F700E5927B /* MGUserNewsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
