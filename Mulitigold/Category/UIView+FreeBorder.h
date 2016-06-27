@@ -21,4 +21,6 @@ typedef enum : NSUInteger {
 
 - (void)addBorderLayerWithColor:(UIColor *)color size:(CGFloat)size borderType:(BorderType)boderType;
 
+- (void)addBorderLayerWithColor:(CGFloat)percent;//存金百分比线
+
 @end

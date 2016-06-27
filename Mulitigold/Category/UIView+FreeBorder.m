@@ -67,4 +67,26 @@
     }
 }
 
+- (void)addBorderLayerWithColor:(CGFloat)percent
+{
+    UIView *backView = [UIView new];
+    [backView setBackgroundColor:COLORf4f4f4];
+    [self addSubview:backView];
+    
+    UIView *percentView = [UIView new];
+    [percentView setBackgroundColor:COLOR318fc9];
+    [self addSubview:percentView];
+    
+    @weakify(self);
+    [backView mas_makeConstraints:^(MASConstraintMaker *make) {
+        @strongify(self);
+        make.edges.equalTo(self);
+    }];
+    
+    [percentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.top.and.bottom.equalTo(self);
+        make.right.equalTo(self).multipliedBy(percent);
+    }];
+}
+
 @end
