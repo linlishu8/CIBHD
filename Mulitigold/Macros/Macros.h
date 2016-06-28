@@ -62,11 +62,14 @@
 #define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 
 //首页
-#define GoldRateAndSysTime @"/api/inrate/getGoldRateAndSysTime"
+#define GoldRateAndSysTime @"api/inrate/getGoldRateAndSysTime"
 #define BannerListPage @"banner/bannerListPage"
 
 //存金
-#define GoldIncome @"/api/inrate/getInteralRate"
-#define DetailForUseNew @"/api/banklist/queryLcDetailForUseNew"
+#define GoldIncome @"api/inrate/getInteralRate"
+#define DetailForUseNew @"api/banklist/queryLcDetailForUseNew"
+
+//用户登录
+#define GoldAccountInformation @"pri/api/accountInfo/goldAccountInformationQuery"
 
 #endif /* Macros_h */

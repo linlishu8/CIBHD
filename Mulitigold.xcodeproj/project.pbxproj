@@ -45,12 +45,14 @@
 		18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18401A751CED6370005DFB43 /* UIImage+Color.m */; };
 		184361E71D1CE2F700E5927B /* MGUserNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184361E61D1CE2F700E5927B /* MGUserNewsCell.m */; };
 		1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */; };
+		1897345A1D225E8C00A4FE54 /* MBProgressHUD+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 189734591D225E8C00A4FE54 /* MBProgressHUD+Custom.m */; };
 		18BF2EFE1D1928280047394D /* BaseRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2EFD1D1928280047394D /* BaseRefreshHeader.m */; };
 		18C861681CE971B2005FC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C861671CE971B2005FC4EA /* main.m */; };
 		18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C8616A1CE971B2005FC4EA /* AppDelegate.m */; };
 		18C861761CE971B2005FC4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C861741CE971B2005FC4EA /* LaunchScreen.storyboard */; };
 		18C992C01D0FDFB200A9ED2D /* ZYKeyboardUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C992BF1D0FDFB200A9ED2D /* ZYKeyboardUtil.m */; };
 		18C992C31D0FE55700A9ED2D /* UIView+FreeBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C992C21D0FE55700A9ED2D /* UIView+FreeBorder.m */; };
+		18D033B91D2217F800848EA1 /* MGUserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D033B81D2217F800848EA1 /* MGUserInformation.m */; };
 		18ED53201CED9D6B00F5F898 /* ACTableViewDelegte.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */; };
 		18F8548E1D0FA9840081FBB6 /* MGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8548D1D0FA9840081FBB6 /* MGLoginViewController.m */; };
 		43DFC672F77565789664AFA6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8B8D4F6F1C104C7B256E20 /* libPods.a */; };
@@ -134,6 +136,8 @@
 		1875A36F1CE9AA3C00E7AB84 /* Mulitigold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mulitigold-Prefix.pch"; sourceTree = "<group>"; };
 		1875A3721CE9B85A00E7AB84 /* MGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarController.h; sourceTree = "<group>"; };
 		1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarController.m; sourceTree = "<group>"; };
+		189734581D225E8C00A4FE54 /* MBProgressHUD+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Custom.h"; sourceTree = "<group>"; };
+		189734591D225E8C00A4FE54 /* MBProgressHUD+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Custom.m"; sourceTree = "<group>"; };
 		18BF2EFC1D1928280047394D /* BaseRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRefreshHeader.h; sourceTree = "<group>"; };
 		18BF2EFD1D1928280047394D /* BaseRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRefreshHeader.m; sourceTree = "<group>"; };
 		18C861631CE971B2005FC4EA /* Mulitigold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mulitigold.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +150,8 @@
 		18C992BF1D0FDFB200A9ED2D /* ZYKeyboardUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYKeyboardUtil.m; sourceTree = "<group>"; };
 		18C992C11D0FE55700A9ED2D /* UIView+FreeBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FreeBorder.h"; sourceTree = "<group>"; };
 		18C992C21D0FE55700A9ED2D /* UIView+FreeBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FreeBorder.m"; sourceTree = "<group>"; };
+		18D033B71D2217F800848EA1 /* MGUserInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGUserInformation.h; sourceTree = "<group>"; };
+		18D033B81D2217F800848EA1 /* MGUserInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGUserInformation.m; sourceTree = "<group>"; };
 		18ED53141CED90C200F5F898 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		18ED531E1CED9D6B00F5F898 /* ACTableViewDelegte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTableViewDelegte.h; sourceTree = "<group>"; };
 		18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTableViewDelegte.m; sourceTree = "<group>"; };
@@ -171,6 +177,8 @@
 		180237701CEB01F600711C1C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				189734581D225E8C00A4FE54 /* MBProgressHUD+Custom.h */,
+				189734591D225E8C00A4FE54 /* MBProgressHUD+Custom.m */,
 				18401A741CED6370005DFB43 /* UIImage+Color.h */,
 				18401A751CED6370005DFB43 /* UIImage+Color.m */,
 				181169AA1CFBD65A00789BC7 /* UIView+Custom.h */,
@@ -443,6 +451,8 @@
 				18F8548B1D0FA9740081FBB6 /* MGLoginViewController */,
 				1814A5CB1CEC1106002DE7AF /* MGGomeViewController */,
 				1875A3711CE9B83C00E7AB84 /* MGTabBarController */,
+				18D033B71D2217F800848EA1 /* MGUserInformation.h */,
+				18D033B81D2217F800848EA1 /* MGUserInformation.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -693,6 +703,7 @@
 				1808AA321CF3FD4E00465C0E /* BaseTableView.m in Sources */,
 				18ED53201CED9D6B00F5F898 /* ACTableViewDelegte.m in Sources */,
 				183008251CEABF580023D293 /* MGTabBarControllerConfig.m in Sources */,
+				18D033B91D2217F800848EA1 /* MGUserInformation.m in Sources */,
 				182BA39B1CEEACF900672DFA /* UIDevice+UtilNetworking.m in Sources */,
 				18BF2EFE1D1928280047394D /* BaseRefreshHeader.m in Sources */,
 				1808AA3E1CF4478500465C0E /* MGGomeCycleCell.m in Sources */,
@@ -713,6 +724,7 @@
 				182477461D17D86A0014B6AF /* MGGomePriceCell.m in Sources */,
 				18C992C31D0FE55700A9ED2D /* UIView+FreeBorder.m in Sources */,
 				182BA3981CEEACF900672DFA /* YABaseDataEngine.m in Sources */,
+				1897345A1D225E8C00A4FE54 /* MBProgressHUD+Custom.m in Sources */,
 				183628051CEC497A004BBF65 /* Reachability.m in Sources */,
 				1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */,
 				184361E71D1CE2F700E5927B /* MGUserNewsCell.m in Sources */,

@@ -10,5 +10,5 @@
 
 @interface UIDevice (UtilNetworking)
 - (NSString *)platform;
--(NSString *)correspondVersion;
+- (NSString *)correspondVersion;
 @end

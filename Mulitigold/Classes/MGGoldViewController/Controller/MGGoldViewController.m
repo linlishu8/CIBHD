@@ -10,6 +10,7 @@
 #import "MGGoldIncomeCell.h"
 #import "MGUserNewsCell.h"
 #import "MGIncomeModel.h"
+#import "MGLoginViewController.h"
 
 @interface MGGoldViewController ()
 
@@ -89,6 +90,20 @@
             return @"MGGoldIncomeCell";
         }
         return @"MGUserNewsCell";
+    };
+    
+    self.tableView.tableDelegate.selectRow = ^(NSIndexPath *path) {
+        @strongify(self);
+        [MBProgressHUD showMBProgressHUD:self.navigationController.view];
+        [[MGUserInformation sharedInstance] goldAccountInformationQuery:^(MGAccountModel *model) {
+            [MBProgressHUD hideMBProgressHUD:self.navigationController.view];
+            if ([model.rntCode isEqualToString:@"UserNotLogin"]) {
+                MGLoginViewController *loginView = [[MGLoginViewController alloc] init];
+                [self presentViewController:loginView animated:YES completion:nil];
+            } else {
+            
+            }
+        }];
     };
 }
 
