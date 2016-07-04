@@ -7,8 +7,9 @@
 //
 
 #import <Mantle/Mantle.h>
+#import <MTLFMDBAdapter/MTLFMDBAdapter.h>
 
-@interface BannerDataModel : MTLModel<MTLJSONSerializing>
+@interface BannerDataModel : MTLModel<MTLJSONSerializing,MTLFMDBSerializing>
 
 //@property (nonatomic, copy, readonly) NSString *bannerId;
 @property (nonatomic, copy, readonly) NSString *content;

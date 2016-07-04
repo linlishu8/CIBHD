@@ -72,4 +72,7 @@
 //用户登录
 #define GoldAccountInformation @"pri/api/accountInfo/goldAccountInformationQuery"
 
+//用户注册验证码
+#define ImageVerifyCode @"api/verificationCode/getImageVerifyCode"
+
 #endif /* Macros_h */

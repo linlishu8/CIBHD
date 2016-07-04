@@ -7,6 +7,7 @@
 //
 
 #import "MGLoginViewController.h"
+#import "MGRegisterViewController.h"
 
 @interface MGLoginViewController ()<UITextFieldDelegate>
 
@@ -15,6 +16,12 @@
 @end
 
 @implementation MGLoginViewController
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBar.hidden = YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -74,6 +81,12 @@
     [scrollView addSubview:forgetButton];
     
     UIButton *registerButton = [UIButton buttonText:@"注册" font:SYSTEMFONT(14.0) textColor:COLOR333333];
+    [registerButton addActionHandler:^(NSInteger tag) {
+        @strongify(self);
+        MGRegisterViewController *registerView = [[MGRegisterViewController alloc] init];
+        [self.navigationController pushViewController:registerView animated:YES];
+        
+    }];
     [scrollView addSubview:registerButton];
     /**
      *  布局
@@ -134,7 +147,7 @@
         make.edges.mas_equalTo(self.view);
         
         // 让scrollview的contentSize随着内容的增多而变化
-//        make.bottom.mas_equalTo(lastLabel.mas_bottom).offset(20);
+        make.bottom.mas_equalTo(registerButton.mas_bottom).offset(20);
     }];
 }
 

@@ -40,8 +40,8 @@
 		183196C01D1BBB5500B1D315 /* MGGoldIncomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183196BF1D1BBB5500B1D315 /* MGGoldIncomeCell.m */; };
 		183196C31D1BBDCA00B1D315 /* MGIncomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183196C21D1BBDCA00B1D315 /* MGIncomeModel.m */; };
 		183628051CEC497A004BBF65 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628041CEC497A004BBF65 /* Reachability.m */; };
-		183628081CEC539B004BBF65 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628071CEC539B004BBF65 /* BaseViewController.m */; };
 		1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */; };
+		1837D1E41D2A52EE004E5CE9 /* MGDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D1E31D2A52EE004E5CE9 /* MGDataBase.m */; };
 		18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18401A751CED6370005DFB43 /* UIImage+Color.m */; };
 		184361E71D1CE2F700E5927B /* MGUserNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184361E61D1CE2F700E5927B /* MGUserNewsCell.m */; };
 		1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */; };
@@ -54,6 +54,10 @@
 		18C992C31D0FE55700A9ED2D /* UIView+FreeBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C992C21D0FE55700A9ED2D /* UIView+FreeBorder.m */; };
 		18D033B91D2217F800848EA1 /* MGUserInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D033B81D2217F800848EA1 /* MGUserInformation.m */; };
 		18ED53201CED9D6B00F5F898 /* ACTableViewDelegte.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */; };
+		18EE5C6F1D236ECA002B0DEE /* MGRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE5C6E1D236ECA002B0DEE /* MGRegisterViewController.m */; };
+		18EE5C741D23A532002B0DEE /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE5C731D23A532002B0DEE /* BaseNavigationController.m */; };
+		18EE5C771D23A60A002B0DEE /* UIViewController+CustomBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE5C761D23A60A002B0DEE /* UIViewController+CustomBackBarButtonItem.m */; };
+		18EE5C7A1D23A6A3002B0DEE /* UIBarButtonItem+CustomImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE5C791D23A6A3002B0DEE /* UIBarButtonItem+CustomImage.m */; };
 		18F8548E1D0FA9840081FBB6 /* MGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F8548D1D0FA9840081FBB6 /* MGLoginViewController.m */; };
 		43DFC672F77565789664AFA6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8B8D4F6F1C104C7B256E20 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -125,10 +129,10 @@
 		183196C21D1BBDCA00B1D315 /* MGIncomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGIncomeModel.m; sourceTree = "<group>"; };
 		183628031CEC497A004BBF65 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		183628041CEC497A004BBF65 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		183628061CEC539B004BBF65 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		183628071CEC539B004BBF65 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		1836280A1CEC53C4004BBF65 /* BaseNavBarHiddenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavBarHiddenController.h; sourceTree = "<group>"; };
 		1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavBarHiddenController.m; sourceTree = "<group>"; };
+		1837D1E21D2A52EE004E5CE9 /* MGDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGDataBase.h; sourceTree = "<group>"; };
+		1837D1E31D2A52EE004E5CE9 /* MGDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGDataBase.m; sourceTree = "<group>"; };
 		18401A741CED6370005DFB43 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		18401A751CED6370005DFB43 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		184361E51D1CE2F700E5927B /* MGUserNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGUserNewsCell.h; sourceTree = "<group>"; };
@@ -155,6 +159,14 @@
 		18ED53141CED90C200F5F898 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		18ED531E1CED9D6B00F5F898 /* ACTableViewDelegte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTableViewDelegte.h; sourceTree = "<group>"; };
 		18ED531F1CED9D6B00F5F898 /* ACTableViewDelegte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTableViewDelegte.m; sourceTree = "<group>"; };
+		18EE5C6D1D236ECA002B0DEE /* MGRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRegisterViewController.h; sourceTree = "<group>"; };
+		18EE5C6E1D236ECA002B0DEE /* MGRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRegisterViewController.m; sourceTree = "<group>"; };
+		18EE5C721D23A532002B0DEE /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		18EE5C731D23A532002B0DEE /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		18EE5C751D23A60A002B0DEE /* UIViewController+CustomBackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CustomBackBarButtonItem.h"; sourceTree = "<group>"; };
+		18EE5C761D23A60A002B0DEE /* UIViewController+CustomBackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CustomBackBarButtonItem.m"; sourceTree = "<group>"; };
+		18EE5C781D23A6A3002B0DEE /* UIBarButtonItem+CustomImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CustomImage.h"; sourceTree = "<group>"; };
+		18EE5C791D23A6A3002B0DEE /* UIBarButtonItem+CustomImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CustomImage.m"; sourceTree = "<group>"; };
 		18F8548C1D0FA9840081FBB6 /* MGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLoginViewController.h; sourceTree = "<group>"; };
 		18F8548D1D0FA9840081FBB6 /* MGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGLoginViewController.m; sourceTree = "<group>"; };
 		5D575FBB2A1E363F99F97366 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +197,10 @@
 				181169AB1CFBD65A00789BC7 /* UIView+Custom.m */,
 				18C992C11D0FE55700A9ED2D /* UIView+FreeBorder.h */,
 				18C992C21D0FE55700A9ED2D /* UIView+FreeBorder.m */,
+				18EE5C751D23A60A002B0DEE /* UIViewController+CustomBackBarButtonItem.h */,
+				18EE5C761D23A60A002B0DEE /* UIViewController+CustomBackBarButtonItem.m */,
+				18EE5C781D23A6A3002B0DEE /* UIBarButtonItem+CustomImage.h */,
+				18EE5C791D23A6A3002B0DEE /* UIBarButtonItem+CustomImage.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -264,21 +280,12 @@
 		1814A5DA1CEC1B42002DE7AF /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				18EE5C711D23A51E002B0DEE /* BaseNavigationController */,
 				18BF2EFB1D1928170047394D /* BaseRefreshHeader */,
 				1808AA2F1CF3FD4400465C0E /* BaseTableView */,
 				183628091CEC53BB004BBF65 /* BaseNavBarHiddenController */,
-				1814A5DB1CEC1B42002DE7AF /* BaseController */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		1814A5DB1CEC1B42002DE7AF /* BaseController */ = {
-			isa = PBXGroup;
-			children = (
-				183628061CEC539B004BBF65 /* BaseViewController.h */,
-				183628071CEC539B004BBF65 /* BaseViewController.m */,
-			);
-			path = BaseController;
 			sourceTree = "<group>";
 		};
 		182BA3661CEEACF900672DFA /* HTTP */ = {
@@ -453,6 +460,8 @@
 				1875A3711CE9B83C00E7AB84 /* MGTabBarController */,
 				18D033B71D2217F800848EA1 /* MGUserInformation.h */,
 				18D033B81D2217F800848EA1 /* MGUserInformation.m */,
+				1837D1E21D2A52EE004E5CE9 /* MGDataBase.h */,
+				1837D1E31D2A52EE004E5CE9 /* MGDataBase.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -551,11 +560,22 @@
 			path = ACTableViewDelegte;
 			sourceTree = "<group>";
 		};
+		18EE5C711D23A51E002B0DEE /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				18EE5C721D23A532002B0DEE /* BaseNavigationController.h */,
+				18EE5C731D23A532002B0DEE /* BaseNavigationController.m */,
+			);
+			path = BaseNavigationController;
+			sourceTree = "<group>";
+		};
 		18F8548B1D0FA9740081FBB6 /* MGLoginViewController */ = {
 			isa = PBXGroup;
 			children = (
 				18F8548C1D0FA9840081FBB6 /* MGLoginViewController.h */,
 				18F8548D1D0FA9840081FBB6 /* MGLoginViewController.m */,
+				18EE5C6D1D236ECA002B0DEE /* MGRegisterViewController.h */,
+				18EE5C6E1D236ECA002B0DEE /* MGRegisterViewController.m */,
 			);
 			path = MGLoginViewController;
 			sourceTree = "<group>";
@@ -682,16 +702,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EE5C7A1D23A6A3002B0DEE /* UIBarButtonItem+CustomImage.m in Sources */,
 				183196BD1D1BB9CF00B1D315 /* MGGoldViewController.m in Sources */,
 				182BA39A1CEEACF900672DFA /* NSString+UtilNetworking.m in Sources */,
 				182BA3AB1CEEF54A00672DFA /* YAAppContext.m in Sources */,
 				183196C31D1BBDCA00B1D315 /* MGIncomeModel.m in Sources */,
 				18C8616B1CE971B2005FC4EA /* AppDelegate.m in Sources */,
 				182BA3A81CEEF53B00672DFA /* YACommonParamsGenerator.m in Sources */,
-				183628081CEC539B004BBF65 /* BaseViewController.m in Sources */,
 				18C992C01D0FDFB200A9ED2D /* ZYKeyboardUtil.m in Sources */,
 				18F8548E1D0FA9840081FBB6 /* MGLoginViewController.m in Sources */,
 				182BA39F1CEEACF900672DFA /* YABaseServers.m in Sources */,
+				1837D1E41D2A52EE004E5CE9 /* MGDataBase.m in Sources */,
+				18EE5C771D23A60A002B0DEE /* UIViewController+CustomBackBarButtonItem.m in Sources */,
 				18C861681CE971B2005FC4EA /* main.m in Sources */,
 				182BA39D1CEEACF900672DFA /* FWZServer.m in Sources */,
 				182BA3A51CEEAF5D00672DFA /* MGGomeDataEngine.m in Sources */,
@@ -699,6 +721,7 @@
 				182BA3A11CEEACF900672DFA /* YAAPIClient.m in Sources */,
 				1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */,
 				1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */,
+				18EE5C6F1D236ECA002B0DEE /* MGRegisterViewController.m in Sources */,
 				182BA3941CEEACF900672DFA /* YAAPIURLRequestGenerator.m in Sources */,
 				1808AA321CF3FD4E00465C0E /* BaseTableView.m in Sources */,
 				18ED53201CED9D6B00F5F898 /* ACTableViewDelegte.m in Sources */,
@@ -718,6 +741,7 @@
 				1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */,
 				1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */,
 				18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */,
+				18EE5C741D23A532002B0DEE /* BaseNavigationController.m in Sources */,
 				182BA39E1CEEACF900672DFA /* YAServer.m in Sources */,
 				1808AA3B1CF446F300465C0E /* MGGomeMenuCell.m in Sources */,
 				182477431D17D20C0014B6AF /* MGGomeLogoCell.m in Sources */,

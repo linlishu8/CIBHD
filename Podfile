@@ -7,3 +7,4 @@ pod 'Mantle'
 pod 'MJRefresh'
 pod 'UITableView+FDTemplateLayoutCell'
 pod 'ScreenCompatible_LFL'#分辨率适配
+pod 'MTLFMDBAdapter'#Mantle 和 FMDB 的转换工具

@@ -24,6 +24,26 @@
              };
 }
 
++ (NSDictionary *)FMDBColumnsByPropertyKey
+{
+    return @{
+             @"content": @"content",
+             @"elementDesc": @"elementDesc",
+             @"elementTitle": @"elementTitle",
+             @"imgUrl": @"imgUrl",
+             @"tolink": @"tolink"
+             };
+}
+
++ (NSArray *)FMDBPrimaryKeys
+{
+    return @[@"imgUrl"];
+}
+
++ (NSString *)FMDBTableName {
+    return @"testClass";
+}
+
 @end
 
 @implementation BannerFootModel

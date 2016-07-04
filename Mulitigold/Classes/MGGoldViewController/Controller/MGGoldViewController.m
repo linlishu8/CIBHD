@@ -11,6 +11,7 @@
 #import "MGUserNewsCell.h"
 #import "MGIncomeModel.h"
 #import "MGLoginViewController.h"
+#import "BaseNavigationController.h"
 
 @interface MGGoldViewController ()
 
@@ -99,7 +100,8 @@
             [MBProgressHUD hideMBProgressHUD:self.navigationController.view];
             if ([model.rntCode isEqualToString:@"UserNotLogin"]) {
                 MGLoginViewController *loginView = [[MGLoginViewController alloc] init];
-                [self presentViewController:loginView animated:YES completion:nil];
+                BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:loginView];
+                [self presentViewController:nav animated:YES completion:nil];
             } else {
             
             }
