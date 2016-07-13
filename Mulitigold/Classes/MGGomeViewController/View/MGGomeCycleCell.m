@@ -68,6 +68,7 @@
                 if(error){
                     NSLog(@"error:%@, Info:%@",error,error.userInfo);
                 }
+                [[MGDataBase shareDataBase] createTable:[BannerDataModel class]];
                 [bannerItems addObject:model];
             }
             self.bannerItems = bannerItems;

@@ -12,6 +12,6 @@
 
 + (instancetype)shareDataBase;
 
-- (void)createTables;
+- (void)createTable:(Class)aClass;
 
 @end
