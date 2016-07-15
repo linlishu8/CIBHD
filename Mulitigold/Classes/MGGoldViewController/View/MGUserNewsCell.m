@@ -159,8 +159,8 @@
 {
     self.titleLabel.text = newsModel.lcPrdName;
     self.codeLabel.text = [NSString stringWithFormat:@"产品编号%@",newsModel.lcPrdCode];
-    self.inrateLabel.text = [NSString stringWithFormat:@"%.2f%@",[newsModel.inrate floatValue] * 100,@"%"];
-    self.timeLimitLabel.text = [NSString stringWithFormat:@"%ld天",(long)[newsModel.timeLimit integerValue]];
+    self.inrateLabel.text = [NSString stringWithFormat:@"%.2f%@",newsModel.inrate * 100,@"%"];
+    self.timeLimitLabel.text = [NSString stringWithFormat:@"%d天",newsModel.timeLimit];
     self.balanceLabel.text = [NSString stringWithFormat:@"%.2f%@",(1 - [newsModel.balance floatValue]) * 100,@"%"];
     
     [self.percentView addBorderLayerWithColor:1 - [newsModel.balance floatValue]];

@@ -30,7 +30,7 @@
 
 @end
 
-@interface BannerImageModel : MTLModel<MTLJSONSerializing>
+@interface BannerImageModel : MTLModel<MTLJSONSerializing,MTLFMDBSerializing>
 
 @property (nonatomic, copy, readonly) NSString *imgUrl;
 

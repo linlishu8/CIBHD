@@ -1,4 +1,5 @@
 pod 'AFNetworking'
+pod 'Reachability'
 pod 'Masonry'
 pod 'SDWebImage'
 pod 'SDCycleScrollView'#图片轮播器

@@ -13,13 +13,13 @@
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
 //             @"bannerId": @"bannerId",
-             @"content": @"content",
-             @"elementDesc": @"elementDesc",
+             @"content" : @"content",
+             @"elementDesc" : @"elementDesc",
 //             @"elementSequence": @"elementSequence",
-             @"elementTitle": @"elementTitle",
-             @"imgUrl": @"imgUrl",
+             @"elementTitle" : @"elementTitle",
+             @"imgUrl" : @"imgUrl",
 //             @"target": @"target",
-             @"tolink": @"tolink"
+             @"tolink" : @"tolink"
 //             @"type": @"type"
              };
 }
@@ -27,11 +27,11 @@
 + (NSDictionary *)FMDBColumnsByPropertyKey
 {
     return @{
-             @"content": @"content",
-             @"elementDesc": @"elementDesc",
-             @"elementTitle": @"elementTitle",
-             @"imgUrl": @"imgUrl",
-             @"tolink": @"tolink"
+             @"content" : @"content",
+             @"elementDesc" : @"elementDesc",
+             @"elementTitle" : @"elementTitle",
+             @"imgUrl" : @"imgUrl",
+             @"tolink" : @"tolink"
              };
 }
 
@@ -41,7 +41,7 @@
 }
 
 + (NSString *)FMDBTableName {
-    return @"testClass";
+    return @"BannerDataModel";
 }
 
 @end
@@ -50,8 +50,8 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"responseParams": @"responseParams",
-             @"goldRate": @"responseParams.goldRate"
+             @"responseParams" : @"responseParams",
+             @"goldRate" : @"responseParams.goldRate"
              };
 }
 
@@ -61,8 +61,24 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
-             @"imgUrl": @"imgUrl"
+             @"imgUrl" : @"imgUrl"
              };
+}
+
++ (NSDictionary *)FMDBColumnsByPropertyKey
+{
+    return @{
+             @"imgUrl" : @"imgUrl"
+             };
+}
+
++ (NSArray *)FMDBPrimaryKeys
+{
+    return @[@"imgUrl"];
+}
+
++ (NSString *)FMDBTableName {
+    return @"BannerImageModel";
 }
 
 @end

@@ -30,4 +30,24 @@
              };
 }
 
++ (NSDictionary *)FMDBColumnsByPropertyKey
+{
+    return @{
+             @"balance": @"balance",
+             @"timeLimit": @"timeLimit",
+             @"lcPrdName": @"lcPrdName",
+             @"lcPrdCode": @"lcPrdCode",
+             @"inrate": @"inrate"
+             };
+}
+
++ (NSArray *)FMDBPrimaryKeys
+{
+    return @[@"lcPrdCode"];
+}
+
++ (NSString *)FMDBTableName {
+    return @"MGForUseNewModel";
+}
+
 @end

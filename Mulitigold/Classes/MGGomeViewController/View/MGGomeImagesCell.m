@@ -22,6 +22,12 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        //取本地
+        NSArray *bannerItems = [[MGDataBase shareDataBase] findAll:[BannerImageModel class]];
+        if ([bannerItems count] > 0) {
+            self.imageItems = bannerItems;
+        }
+        
         [self httpRequestBannerImages];
     }
     return self;
@@ -38,12 +44,15 @@
             NSLog(@"%@",error.localizedDescription);
         } else {
             NSMutableArray *imageItems = [NSMutableArray array];
+            [[MGDataBase shareDataBase] createTable:[BannerImageModel class]];//取本地
+            
             for (NSDictionary *orderDict in data[@"result"][@"bannerElements"]) {
                 NSError* error;
                 BannerImageModel *model = [MTLJSONAdapter modelOfClass:[BannerImageModel class] fromJSONDictionary:orderDict error:&error];
                 if(error){
                     NSLog(@"error:%@, Info:%@",error,error.userInfo);
                 }
+                [[MGDataBase shareDataBase] insertModel:model];//取本地
                 [imageItems addObject:model];
             }
             self.imageItems = imageItems;

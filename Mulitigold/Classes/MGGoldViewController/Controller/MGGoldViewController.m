@@ -31,6 +31,7 @@
     [super viewDidLoad];
     self.navigationItem.titleView = [UILabel lableTitleView:@"存金"];
     isComplete = NO;
+    
     [self setUpTableView];
 }
 
@@ -40,6 +41,14 @@
     self.tableView = [[BaseTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     [self.tableView addTableViewRefreshHeader:self selector:@selector(loadNewData)];
     [self.view addSubview:self.tableView];
+    
+    //取本地
+    NSArray *items = [[MGDataBase shareDataBase] findAll:[MGForUseNewModel class]];
+    if ([items count] > 0) {
+        self.useNews = items;
+        [self.tableView reloadData];
+    }
+    
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
         make.edges.equalTo(self.view);
@@ -145,12 +154,15 @@
             NSLog(@"error:%@",error.localizedDescription);
         } else {
             NSMutableArray *useNews = [NSMutableArray array];
+            [[MGDataBase shareDataBase] createTable:[MGForUseNewModel class]];//取本地
+            
             for (NSDictionary *orderDict in data[@"responseParams"]) {
                 NSError* error;
                 MGForUseNewModel *model = [MTLJSONAdapter modelOfClass:[MGForUseNewModel class] fromJSONDictionary:orderDict error:&error];
                 if(error){
                     NSLog(@"error:%@, Info:%@",error,error.userInfo);
                 } else {
+                    [[MGDataBase shareDataBase] insertModel:model];//取本地
                     [useNews addObject:model];
                 }
             }

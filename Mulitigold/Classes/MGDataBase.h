@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MTLFMDBAdapter.h"
 
 @interface MGDataBase : NSObject
 
 + (instancetype)shareDataBase;
 
+- (NSArray *)findAll:(Class)aClass;
+
 - (void)createTable:(Class)aClass;
+
+- (void)insertModel:(MTLModel<MTLFMDBSerializing> *)model;
+- (void)insertModel:(MTLModel<MTLFMDBSerializing> *)model completion:(void(^)(BOOL success))completion;
 
 @end

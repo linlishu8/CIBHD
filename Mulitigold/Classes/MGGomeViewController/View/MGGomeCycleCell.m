@@ -46,7 +46,15 @@
             make.width.and.height.equalTo(@(WIDTH_LFL(30)));
         }];
         
+        //取本地
+        NSArray *bannerItems = [[MGDataBase shareDataBase] findAll:[BannerDataModel class]];
+        if ([bannerItems count] > 0) {
+            self.bannerItems = bannerItems;
+        }
+        //取网络
         [self httpRequestBannerElements];
+        
+        
     }
     return self;
 }
@@ -62,13 +70,15 @@
             NSLog(@"%@",error.localizedDescription);
         } else {
             NSMutableArray *bannerItems = [NSMutableArray array];
+            [[MGDataBase shareDataBase] createTable:[BannerDataModel class]];//取本地
+            
             for (NSDictionary *orderDict in data[@"result"][@"bannerElements"]) {
                 NSError* error;
                 BannerDataModel *model = [MTLJSONAdapter modelOfClass:[BannerDataModel class] fromJSONDictionary:orderDict error:&error];
                 if(error){
                     NSLog(@"error:%@, Info:%@",error,error.userInfo);
                 }
-                [[MGDataBase shareDataBase] createTable:[BannerDataModel class]];
+                [[MGDataBase shareDataBase] insertModel:model];//取本地
                 [bannerItems addObject:model];
             }
             self.bannerItems = bannerItems;

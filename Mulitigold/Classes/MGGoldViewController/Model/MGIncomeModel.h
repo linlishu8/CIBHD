@@ -14,12 +14,12 @@
 
 @end
 
-@interface MGForUseNewModel : MTLModel<MTLJSONSerializing>
+@interface MGForUseNewModel : MTLModel<MTLJSONSerializing,MTLFMDBSerializing>
 
 @property (nonatomic, copy, readonly) NSString *balance;//已售百分比
-@property (nonatomic, copy, readonly) NSNumber *timeLimit;//固定周期
+@property (nonatomic, readonly) int timeLimit;//固定周期
 @property (nonatomic, copy, readonly) NSString *lcPrdName;//产品名称
 @property (nonatomic, copy, readonly) NSString *lcPrdCode;//产品编号
-@property (nonatomic, copy, readonly) NSNumber *inrate;//年化收益
+@property (nonatomic, readonly) double inrate;//年化收益
 
 @end

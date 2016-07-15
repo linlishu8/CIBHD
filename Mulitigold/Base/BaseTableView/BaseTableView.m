@@ -8,6 +8,7 @@
 
 #import "BaseTableView.h"
 #import "BaseRefreshHeader.h"
+#import "ReachabilityTools.h"
 
 @implementation BaseTableView
 
@@ -31,7 +32,9 @@
     // 隐藏时间
     header.lastUpdatedTimeLabel.hidden = YES;
     // 马上进入刷新状态
-    [header beginRefreshing];
+    if ([ReachabilityTools sharedManager].isConnect) {
+        [header beginRefreshing];
+    }
     
     self.mj_header = header;
 }

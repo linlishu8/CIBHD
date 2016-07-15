@@ -14,7 +14,6 @@
 		181169AC1CFBD65A00789BC7 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 181169AB1CFBD65A00789BC7 /* UIView+Custom.m */; };
 		1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */; };
 		1814A5E11CEC4442002DE7AF /* BannerDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E01CEC4442002DE7AF /* BannerDataModel.m */; };
-		1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */; };
 		1824773F1D17851D0014B6AF /* MGGomeImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824773E1D17851D0014B6AF /* MGGomeImagesCell.m */; };
 		182477431D17D20C0014B6AF /* MGGomeLogoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182477421D17D20C0014B6AF /* MGGomeLogoCell.m */; };
 		182477461D17D86A0014B6AF /* MGGomePriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182477451D17D86A0014B6AF /* MGGomePriceCell.m */; };
@@ -39,11 +38,11 @@
 		183196BD1D1BB9CF00B1D315 /* MGGoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183196BA1D1BB9CF00B1D315 /* MGGoldViewController.m */; };
 		183196C01D1BBB5500B1D315 /* MGGoldIncomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183196BF1D1BBB5500B1D315 /* MGGoldIncomeCell.m */; };
 		183196C31D1BBDCA00B1D315 /* MGIncomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 183196C21D1BBDCA00B1D315 /* MGIncomeModel.m */; };
-		183628051CEC497A004BBF65 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 183628041CEC497A004BBF65 /* Reachability.m */; };
 		1836280C1CEC53C4004BBF65 /* BaseNavBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */; };
 		1837D1E41D2A52EE004E5CE9 /* MGDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1837D1E31D2A52EE004E5CE9 /* MGDataBase.m */; };
 		18401A761CED6370005DFB43 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 18401A751CED6370005DFB43 /* UIImage+Color.m */; };
 		184361E71D1CE2F700E5927B /* MGUserNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184361E61D1CE2F700E5927B /* MGUserNewsCell.m */; };
+		186DE6FA1D388D52004121C1 /* ReachabilityTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 186DE6F91D388D52004121C1 /* ReachabilityTools.m */; };
 		1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */; };
 		1897345A1D225E8C00A4FE54 /* MBProgressHUD+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 189734591D225E8C00A4FE54 /* MBProgressHUD+Custom.m */; };
 		18BF2EFE1D1928280047394D /* BaseRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BF2EFD1D1928280047394D /* BaseRefreshHeader.m */; };
@@ -76,8 +75,6 @@
 		1814A5D11CEC13C8002DE7AF /* MGGomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeViewController.m; sourceTree = "<group>"; };
 		1814A5DF1CEC4442002DE7AF /* BannerDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerDataModel.h; sourceTree = "<group>"; };
 		1814A5E01CEC4442002DE7AF /* BannerDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerDataModel.m; sourceTree = "<group>"; };
-		1814A5E21CEC48EF002DE7AF /* NetworkUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkUnit.h; sourceTree = "<group>"; };
-		1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkUnit.m; sourceTree = "<group>"; };
 		1824773D1D17851D0014B6AF /* MGGomeImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeImagesCell.h; sourceTree = "<group>"; };
 		1824773E1D17851D0014B6AF /* MGGomeImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGomeImagesCell.m; sourceTree = "<group>"; };
 		182477411D17D20C0014B6AF /* MGGomeLogoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGomeLogoCell.h; sourceTree = "<group>"; };
@@ -127,8 +124,6 @@
 		183196BF1D1BBB5500B1D315 /* MGGoldIncomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGGoldIncomeCell.m; path = Mulitigold/Classes/MGGoldViewController/View/MGGoldIncomeCell.m; sourceTree = SOURCE_ROOT; };
 		183196C11D1BBDCA00B1D315 /* MGIncomeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGIncomeModel.h; sourceTree = "<group>"; };
 		183196C21D1BBDCA00B1D315 /* MGIncomeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGIncomeModel.m; sourceTree = "<group>"; };
-		183628031CEC497A004BBF65 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		183628041CEC497A004BBF65 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		1836280A1CEC53C4004BBF65 /* BaseNavBarHiddenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavBarHiddenController.h; sourceTree = "<group>"; };
 		1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavBarHiddenController.m; sourceTree = "<group>"; };
 		1837D1E21D2A52EE004E5CE9 /* MGDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGDataBase.h; sourceTree = "<group>"; };
@@ -137,6 +132,8 @@
 		18401A751CED6370005DFB43 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		184361E51D1CE2F700E5927B /* MGUserNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGUserNewsCell.h; sourceTree = "<group>"; };
 		184361E61D1CE2F700E5927B /* MGUserNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGUserNewsCell.m; sourceTree = "<group>"; };
+		186DE6F81D388D52004121C1 /* ReachabilityTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityTools.h; sourceTree = "<group>"; };
+		186DE6F91D388D52004121C1 /* ReachabilityTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityTools.m; sourceTree = "<group>"; };
 		1875A36F1CE9AA3C00E7AB84 /* Mulitigold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mulitigold-Prefix.pch"; sourceTree = "<group>"; };
 		1875A3721CE9B85A00E7AB84 /* MGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarController.h; sourceTree = "<group>"; };
 		1875A3731CE9B85A00E7AB84 /* MGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarController.m; sourceTree = "<group>"; };
@@ -217,8 +214,6 @@
 			isa = PBXGroup;
 			children = (
 				182BA3661CEEACF900672DFA /* HTTP */,
-				1814A5E21CEC48EF002DE7AF /* NetworkUnit.h */,
-				1814A5E31CEC48EF002DE7AF /* NetworkUnit.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -426,20 +421,11 @@
 		183628011CEC4957004BBF65 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				186DE6F71D388D3C004121C1 /* ReachabilityTools */,
 				18C992BD1D0FDFA500A9ED2D /* Keyboard */,
 				18ED531D1CED9D6200F5F898 /* ACTableViewDelegte */,
-				183628021CEC4974004BBF65 /* Reachability */,
 			);
 			path = Tool;
-			sourceTree = "<group>";
-		};
-		183628021CEC4974004BBF65 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				183628031CEC497A004BBF65 /* Reachability.h */,
-				183628041CEC497A004BBF65 /* Reachability.m */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 		183628091CEC53BB004BBF65 /* BaseNavBarHiddenController */ = {
@@ -449,6 +435,15 @@
 				1836280B1CEC53C4004BBF65 /* BaseNavBarHiddenController.m */,
 			);
 			path = BaseNavBarHiddenController;
+			sourceTree = "<group>";
+		};
+		186DE6F71D388D3C004121C1 /* ReachabilityTools */ = {
+			isa = PBXGroup;
+			children = (
+				186DE6F81D388D52004121C1 /* ReachabilityTools.h */,
+				186DE6F91D388D52004121C1 /* ReachabilityTools.m */,
+			);
+			path = ReachabilityTools;
 			sourceTree = "<group>";
 		};
 		1875A3701CE9B77900E7AB84 /* Classes */ = {
@@ -719,7 +714,6 @@
 				182BA3A51CEEAF5D00672DFA /* MGGomeDataEngine.m in Sources */,
 				182BA3931CEEACF900672DFA /* YAAPIResponseErrorHandler.m in Sources */,
 				182BA3A11CEEACF900672DFA /* YAAPIClient.m in Sources */,
-				1814A5E41CEC48EF002DE7AF /* NetworkUnit.m in Sources */,
 				1875A3741CE9B85A00E7AB84 /* MGTabBarController.m in Sources */,
 				18EE5C6F1D236ECA002B0DEE /* MGRegisterViewController.m in Sources */,
 				182BA3941CEEACF900672DFA /* YAAPIURLRequestGenerator.m in Sources */,
@@ -732,6 +726,7 @@
 				1808AA3E1CF4478500465C0E /* MGGomeCycleCell.m in Sources */,
 				1824773F1D17851D0014B6AF /* MGGomeImagesCell.m in Sources */,
 				182BA3A01CEEACF900672DFA /* YAServerFactory.m in Sources */,
+				186DE6FA1D388D52004121C1 /* ReachabilityTools.m in Sources */,
 				182BA3921CEEACF900672DFA /* YAAPIBaseRequestDataModel.m in Sources */,
 				181169AC1CFBD65A00789BC7 /* UIView+Custom.m in Sources */,
 				182BA39C1CEEACF900672DFA /* YANetworkingAutoCancelRequests.m in Sources */,
@@ -749,7 +744,6 @@
 				18C992C31D0FE55700A9ED2D /* UIView+FreeBorder.m in Sources */,
 				182BA3981CEEACF900672DFA /* YABaseDataEngine.m in Sources */,
 				1897345A1D225E8C00A4FE54 /* MBProgressHUD+Custom.m in Sources */,
-				183628051CEC497A004BBF65 /* Reachability.m in Sources */,
 				1814A5D21CEC13C8002DE7AF /* MGGomeViewController.m in Sources */,
 				184361E71D1CE2F700E5927B /* MGUserNewsCell.m in Sources */,
 			);
