@@ -12,6 +12,7 @@
 #import "MGIncomeModel.h"
 #import "MGLoginViewController.h"
 #import "BaseNavigationController.h"
+#import "NSObject+XWAdd.h"
 
 @interface MGGoldViewController ()
 
@@ -41,6 +42,10 @@
     self.tableView = [[BaseTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     [self.tableView addTableViewRefreshHeader:self selector:@selector(loadNewData)];
     [self.view addSubview:self.tableView];
+    
+    [self xw_addNotificationForName:MGNotificatonKey block:^(NSNotification *notification) {
+        [self.tableView.mj_header beginRefreshing];
+    }];
     
     //取本地
     NSArray *items = [[MGDataBase shareDataBase] findAll:[MGForUseNewModel class]];
@@ -181,6 +186,12 @@
 
 - (void)loadNewData
 {
+    // 马上进入刷新状态
+    if (![ReachabilityTools sharedManager].isConnect) {
+        [self.tableView.mj_header endRefreshing];
+        return;
+    }
+    
     [self.gomeDataEngine cancelRequest];
     
     [self httpRequestIncome];

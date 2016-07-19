@@ -8,9 +8,11 @@
 
 #import "AppDelegate.h"
 #import "MGTabBarControllerConfig.h"
-#import "ReachabilityTools.h"
+#import "NSObject+XWAdd.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, copy) NSString *appReachability;//网络连接是否变化
 
 @end
 
@@ -24,6 +26,16 @@
     self.window.frame = [UIScreen mainScreen].bounds;
     
     [[ReachabilityTools sharedManager] appleReachability];//网络状态监控
+    
+    @weakify(self);
+    [[ReachabilityTools sharedManager] xw_addObserverBlockForKeyPath:@"isConnect" block:^(id obj, id oldVal, id newVal) {
+        @strongify(self);
+        if ([self.appReachability isEqualToString:[NSString stringWithFormat:@"%@",newVal]] || [[NSString stringWithFormat:@"%@",newVal] isEqualToString:@"0"]) {
+            return;
+        }
+        [[NSNotificationCenter defaultCenter] postNotificationName:MGNotificatonKey object:nil userInfo:nil];
+        self.appReachability = [NSString stringWithFormat:@"%@",newVal];
+    }];
     
     
     MGTabBarControllerConfig *tabBarControllerConfig = [[MGTabBarControllerConfig alloc] init];

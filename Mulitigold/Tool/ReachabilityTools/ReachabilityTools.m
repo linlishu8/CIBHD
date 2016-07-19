@@ -12,7 +12,6 @@
 @interface ReachabilityTools ()
 
 @property (nonatomic, strong) Reachability *hostReachability;
-@property (nonatomic, strong) Reachability *routerReachability;
 @property(nonatomic, readwrite) BOOL isConnect;
 
 @end
@@ -43,8 +42,6 @@
         weakSelf.hostReachability = [Reachability reachabilityWithHostName:remoteHostName];
         [weakSelf.hostReachability startNotifier];
         
-        weakSelf.routerReachability = [Reachability reachabilityForInternetConnection];
-        [weakSelf.routerReachability startNotifier];
         // 开启当前线程消息循环
         [[NSRunLoop currentRunLoop] run];
     });
@@ -57,18 +54,6 @@
     if([reach isKindOfClass:[Reachability class]]){
         NetworkStatus status = [reach currentReachabilityStatus];
         // 两种检测:路由与服务器是否可达  三种状态:手机流量联网、WiFi联网、没有联网
-        if (reach == self.routerReachability) {
-            if (status == NotReachable) {
-                NSLog(@"routerReachability NotReachable");
-                self.isConnect = NO;
-            } else if (status == ReachableViaWiFi) {
-                NSLog(@"routerReachability ReachableViaWiFi");
-                self.isConnect = YES;
-            } else if (status == ReachableViaWWAN) {
-                NSLog(@"routerReachability ReachableViaWWAN");
-                self.isConnect = YES;
-            }
-        }
         if (reach == self.hostReachability) {
             if (status == NotReachable) {
                 NSLog(@"hostReachability failed");

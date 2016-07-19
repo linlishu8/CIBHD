@@ -58,6 +58,8 @@
 #define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:HEIGHT_LFL(FONTSIZE)]
 #define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:HEIGHT_LFL(FONTSIZE)]
 
+#define MGNotificatonKey @"MGNotificatonKey"
+
 //获取图片资源
 #define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
 
