@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1834736A1E35A103000A983B /* MGBannerListPageApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 183473691E35A103000A983B /* MGBannerListPageApi.m */; };
+		1834736E1E35B19E000A983B /* MGBannerListPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1834736D1E35B19E000A983B /* MGBannerListPageModel.m */; };
+		183473741E35F5CC000A983B /* MGNavBarHiddenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183473731E35F5CC000A983B /* MGNavBarHiddenController.m */; };
+		186391541E31FBAE0017497B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186391531E31FBAE0017497B /* main.m */; };
+		186391571E31FBAE0017497B /* MGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186391561E31FBAE0017497B /* MGAppDelegate.m */; };
+		1863915F1E31FBAE0017497B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1863915E1E31FBAE0017497B /* Assets.xcassets */; };
+		18E1B10F1E3453320041E1C5 /* MGRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B10E1E3453320041E1C5 /* MGRouter.m */; };
+		18E1B11F1E3494920041E1C5 /* MGHomepageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B11E1E3494920041E1C5 /* MGHomepageViewModel.m */; };
+		18E1B1231E3494BD0041E1C5 /* MGViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B1221E3494BD0041E1C5 /* MGViewModel.m */; };
+		18E1B1261E3495B90041E1C5 /* MGGoldViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B1251E3495B90041E1C5 /* MGGoldViewModel.m */; };
+		18E1B12C1E3496C00041E1C5 /* MGNavigationControllerStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B1291E3496C00041E1C5 /* MGNavigationControllerStack.m */; };
+		18E1B12D1E3496C00041E1C5 /* MGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B12B1E3496C00041E1C5 /* MGViewController.m */; };
+		18E1B1301E3497350041E1C5 /* MGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B12F1E3497350041E1C5 /* MGTabBarController.m */; };
+		18E1B1331E3497850041E1C5 /* MGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B1321E3497850041E1C5 /* MGNavigationController.m */; };
+		18E1B1361E3498570041E1C5 /* MGHomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B1351E3498570041E1C5 /* MGHomepageViewController.m */; };
+		18E1B13A1E349A690041E1C5 /* MGGoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B1391E349A690041E1C5 /* MGGoldViewController.m */; };
+		18E1B1401E349A960041E1C5 /* MGDepositViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B13F1E349A960041E1C5 /* MGDepositViewController.m */; };
+		18E1B1431E349AA10041E1C5 /* MGAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B1421E349AA10041E1C5 /* MGAssetsViewController.m */; };
+		18E1B1461E349AAE0041E1C5 /* MGMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1B1451E349AAE0041E1C5 /* MGMoreViewController.m */; };
+		4B7A381044C018CEC38AE01D /* Pods_Mulitigold.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0EA78A9D42D9B0CE3D0438D /* Pods_Mulitigold.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		183473681E35A103000A983B /* MGBannerListPageApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGBannerListPageApi.h; sourceTree = "<group>"; };
+		183473691E35A103000A983B /* MGBannerListPageApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGBannerListPageApi.m; sourceTree = "<group>"; };
+		1834736C1E35B19E000A983B /* MGBannerListPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGBannerListPageModel.h; sourceTree = "<group>"; };
+		1834736D1E35B19E000A983B /* MGBannerListPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGBannerListPageModel.m; sourceTree = "<group>"; };
+		183473721E35F5CC000A983B /* MGNavBarHiddenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGNavBarHiddenController.h; sourceTree = "<group>"; };
+		183473731E35F5CC000A983B /* MGNavBarHiddenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGNavBarHiddenController.m; sourceTree = "<group>"; };
+		1863914F1E31FBAE0017497B /* Mulitigold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mulitigold.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		186391531E31FBAE0017497B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		186391551E31FBAE0017497B /* MGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGAppDelegate.h; sourceTree = "<group>"; };
+		186391561E31FBAE0017497B /* MGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGAppDelegate.m; sourceTree = "<group>"; };
+		1863915E1E31FBAE0017497B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		186391631E31FBAE0017497B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E1B0F51E3447350041E1C5 /* Mulitigold-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mulitigold-Prefix.pch"; sourceTree = "<group>"; };
+		18E1B10D1E3453320041E1C5 /* MGRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGRouter.h; sourceTree = "<group>"; };
+		18E1B10E1E3453320041E1C5 /* MGRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGRouter.m; sourceTree = "<group>"; };
+		18E1B11D1E3494920041E1C5 /* MGHomepageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGHomepageViewModel.h; sourceTree = "<group>"; };
+		18E1B11E1E3494920041E1C5 /* MGHomepageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGHomepageViewModel.m; sourceTree = "<group>"; };
+		18E1B1211E3494BD0041E1C5 /* MGViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGViewModel.h; sourceTree = "<group>"; };
+		18E1B1221E3494BD0041E1C5 /* MGViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGViewModel.m; sourceTree = "<group>"; };
+		18E1B1241E3495B90041E1C5 /* MGGoldViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGoldViewModel.h; sourceTree = "<group>"; };
+		18E1B1251E3495B90041E1C5 /* MGGoldViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGoldViewModel.m; sourceTree = "<group>"; };
+		18E1B1281E3496C00041E1C5 /* MGNavigationControllerStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGNavigationControllerStack.h; sourceTree = "<group>"; };
+		18E1B1291E3496C00041E1C5 /* MGNavigationControllerStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGNavigationControllerStack.m; sourceTree = "<group>"; };
+		18E1B12A1E3496C00041E1C5 /* MGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGViewController.h; sourceTree = "<group>"; };
+		18E1B12B1E3496C00041E1C5 /* MGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGViewController.m; sourceTree = "<group>"; };
+		18E1B12E1E3497350041E1C5 /* MGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTabBarController.h; sourceTree = "<group>"; };
+		18E1B12F1E3497350041E1C5 /* MGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTabBarController.m; sourceTree = "<group>"; };
+		18E1B1311E3497850041E1C5 /* MGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGNavigationController.h; sourceTree = "<group>"; };
+		18E1B1321E3497850041E1C5 /* MGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGNavigationController.m; sourceTree = "<group>"; };
+		18E1B1341E3498570041E1C5 /* MGHomepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGHomepageViewController.h; sourceTree = "<group>"; };
+		18E1B1351E3498570041E1C5 /* MGHomepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGHomepageViewController.m; sourceTree = "<group>"; };
+		18E1B1371E3499C10041E1C5 /* MGConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGConstant.h; sourceTree = "<group>"; };
+		18E1B1381E349A690041E1C5 /* MGGoldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGGoldViewController.h; sourceTree = "<group>"; };
+		18E1B1391E349A690041E1C5 /* MGGoldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGGoldViewController.m; sourceTree = "<group>"; };
+		18E1B13E1E349A960041E1C5 /* MGDepositViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGDepositViewController.h; sourceTree = "<group>"; };
+		18E1B13F1E349A960041E1C5 /* MGDepositViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGDepositViewController.m; sourceTree = "<group>"; };
+		18E1B1411E349AA10041E1C5 /* MGAssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGAssetsViewController.h; sourceTree = "<group>"; };
+		18E1B1421E349AA10041E1C5 /* MGAssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGAssetsViewController.m; sourceTree = "<group>"; };
+		18E1B1441E349AAE0041E1C5 /* MGMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMoreViewController.h; sourceTree = "<group>"; };
+		18E1B1451E349AAE0041E1C5 /* MGMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMoreViewController.m; sourceTree = "<group>"; };
+		964BEC7CEE2AAF8B05578900 /* Pods-Mulitigold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mulitigold.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mulitigold/Pods-Mulitigold.release.xcconfig"; sourceTree = "<group>"; };
+		AE5525EA06B7B37E882F34BA /* Pods-Mulitigold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mulitigold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mulitigold/Pods-Mulitigold.debug.xcconfig"; sourceTree = "<group>"; };
+		F0EA78A9D42D9B0CE3D0438D /* Pods_Mulitigold.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mulitigold.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1863914C1E31FBAE0017497B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B7A381044C018CEC38AE01D /* Pods_Mulitigold.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		108E849DB05A4EEA79F57DFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE5525EA06B7B37E882F34BA /* Pods-Mulitigold.debug.xcconfig */,
+				964BEC7CEE2AAF8B05578900 /* Pods-Mulitigold.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		183473671E359FE7000A983B /* HttpServiceApi */ = {
+			isa = PBXGroup;
+			children = (
+				183473681E35A103000A983B /* MGBannerListPageApi.h */,
+				183473691E35A103000A983B /* MGBannerListPageApi.m */,
+			);
+			path = HttpServiceApi;
+			sourceTree = "<group>";
+		};
+		1834736B1E35AF0F000A983B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1834736C1E35B19E000A983B /* MGBannerListPageModel.h */,
+				1834736D1E35B19E000A983B /* MGBannerListPageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		186391461E31FBAE0017497B = {
+			isa = PBXGroup;
+			children = (
+				186391511E31FBAE0017497B /* Mulitigold */,
+				186391501E31FBAE0017497B /* Products */,
+				108E849DB05A4EEA79F57DFF /* Pods */,
+				D72289A130753F51FC346916 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		186391501E31FBAE0017497B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1863914F1E31FBAE0017497B /* Mulitigold.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		186391511E31FBAE0017497B /* Mulitigold */ = {
+			isa = PBXGroup;
+			children = (
+				186391551E31FBAE0017497B /* MGAppDelegate.h */,
+				186391561E31FBAE0017497B /* MGAppDelegate.m */,
+				1834736B1E35AF0F000A983B /* Model */,
+				183473671E359FE7000A983B /* HttpServiceApi */,
+				18E1B1141E345AC30041E1C5 /* ViewModel */,
+				18E1B1101E3454B30041E1C5 /* View */,
+				18E1B10C1E34530D0041E1C5 /* Util */,
+				1863915E1E31FBAE0017497B /* Assets.xcassets */,
+				186391631E31FBAE0017497B /* Info.plist */,
+				186391521E31FBAE0017497B /* Supporting Files */,
+			);
+			path = Mulitigold;
+			sourceTree = "<group>";
+		};
+		186391521E31FBAE0017497B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				186391531E31FBAE0017497B /* main.m */,
+				18E1B0F51E3447350041E1C5 /* Mulitigold-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18E1B10C1E34530D0041E1C5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				18E1B1371E3499C10041E1C5 /* MGConstant.h */,
+				18E1B10D1E3453320041E1C5 /* MGRouter.h */,
+				18E1B10E1E3453320041E1C5 /* MGRouter.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		18E1B1101E3454B30041E1C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18E1B1271E3496C00041E1C5 /* BaseView */,
+				18E1B1341E3498570041E1C5 /* MGHomepageViewController.h */,
+				18E1B1351E3498570041E1C5 /* MGHomepageViewController.m */,
+				18E1B1381E349A690041E1C5 /* MGGoldViewController.h */,
+				18E1B1391E349A690041E1C5 /* MGGoldViewController.m */,
+				18E1B13E1E349A960041E1C5 /* MGDepositViewController.h */,
+				18E1B13F1E349A960041E1C5 /* MGDepositViewController.m */,
+				18E1B1411E349AA10041E1C5 /* MGAssetsViewController.h */,
+				18E1B1421E349AA10041E1C5 /* MGAssetsViewController.m */,
+				18E1B1441E349AAE0041E1C5 /* MGMoreViewController.h */,
+				18E1B1451E349AAE0041E1C5 /* MGMoreViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18E1B1141E345AC30041E1C5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18E1B1201E3494AF0041E1C5 /* BaseViewModel */,
+				18E1B11D1E3494920041E1C5 /* MGHomepageViewModel.h */,
+				18E1B11E1E3494920041E1C5 /* MGHomepageViewModel.m */,
+				18E1B1241E3495B90041E1C5 /* MGGoldViewModel.h */,
+				18E1B1251E3495B90041E1C5 /* MGGoldViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18E1B1201E3494AF0041E1C5 /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18E1B1211E3494BD0041E1C5 /* MGViewModel.h */,
+				18E1B1221E3494BD0041E1C5 /* MGViewModel.m */,
+			);
+			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
+		18E1B1271E3496C00041E1C5 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				18E1B12E1E3497350041E1C5 /* MGTabBarController.h */,
+				18E1B12F1E3497350041E1C5 /* MGTabBarController.m */,
+				18E1B1311E3497850041E1C5 /* MGNavigationController.h */,
+				18E1B1321E3497850041E1C5 /* MGNavigationController.m */,
+				18E1B1281E3496C00041E1C5 /* MGNavigationControllerStack.h */,
+				18E1B1291E3496C00041E1C5 /* MGNavigationControllerStack.m */,
+				18E1B12A1E3496C00041E1C5 /* MGViewController.h */,
+				18E1B12B1E3496C00041E1C5 /* MGViewController.m */,
+				183473721E35F5CC000A983B /* MGNavBarHiddenController.h */,
+				183473731E35F5CC000A983B /* MGNavBarHiddenController.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		D72289A130753F51FC346916 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0EA78A9D42D9B0CE3D0438D /* Pods_Mulitigold.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1863914E1E31FBAE0017497B /* Mulitigold */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186391661E31FBAE0017497B /* Build configuration list for PBXNativeTarget "Mulitigold" */;
+			buildPhases = (
+				E4DC46D39B1F8E349F936F23 /* [CP] Check Pods Manifest.lock */,
+				1863914B1E31FBAE0017497B /* Sources */,
+				1863914C1E31FBAE0017497B /* Frameworks */,
+				1863914D1E31FBAE0017497B /* Resources */,
+				60C5A1F7488189DA3A8602EA /* [CP] Embed Pods Frameworks */,
+				7568C6AA0D7FCF11C854E872 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mulitigold;
+			productName = Mulitigold;
+			productReference = 1863914F1E31FBAE0017497B /* Mulitigold.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		186391471E31FBAE0017497B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = liuwei;
+				TargetAttributes = {
+					1863914E1E31FBAE0017497B = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = M8Y7BB8FWZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1863914A1E31FBAE0017497B /* Build configuration list for PBXProject "Mulitigold" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 186391461E31FBAE0017497B;
+			productRefGroup = 186391501E31FBAE0017497B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1863914E1E31FBAE0017497B /* Mulitigold */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1863914D1E31FBAE0017497B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1863915F1E31FBAE0017497B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60C5A1F7488189DA3A8602EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mulitigold/Pods-Mulitigold-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7568C6AA0D7FCF11C854E872 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mulitigold/Pods-Mulitigold-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4DC46D39B1F8E349F936F23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1863914B1E31FBAE0017497B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E1B12D1E3496C00041E1C5 /* MGViewController.m in Sources */,
+				18E1B1331E3497850041E1C5 /* MGNavigationController.m in Sources */,
+				18E1B13A1E349A690041E1C5 /* MGGoldViewController.m in Sources */,
+				18E1B12C1E3496C00041E1C5 /* MGNavigationControllerStack.m in Sources */,
+				18E1B1361E3498570041E1C5 /* MGHomepageViewController.m in Sources */,
+				18E1B11F1E3494920041E1C5 /* MGHomepageViewModel.m in Sources */,
+				18E1B1461E349AAE0041E1C5 /* MGMoreViewController.m in Sources */,
+				18E1B1401E349A960041E1C5 /* MGDepositViewController.m in Sources */,
+				18E1B1261E3495B90041E1C5 /* MGGoldViewModel.m in Sources */,
+				186391571E31FBAE0017497B /* MGAppDelegate.m in Sources */,
+				18E1B10F1E3453320041E1C5 /* MGRouter.m in Sources */,
+				1834736E1E35B19E000A983B /* MGBannerListPageModel.m in Sources */,
+				186391541E31FBAE0017497B /* main.m in Sources */,
+				18E1B1431E349AA10041E1C5 /* MGAssetsViewController.m in Sources */,
+				1834736A1E35A103000A983B /* MGBannerListPageApi.m in Sources */,
+				183473741E35F5CC000A983B /* MGNavBarHiddenController.m in Sources */,
+				18E1B1231E3494BD0041E1C5 /* MGViewModel.m in Sources */,
+				18E1B1301E3497350041E1C5 /* MGTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		186391641E31FBAE0017497B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		186391651E31FBAE0017497B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		186391671E31FBAE0017497B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5525EA06B7B37E882F34BA /* Pods-Mulitigold.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8Y7BB8FWZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mulitigold/Mulitigold-Prefix.pch";
+				INFOPLIST_FILE = Mulitigold/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lw.Mulitigold;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		186391681E31FBAE0017497B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964BEC7CEE2AAF8B05578900 /* Pods-Mulitigold.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M8Y7BB8FWZ;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mulitigold/Mulitigold-Prefix.pch";
+				INFOPLIST_FILE = Mulitigold/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lw.Mulitigold;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1863914A1E31FBAE0017497B /* Build configuration list for PBXProject "Mulitigold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186391641E31FBAE0017497B /* Debug */,
+				186391651E31FBAE0017497B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		186391661E31FBAE0017497B /* Build configuration list for PBXNativeTarget "Mulitigold" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186391671E31FBAE0017497B /* Debug */,
+				186391681E31FBAE0017497B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 186391471E31FBAE0017497B /* Project object */;
+}
