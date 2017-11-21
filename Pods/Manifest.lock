@@ -1,0 +1,38 @@
+PODS:
+  - CustomIOSAlertView (0.9.5)
+  - Masonry (1.1.0)
+  - MBProgressHUD (0.9.2)
+  - OpenUDID (1.0.0)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - UITableView+FDTemplateLayoutCell (1.6)
+
+DEPENDENCIES:
+  - CustomIOSAlertView
+  - Masonry
+  - MBProgressHUD (~> 0.9.2)
+  - OpenUDID
+  - ReactiveCocoa
+  - SDWebImage (~> 3.7.3)
+  - UITableView+FDTemplateLayoutCell
+
+SPEC CHECKSUMS:
+  CustomIOSAlertView: cc4fa8e36219be3fd5ebcd40789f5b4aaae0f38e
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+
+PODFILE CHECKSUM: 953d01bad67186bbc6b7e0d6dc6836696faacde6
+
+COCOAPODS: 1.2.1
